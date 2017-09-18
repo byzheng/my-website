@@ -1,6 +1,6 @@
 +++
 authors = ["Tao Duan", "Scott Chapman", "Edward Holland", "Yan Guo", "Bangyou Zheng"]
-date = "2016-08-1"
+date = "2016-08-01"
 image_preview = "paper/early-vigour.png"
 math = true
 publication_types = ["2"]
