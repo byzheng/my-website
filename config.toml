@@ -29,7 +29,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   avatar = "bz.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "Bangyou.Zheng@csiro.au"
   address = "306 Carmody Road, St Lucia, QLD"
-  phone = "+62 7 3214 2620"
+  phone = "+61 7 3214 2620"
   date_format = "Jan 2, 2006"
 
   # Enable global LaTeX math rendering?
