@@ -1,0 +1,32 @@
++++
+# Date this page was created.
+date = "2017-09-18"
+
+# Project title.
+title = "Raising water productivity: Trait assessment for Australian rainfed wheat"
+
+# Project summary to display on homepage.
+summary = "Evaluate wheat traits related with water productivity across Australian wheatbelt"
+
+# Optional image to display on homepage (relative to `static/img/` folder).
+image_preview = ""
+
+# Tags: can be used for filtering projects.
+# Example: `tags = ["machine-learning", "deep-learning"]`
+tags = ["model"]
+
+# Optional external URL for project (replaces project detail page).
+external_link = ""
+
+# Does the project detail page use math formatting?
+math = false
+
+# Optional featured image (relative to `static/img/` folder).
+[header]
+image = ""
+caption = ""
+
++++
+
+The project plans to develop a new wheat model in the APSIM next generation to evaluate wheat traits related with water usage patterns, then assess traits across Australian wheatbelt.
+
