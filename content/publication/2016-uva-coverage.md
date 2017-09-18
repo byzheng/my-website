@@ -6,7 +6,7 @@ math = true
 publication_types = ["2"]
 publication = "Functional Plant Biology"
 publication_short = ""
-selected = true
+selected = false
 title = "Comparison of ground cover estimates from experiment plots in cotton, sorghum and sugarcane based on images and ortho-mosaics captured by UAV"
 
 url_code = ""

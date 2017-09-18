@@ -1,12 +1,12 @@
 +++
 authors = ["Tao Duan", "Scott Chapman", "Yan Guo", "Bangyou Zheng"]
 date = "2017-08-15"
-image_preview = ""
+image_preview = "paper/uav-ndvi.png"
 math = true
 publication_types = ["2"]
 publication = "Field Crop Research"
 publication_short = ""
-selected = false
+selected = true
 title = "Dynamic monitoring of NDVI in wheat agronomy and breeding trials using an unmanned aerial vehicle"
 
 url_code = ""
@@ -26,7 +26,7 @@ url = "http://www.sciencedirect.com/science/article/pii/S0378429017303684"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = ""
-caption = ""
+image = "paper/uav-ndvi.png"
+caption = "A better correlation after removing soil from multiple-spectral images"
 
 +++
