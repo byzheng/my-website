@@ -6,7 +6,7 @@ math = true
 publication_types = ["2"]
 publication = "Journal of Experimental Botany"
 publication_short = ""
-selected = false
+selected = true
 title = "Quantification of the effects of VRN1 and Ppd-D1 to predict spring wheat (Triticum aestivum) heading time across diverse environments"
 
 url_code = ""
