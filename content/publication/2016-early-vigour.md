@@ -27,6 +27,6 @@ url = "https://academic.oup.com/jxb/article/67/15/4523/1749226/"
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = "paper/early-vigour.png"
-caption = "Reconstruction of 3D canopies for two wheat genotypes"
+caption = ""
 
 +++

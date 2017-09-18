@@ -27,6 +27,6 @@ url = "http://www.sciencedirect.com/science/article/pii/S0378429017303684"
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = "paper/uav-ndvi.png"
-caption = "A better correlation after removing soil from multiple-spectral images"
+caption = ""
 
 +++

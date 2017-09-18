@@ -27,6 +27,6 @@ url = "http://www.publish.csiro.au/fp/FP16123"
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = "paper/uav-coverage.png"
-caption = "Estimation of ground coverage in the natural conditions and ghost effects"
+caption = ""
 
 +++
