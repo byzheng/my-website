@@ -1,0 +1,18 @@
++++
+date = "2016-08-20T00:00:00"
+title = "Improvement of the model capacity and assessment traits related with water use efficiency for wheat in Australia"
+abstract = ""
+abstract_short = ""
+event = "7th International Crop Science Congress"
+event_url = "www.7icsc.com.cn"
+location = "Beijing, China"
+
+selected = false
+math = true
+
+url_pdf = ""
+url_slides = ""
+url_video = ""
+
++++
+
