@@ -3,7 +3,6 @@ title = "Bangyou Zheng"
 copyright = "&copy; 2017 Bangyou Zheng"
 theme = "hugo-academic"
 enableEmoji = true
-uglyurls = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 
 # Enable comments by entering your Disqus shortname
