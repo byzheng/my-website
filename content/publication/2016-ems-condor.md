@@ -1,7 +1,7 @@
 +++
 authors = ["Bangyou Zheng", "Edward Holland", "Scott Chapman"]
 date = "2016-07-10"
-image_preview = "paper/2016-ems-condor.png"
+image_preview = ""
 math = true
 publication_types = ["2"]
 publication = "Environmental Modelling & Software"
@@ -26,7 +26,7 @@ url = "http://www.sciencedirect.com/science/article/pii/S1364815216303450"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "paper/2016-ems-condor.png"
+image = ""
 caption = ""
 
 +++

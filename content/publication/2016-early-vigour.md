@@ -1,7 +1,7 @@
 +++
 authors = ["Tao Duan", "Scott Chapman", "Edward Holland", "Yan Guo", "Bangyou Zheng"]
 date = "2016-08-01"
-image_preview = "paper/early-vigour.png"
+image_preview = ""
 math = true
 publication_types = ["2"]
 publication = "Journal of Experimental Botany"
@@ -26,7 +26,7 @@ url = "https://academic.oup.com/jxb/article/67/15/4523/1749226/"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "paper/early-vigour.png"
+image = ""
 caption = ""
 
 +++

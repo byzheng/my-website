@@ -1,7 +1,7 @@
 +++
 authors = ["Tao Duan", "Bangyou Zheng", "Wei Guo", "Seishi Ninomiya", "Yan Guo", "Scott Chapman"]
 date = "2016-12-14"
-image_preview = "paper/uav-coverage.png"
+image_preview = ""
 math = true
 publication_types = ["2"]
 publication = "Functional Plant Biology"
@@ -26,7 +26,7 @@ url = "http://www.publish.csiro.au/fp/FP16123"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "paper/uav-coverage.png"
+image = ""
 caption = ""
 
 +++

@@ -1,7 +1,7 @@
 +++
 authors = ["Bangyou Zheng", "Ben Biddulph", "Dora Li", "Haydn Kuchel", "Scott Chapman"]
 date = "2013-07-19"
-image_preview = "paper/jxb-flowering-time.png"
+image_preview = ""
 math = true
 publication_types = ["2"]
 publication = "Journal of Experimental Botany"
@@ -26,7 +26,7 @@ url = "https://academic.oup.com/jxb/article-lookup/doi/10.1093/jxb/ert209"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "paper/jxb-flowering-time.png"
+image = ""
 caption = ""
 
 +++

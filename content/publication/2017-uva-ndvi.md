@@ -1,7 +1,7 @@
 +++
 authors = ["Tao Duan", "Scott Chapman", "Yan Guo", "Bangyou Zheng"]
 date = "2017-08-15"
-image_preview = "paper/uav-ndvi.png"
+image_preview = ""
 math = true
 publication_types = ["2"]
 publication = "Field Crop Research"
@@ -26,7 +26,7 @@ url = "http://www.sciencedirect.com/science/article/pii/S0378429017303684"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "paper/uav-ndvi.png"
+image = ""
 caption = ""
 
 +++

@@ -1,7 +1,7 @@
 +++
 authors = ["Bangyou Zheng", "Scott Chapman", "Jack Christopher", "Troy Frederiks", "Karine Chenu"]
 date = "2015-04-28"
-image_preview = "paper/jxb-frost.png"
+image_preview = ""
 math = true
 publication_types = ["2"]
 publication = "Journal of Experimental Botany"
@@ -26,7 +26,7 @@ url = "https://academic.oup.com/jxb/article/66/12/3611/526621"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "paper/jxb-frost.png"
+image = ""
 caption = ""
 
 +++

@@ -1,7 +1,7 @@
 +++
 authors = ["Bangyou Zheng", "Karine Chenu", "Fernanda Dreccer", "Scott Chapman"]
 date = "2012-06-02"
-image_preview = "paper/gcb-frost-heat.png"
+image_preview = ""
 math = true
 publication_types = ["2"]
 publication = "Global Change Biology"
@@ -26,7 +26,7 @@ url = "http://dx.doi.org/10.1111%2Fj.1365-2486.2012.02724.x"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "paper/gcb-frost-heat.png"
+image = ""
 caption = ""
 
 +++

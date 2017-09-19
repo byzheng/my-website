@@ -1,7 +1,7 @@
 +++
 authors = ["Bangyou Zheng", "Karine Chenu", "Scott Chapman"]
 date = "2016-01-06"
-image_preview = "paper/2016-gcb-velocity.png"
+image_preview = ""
 math = true
 publication_types = ["2"]
 publication = "Global Change Biology"
@@ -26,7 +26,7 @@ url = "http://onlinelibrary.wiley.com/doi/10.1111/gcb.13118/abstract"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "paper/2016-gcb-velocity.png"
+image = ""
 caption = ""
 
 +++
