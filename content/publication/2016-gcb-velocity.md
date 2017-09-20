@@ -6,7 +6,7 @@ math = false
 publication_types = ["2"]
 publication = "Global Change Biology"
 publication_short = ""
-selected = true
+selected = false
 title = "Velocity of temperature and flowering time in wheat – assisting breeders to keep pace with climate change"
 
 url_code = ""
