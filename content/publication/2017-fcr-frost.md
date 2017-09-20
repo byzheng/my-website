@@ -6,7 +6,7 @@ math = true
 publication_types = ["2"]
 publication = "Field Crop Research"
 publication_short = ""
-selected = true
+selected = false
 title = "Economic assessment of wheat breeding options for potential improved levels of post head-emergence frost tolerance"
 
 url_code = ""
