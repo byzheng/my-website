@@ -2,7 +2,7 @@
 authors = ["Shahbaz Mushtaq", "Duc-Anh An-Vo", "Mandy Christopher", "Bangyou Zheng", "Karine Chenue", "Scott Chapman", "Jack Christopher", "Roger Stone", "Troy Frederiks", "Monirul Alam"]
 date = "2017-09-08"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Field Crop Research"
 publication_short = ""

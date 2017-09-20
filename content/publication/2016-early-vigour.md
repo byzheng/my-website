@@ -2,7 +2,7 @@
 authors = ["Tao Duan", "Scott Chapman", "Edward Holland", "Yan Guo", "Bangyou Zheng"]
 date = "2016-08-01"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Journal of Experimental Botany"
 publication_short = ""

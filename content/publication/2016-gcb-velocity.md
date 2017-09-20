@@ -2,7 +2,7 @@
 authors = ["Bangyou Zheng", "Karine Chenu", "Scott Chapman"]
 date = "2016-01-06"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Global Change Biology"
 publication_short = ""

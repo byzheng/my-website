@@ -2,7 +2,7 @@
 authors = ["Vijaya Singh", "Chuc T. Nguyen", "Greg McLean", "Scott  C. Chapman", "BangyouZheng", "Erik J. van Oosterom", "Graeme L. Hammer"]
 date = "2017-06-08"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Field Crop Research"
 publication_short = ""

@@ -2,7 +2,7 @@
 authors = ["Tao Duan", "Scott Chapman", "Yan Guo", "Bangyou Zheng"]
 date = "2017-08-15"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Field Crop Research"
 publication_short = ""

@@ -2,7 +2,7 @@
 authors = ["Bangyou Zheng", "Ben Biddulph", "Dora Li", "Haydn Kuchel", "Scott Chapman"]
 date = "2013-07-19"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Journal of Experimental Botany"
 publication_short = ""

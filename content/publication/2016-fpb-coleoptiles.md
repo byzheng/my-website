@@ -2,7 +2,7 @@
 authors = ["Greg J. Rebetzke", "Bangyou Zheng", "Scott C. Chapman"]
 date = "2016-06-26"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Functional Plant Biology"
 publication_short = ""

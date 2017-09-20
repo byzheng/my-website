@@ -2,7 +2,7 @@
 authors = ["Wei Guo", "Bangyou Zheng", "Tao Duan", "Tokihiro Fukatsu", "Scott Chapman", "Seishi Ninomiya"]
 date = "2017-06-08"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Sensors"
 publication_short = ""

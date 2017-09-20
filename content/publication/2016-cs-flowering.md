@@ -2,7 +2,7 @@
 authors = ["Sivakumar Sukumaran", "Marta S. Lopes", "Susanne Dreisigacker", "Laura E. Dixon", "Meluleki Zikhali", "Simon Griffiths", "Bangyou Zheng", "Scott Chapman", "Matthew P. Reynolds"]
 date = "2016-09-01"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Crop Science"
 publication_short = ""

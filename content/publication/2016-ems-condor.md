@@ -2,7 +2,7 @@
 authors = ["Bangyou Zheng", "Edward Holland", "Scott Chapman"]
 date = "2016-07-10"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Environmental Modelling & Software"
 publication_short = ""

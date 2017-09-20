@@ -2,7 +2,7 @@
 authors = ["Steven Jeffery Crimp", "Bangyou Zheng", "Nirav Khimashia", "David Lyon Gobbett", "Scott Chapman", "Mark Howden", "Neville Nicholls"]
 date = "2016-08-17"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Crop and Pasture Science"
 publication_short = ""

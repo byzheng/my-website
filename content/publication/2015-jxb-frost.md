@@ -2,7 +2,7 @@
 authors = ["Bangyou Zheng", "Scott Chapman", "Jack Christopher", "Troy Frederiks", "Karine Chenu"]
 date = "2015-04-28"
 image_preview = ""
-math = true
+math = false
 publication_types = ["2"]
 publication = "Journal of Experimental Botany"
 publication_short = ""
