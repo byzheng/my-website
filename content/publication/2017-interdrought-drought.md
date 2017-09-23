@@ -6,7 +6,7 @@ math = false
 publication_types = ["1"]
 publication = ""
 publication_short = "InterDrought V"
-selected = true
+selected = false
 title = "Drought in wheat – Past and future trends"
 
 url_code = ""

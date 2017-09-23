@@ -6,7 +6,7 @@ math = false
 publication_types = ["1"]
 publication = "7th International Crop Science Congress"
 publication_short = ""
-selected = true
+selected = false
 title = "Improvement of the model capacity and assessment traits related with water use efficiency for wheat in Australia"
 
 url_code = ""

@@ -6,7 +6,7 @@ math = false
 publication_types = ["1"]
 publication = "17th Australian Agronomy"
 publication_short = ""
-selected = true
+selected = false
 title = "Predicting heading date and frost impact in wheat across Australia"
 
 url_code = ""

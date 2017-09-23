@@ -6,7 +6,7 @@ math = false
 publication_types = ["1"]
 publication = ""
 publication_short = "IUFRO Regional Congress for Asia and Oceaniai"
-selected = true
+selected = false
 title = "The gravel coverage and size of Gobi desert analyzed by a rapid image-based method"
 
 url_code = ""
