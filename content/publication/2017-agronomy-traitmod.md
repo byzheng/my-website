@@ -11,7 +11,7 @@ title = "Assessment of canopy growth and development for three wheat cultivars u
 
 url_code = ""
 url_dataset = ""
-url_pdf = ""
+url_pdf = "http://www.agronomyconference.com/2017/110_ASA2017_Zheng_Bangyou_Final.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
