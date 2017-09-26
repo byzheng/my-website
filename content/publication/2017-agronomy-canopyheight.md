@@ -11,7 +11,7 @@ title = "Estimation of canopy height using an unmanned aerial vehicle in the fie
 
 url_code = ""
 url_dataset = ""
-url_pdf = ""
+url_pdf = "http://www.agronomyconference.com/2017/118_ASA2017_Zheng_Bangyou_Final.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
