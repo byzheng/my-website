@@ -7,7 +7,7 @@ draft = true
 title = "Adapting wheat to future warm and dry climates - improved simulation of flowering and tillering"
 
 # Project summary to display on homepage.
-summary = "Australian wheat production is greatly influenced by periods of drought and high temperature. In future climate we expect increases in incidences of low or high temperature and potentially in reduced rainfall. We conducted experiments on flowering time and tillering, and assembled datasets from other researchers to build a new gene-based model to predict heading time."
+summary = ""
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = ""

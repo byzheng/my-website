@@ -8,7 +8,7 @@ draft = true
 title = "Raising water productivity: Trait assessment for Australian rainfed wheat"
 
 # Project summary to display on homepage.
-summary = "Evaluate wheat traits related with water productivity across Australian wheatbelt"
+summary = ""
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = ""
