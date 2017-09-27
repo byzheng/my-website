@@ -6,7 +6,7 @@ date = "2009-07-01"
 title = "Adapting wheat to future warm and dry climates - improved simulation of flowering and tillering"
 
 # Project summary to display on homepage.
-summary = "Australian wheat production is greatly influenced by periods of drought and high temperature. In future climate we expect increases in incidences of low or high temperature and potentially in reduced rainfall. We conducted experiments on flowering time and tillering, and assembled datasets from other researchers to build a new gene-based model to predict heading time. The model was validated over a wide range of environments (ca. 4500 observations) and showed substantial spatial variability of frost and heat events across the Australian wheatbelt in current and future climates. In future climates, the target sowing and flowering windows would be shifted earlier by up to two and one months."
+summary = "Australian wheat production is greatly influenced by periods of drought and high temperature. In future climate we expect increases in incidences of low or high temperature and potentially in reduced rainfall. We conducted experiments on flowering time and tillering, and assembled datasets from other researchers to build a new gene-based model to predict heading time."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = ""
@@ -28,5 +28,6 @@ caption = ""
 
 +++
 
-The project plans to develop a new wheat model in the APSIM next generation to evaluate wheat traits related with water usage patterns, then assess traits across Australian wheatbelt.
+
+Australian wheat production is greatly influenced by periods of drought and high temperature. In future climate we expect increases in incidences of low or high temperature and potentially in reduced rainfall. We conducted experiments on flowering time and tillering, and assembled datasets from other researchers to build a new gene-based model to predict heading time. The model was validated over a wide range of environments (ca. 4500 observations) and showed substantial spatial variability of frost and heat events across the Australian wheatbelt in current and future climates. In future climates, the target sowing and flowering windows would be shifted earlier by up to two and one months.
 
