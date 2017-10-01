@@ -123,17 +123,18 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   weight = 1
 
 
-[[menu.main]]
-  name = "Publications"
-  url = "#publications_selected"
-  weight = 2
-
-
 
 [[menu.main]]
   name = "Talks"
   url = "#talks"
+  weight = 2
+
+
+[[menu.main]]
+  name = "Publications"
+  url = "#publications_selected"
   weight = 3
+
 
 [[menu.main]]
   name = "Projects"
@@ -157,9 +158,3 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   category = "categories"
   publication_type = "publication_types"
 
-# Languages
-#   Create a [languages.X] block for each language you want, where X is the language ID.
-
-# Configure the English version of the website.
-[languages.en]
-  languageCode = "en-us"
