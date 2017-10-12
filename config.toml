@@ -1,9 +1,11 @@
-baseurl = "https://www.bangyou.me/" 
+baseurl = "https://www.bangyou.me/"
 title = "Bangyou Zheng"
 copyright = "&copy; 2017 Bangyou Zheng"
 theme = "hugo-academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
+
+paginate = 10
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
@@ -17,29 +19,82 @@ defaultContentLanguageInSubdir = false
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+[outputs]
+  home = [ "HTML", "CSS" ]
+
 [blackfriday]
   hrefTargetBlank = true
 
 [params]
+  # Color theme.
+  #   Choose from `default`, `ocean`, `forest`, or `coffee`.
+  color_theme = "default"
+
+  # Font style.
+  #   Choose from `default`, `classic`, or `playfair`.
+  font = "default"
+
+  # Your details.
   name = "Bangyou Zheng"
   role = "Research scientist"
-  organization = "CSIRO"
-  organization_url = ""
+
+  # Organizations/Affiliations.
+  #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
+  organizations = [ { name = "CSIRO", url = "https://www.csiro.au/" } ]
+
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "bz.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "Bangyou.Zheng@csiro.au"
   address = "306 Carmody Road, St Lucia, QLD"
+  office_hours = ""
   phone = "+61 7 3214 2620"
+  skype = ""
+  telegram = ""
+
+  # Enable Keybase in Contact section by entering your keybase.io username.
+  keybase = ""
+
+  # Date format (refer to Go's date format: http://flippinggodateformat.com )
+  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
   date_format = "Jan 2, 2006"
+
+  # Show estimated reading time for posts?
+  reading_time = true
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
   math = false
 
+  # Highlight.js options
+  #   highlight
+  #     Enable global source code highlighting?  If false, you can
+  #     override it for a particular page in that page's preamble.
+  #
+  #     Example: highlight = true
+  #
+  #   highlight_languages
+  #     Add support for highlighting additional languages. Support for
+  #     languages mentioned here will be included in all pages. You
+  #     can also set this variable for a particular page in that
+  #     page's preamble.
+  #
+  #     Example: highlight_languages = ["go", "lisp", "ocaml"]
+  #
+  #   highlight_style
+  #     Choose a different CSS style for highlighting source
+  #     code. Setting this option in a page's preamble has no
+  #     effect.
+  #
+  #     Example: highlight_style = "github-gist"
+  #
+  #   For the list of supported languages and styles, see:
+  #   https://cdnjs.com/libraries/highlight.js/
+  #
+  #   For more info on the highlighting options, see:
+  #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
   highlight_languages = []
-  highlight_style = "github"
-  # highlight_version = "9.9.0"
+  # highlight_style = "github"
 
   # Enable native social sharing buttons?
   sharing = true
@@ -82,6 +137,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   #   google-scholar, arxiv, orcid, researchgate, mendeley
   #
   #   Full list: https://jpswalsh.github.io/academicons/
+
 [[params.social]]
     icon = "home"
     icon_pack = "fa"
@@ -110,6 +166,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     icon = "github"
     icon_pack = "fa"
     link = "https://github.com/byzheng"
+
+
 
 
 # Navigation Links
@@ -158,3 +216,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   category = "categories"
   publication_type = "publication_types"
 
+
+# Languages
+#   Create a [languages.X] block for each language you want, where X is the language ID.
+
+# Configure the English version of the website.
+[Languages.en]
+  languageCode = "en-us"
