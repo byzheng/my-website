@@ -26,7 +26,7 @@ weight = 1
   year = 2009
 
 [[education.courses]]
-  course = "BSc in Agricluture"
+  course = "BSc in Agriculture"
   institution = "China Agricultural University"
   year = 2004
  
