@@ -95,7 +95,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/BangyouZheng"
+    link = "https://twitter.com/BangyouZheng"
 
   [[params.social]]
     icon = "google-scholar"
@@ -109,7 +109,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/byzheng"
+    link = "https://github.com/byzheng"
 
 
 # Navigation Links
