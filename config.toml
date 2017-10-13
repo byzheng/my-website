@@ -6,7 +6,7 @@ enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 
 paginate = 10
-
+preserveTaxonomyNames = true
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 
