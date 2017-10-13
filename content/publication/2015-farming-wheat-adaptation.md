@@ -8,6 +8,8 @@ publication = "5th International Symposium for Farming Systems Design Montpellie
 publication_short = "5th International Symposium for Farming Systems Design"
 selected = false
 title = "Climate change adaptation in Australian wheat farm systems upscaled from farm to national scale"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "farming", "economy"]
+
 
 url_code = ""
 url_dataset = ""

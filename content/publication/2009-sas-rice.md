@@ -8,6 +8,7 @@ publication = "Scientia Agricultura Sinica"
 publication_short = ""
 selected = false
 title = "Three-dimensional digitization in situ of rice canopies and virtual stratified-clipping method."
+tags = ["rice", "canopy", "structure", "model", "light"]
 
 url_code = ""
 url_dataset = ""

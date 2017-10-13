@@ -8,6 +8,7 @@ publication = "Functional Plant Biology"
 publication_short = ""
 selected = false
 title = "Comparison of architecture among different cultivars of hybrid rice using spatial light model based on 3D digitizing"
+tags = ["rice", "canopy", "light", "breeding"]
 
 url_code = ""
 url_dataset = ""

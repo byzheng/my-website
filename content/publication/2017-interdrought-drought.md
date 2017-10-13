@@ -8,6 +8,7 @@ publication = ""
 publication_short = "InterDrought V"
 selected = false
 title = "Drought in wheat – Past and future trends"
+tags = ["climate", "adaptation", "drought", "EC", "wheat", "Australia", "APSIM"]
 
 url_code = ""
 url_dataset = ""

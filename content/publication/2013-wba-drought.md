@@ -8,6 +8,8 @@ publication = "Wheat Breeding Assembly"
 publication_short = ""
 selected = false
 title = "Wheat response to drought and heat - Using crop modelling to prepare for the future"
+tags = ["wheat", "drought", "heat", "Australia", "climate", "adaptation"]
+
 
 url_code = ""
 url_dataset = ""

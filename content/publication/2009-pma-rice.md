@@ -8,7 +8,7 @@ publication = "Plant Growth Modeling And Applications"
 publication_short = ""
 selected = false
 title = "Assessment of the effects of leaf angle combinations on potential photosynthesis capacity of rice with 3-D models using high performance computing"
-
+tags = ["rice", "model", "light", "canopy", "structure"]
 url_code = ""
 url_dataset = ""
 url_pdf = ""

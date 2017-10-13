@@ -8,6 +8,7 @@ publication = ""
 publication_short = "International conference on crop improvement, ideotyping, and modeling for African cropping systems under climate change"
 selected = false
 title = "Crop improvement, ideotyping and modelling under climate change"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM"]
 
 url_code = ""
 url_dataset = ""

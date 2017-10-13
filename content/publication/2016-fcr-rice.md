@@ -8,6 +8,7 @@ publication = "Field Crop Research"
 publication_short = ""
 selected = false
 title = "Quantitative evaluation of influence of PROSTRATE GROWTH 1 gene on rice canopy structure based on three-dimensional structure model"
+tags = ["rice", "model", "structure", "canopy", "gene"]
 
 url_code = ""
 url_dataset = ""

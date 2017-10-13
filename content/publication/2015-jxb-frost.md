@@ -8,6 +8,7 @@ publication = "Journal of Experimental Botany"
 publication_short = ""
 selected = true
 title = "Frost trends and their estimated impact on yield in the Australian wheatbelt"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering"]
 
 url_code = ""
 url_dataset = ""

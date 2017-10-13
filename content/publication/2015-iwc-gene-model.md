@@ -8,6 +8,7 @@ publication = "The 9th International Wheat Conferenc"
 publication_short = ""
 selected = false
 title = "Gene-based prediction of heading time to target real-time and future climate adaptation in wheat"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering", "gene", "model"]
 
 url_code = ""
 url_dataset = ""

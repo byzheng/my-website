@@ -8,6 +8,7 @@ publication = "Tropical Agriculture Conference 2015"
 publication_short = ""
 selected = false
 title = "Heat stress effects on grain sorghum productivity – biology and modelling"
+tags = ["sorghum", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering", "breeding"]
 
 url_code = ""
 url_dataset = ""

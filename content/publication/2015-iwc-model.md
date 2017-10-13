@@ -8,6 +8,7 @@ publication = "The 9th International Wheat Conferenc"
 publication_short = ""
 selected = false
 title = "Crop modelling to aid crop improvement"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation"]
 
 url_code = ""
 url_dataset = ""

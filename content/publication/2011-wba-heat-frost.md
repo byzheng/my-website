@@ -8,6 +8,7 @@ publication = "Wheat Breeding Assembly"
 publication_short = ""
 selected = false
 title = "Frost and heat limits to the wheat flowering ‘window’ in present and future climates"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering"]
 
 url_code = ""
 url_dataset = ""

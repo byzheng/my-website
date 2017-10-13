@@ -8,6 +8,7 @@ publication = "Agronomy"
 publication_short = ""
 selected = false
 title = "Pheno-Copter: a low-altitude, autonomous remote-sensing robotic helicopter for high-throughput field-based phenotyping"
+tags = ["wheat", "UAV", "HTP", "image", "thermal"]
 
 url_code = ""
 url_dataset = ""

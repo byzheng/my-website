@@ -8,6 +8,7 @@ publication = "Environmental Modelling & Software"
 publication_short = ""
 selected = false
 title = "A standardized workflow to utilise a grid-computing system through advanced message queuing protocols"
+tags = ["HPC", "climate", "adaptation", "APSIM", "condor"]
 
 url_code = ""
 url_dataset = ""

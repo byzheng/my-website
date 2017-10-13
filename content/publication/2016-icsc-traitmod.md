@@ -8,6 +8,7 @@ publication = "7th International Crop Science Congress"
 publication_short = ""
 selected = false
 title = "Improvement of the model capacity and assessment traits related with water use efficiency for wheat in Australia"
+tags = ["wheat", "canopy", "Australia", "climate", "adaptation", "APSIM", "breeding", "nitrogen", "irrigation"]
 
 url_code = ""
 url_dataset = ""

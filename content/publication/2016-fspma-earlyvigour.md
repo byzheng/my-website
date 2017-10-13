@@ -8,6 +8,7 @@ publication = "International Conference on Functional-Structural Plant Growth Mo
 publication_short = ""
 selected = false
 title = "Dynamic monitoring of canopy structure by time serial photography of early stage growth of wheat"
+tags = ["wheat", "canopy", "image", "structure"]
 
 url_code = ""
 url_dataset = ""

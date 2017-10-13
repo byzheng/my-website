@@ -8,6 +8,8 @@ publication = "Agriculture, Ecosystems & Environment"
 publication_short = ""
 selected = false
 title = "The value of adapting to climate change in Australian wheat farm systems: farm to cross-regional scale"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "economy", "farming"]
+
 
 url_code = ""
 url_dataset = ""

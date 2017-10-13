@@ -8,6 +8,7 @@ publication = "Crop & Pasture Science"
 publication_short = ""
 selected = false
 title = "Crop design for specific adaptation in variable dryland production environments"
+tags = ["sorghum", "heat", "Australia", "climate", "adaptation", "APSIM", "breeding", "drought"]
 
 url_code = ""
 url_dataset = ""

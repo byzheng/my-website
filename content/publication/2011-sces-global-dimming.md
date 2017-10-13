@@ -8,6 +8,7 @@ publication = "Science China Earth Sciences"
 publication_short = ""
 selected = false
 title = "Assessment of the influence of global dimming on the photosynthetic production of rice based on three-dimensional modeling"
+tags = ["rice", "canopy", "light", "climate", "model"]
 
 url_code = ""
 url_dataset = ""

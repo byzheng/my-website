@@ -8,6 +8,7 @@ publication = "Global Change Biology"
 publication_short = ""
 selected = false
 title = "The shifting influence of drought and heat stress for crops in Northeast Australia"
+tags = ["wheat", "frost", "heat", "drought", "EC", "Australia", "climate", "adaptation", "APSIM"]
 
 url_code = ""
 url_dataset = ""

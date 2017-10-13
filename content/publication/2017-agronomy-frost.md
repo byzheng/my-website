@@ -8,6 +8,7 @@ publication = ""
 publication_short = "18th Australian Agronomy Conference"
 selected = false
 title = "Improving the relationships used to define frost damage to wheat in crop models"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM"]
 
 url_code = ""
 url_dataset = ""

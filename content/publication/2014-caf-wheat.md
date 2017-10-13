@@ -8,6 +8,7 @@ publication = "Climate adaptation 2014"
 publication_short = ""
 selected = false
 title = "National scale adaptation value in wheat farm systems by 2030, filling the yield gap or interactive benefits?"
+tags = ["wheat", "Australia", "climate", "adaptation", "APSIM", "farming"]
 
 url_code = ""
 url_dataset = ""

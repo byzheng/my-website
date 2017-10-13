@@ -8,6 +8,7 @@ publication = "Field Crop Research"
 publication_short = ""
 selected = false
 title = "Quantifying high temperature risks and their potential effects on sorghum production in Australia"
+tags = ["sorghum", "heat", "Australia", "climate", "adaptation", "APSIM"]
 
 url_code = ""
 url_dataset = ""

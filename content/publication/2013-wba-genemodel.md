@@ -8,6 +8,7 @@ publication = "Wheat Breeding Assembly"
 publication_short = ""
 selected = false
 title = "Predicting heading time of Australian wheat using effects of VRN1 and Ppd-D1"
+tags = ["wheat", "Australia", "climate", "adaptation", "APSIM", "flowering", "gene", "model"]
 
 url_code = ""
 url_dataset = ""

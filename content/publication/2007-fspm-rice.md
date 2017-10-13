@@ -8,6 +8,7 @@ publication = ""
 publication_short = "Proceedings of the 5th International Workshop on Functional-Structural Plant Models"
 selected = false
 title = "Canopy Architecture Quantification and Spatial Direct Light Interception Modeling of Hybrid Rice"
+tags = ["rice", "model"]
 
 url_code = ""
 url_dataset = ""

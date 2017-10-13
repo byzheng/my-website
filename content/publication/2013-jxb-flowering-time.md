@@ -8,6 +8,7 @@ publication = "Journal of Experimental Botany"
 publication_short = ""
 selected = true
 title = "Quantification of the effects of VRN1 and Ppd-D1 to predict spring wheat (Triticum aestivum) heading time across diverse environments"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering", "gene", "model"]
 
 url_code = ""
 url_dataset = ""

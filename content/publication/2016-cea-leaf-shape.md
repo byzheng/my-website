@@ -8,6 +8,7 @@ publication = "Computers and Electronics in Agriculture"
 publication_short = ""
 selected = false
 title = "Simplification of leaf surfaces from scanned data: Effects of two algorithms on leaf morphology"
+tags = ["maize", "canopy", "light", "model"]
 
 url_code = ""
 url_dataset = ""

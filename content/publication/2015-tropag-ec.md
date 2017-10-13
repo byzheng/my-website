@@ -8,6 +8,7 @@ publication = "Tropical Agriculture Conference 2015"
 publication_short = ""
 selected = false
 title = "Projected impacts of climate change on drought stresses in Australian wheat"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "drought", "EC"]
 
 url_code = ""
 url_dataset = ""

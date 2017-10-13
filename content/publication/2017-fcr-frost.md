@@ -8,6 +8,7 @@ publication = "Field Crop Research"
 publication_short = ""
 selected = false
 title = "Economic assessment of wheat breeding options for potential improved levels of post head-emergence frost tolerance"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "economy"]
 
 url_code = ""
 url_dataset = ""

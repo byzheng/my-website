@@ -8,6 +8,7 @@ publication = "Global Change Biology"
 publication_short = ""
 selected = false
 title = "Do maize models capture the impacts of heat and drought stresses on yield? Using algorithm ensembles to identify successful approaches"
+tags = ["maize", "heat", "climate", "adaptation", "APSIM", "drought", "model"]
 
 url_code = ""
 url_dataset = ""

@@ -8,6 +8,8 @@ publication = ""
 publication_short = "IUFRO Regional Congress for Asia and Oceaniai"
 selected = false
 title = "The gravel coverage and size of Gobi desert analyzed by a rapid image-based method"
+tags = ["image", "coverage"]
+
 
 url_code = ""
 url_dataset = ""

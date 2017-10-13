@@ -8,6 +8,7 @@ publication = "InterDrought IV"
 publication_short = ""
 selected = false
 title = "Crop design for specific adaptation in variable dryland production environment"
+tags = ["wheat", "drought", "Australia", "climate", "adaptation", "APSIM", "breeding"]
 
 url_code = ""
 url_dataset = ""

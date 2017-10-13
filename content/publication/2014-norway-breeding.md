@@ -8,6 +8,7 @@ publication = "Genetic Resources for Food and Agriculture in a Changing Climate"
 publication_short = ""
 selected = false
 title = "Breeding for the future – avoiding climate extremes and maximising yield of spring wheat in water-limited environments"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering"]
 
 url_code = ""
 url_dataset = ""

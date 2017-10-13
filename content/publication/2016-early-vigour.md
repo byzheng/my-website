@@ -8,6 +8,7 @@ publication = "Journal of Experimental Botany"
 publication_short = ""
 selected = false
 title = "Dynamic quantification of canopy structure to characterize early plant vigour in wheat genotypes"
+tags = ["wheat", "early-vigour"]
 
 url_code = ""
 url_dataset = ""

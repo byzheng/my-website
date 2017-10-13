@@ -8,6 +8,7 @@ publication = "InterDrought IV"
 publication_short = ""
 selected = false
 title = "Using gene-based information to adapt wheat flowering time to avoid heat, frost and drought stresses in current and future climates"
+tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering", "gene", "model"]
 
 url_code = ""
 url_dataset = ""

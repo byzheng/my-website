@@ -8,6 +8,8 @@ publication = "Functional Plant Biology"
 publication_short = ""
 selected = false
 title = "Comparison of ground cover estimates from experiment plots in cotton, sorghum and sugarcane based on images and ortho-mosaics captured by UAV"
+tags = ["wheat", "cotton", "sorghum", "sugarcane", "UAV", "HTP", "coverage", "image"]
+
 
 url_code = ""
 url_dataset = ""
