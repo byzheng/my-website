@@ -4,10 +4,10 @@ date = "2009-07-01"
 draft = false
 
 # Project title.
-title = "Adapting wheat to future warm and dry climates: improved simulation of flowering and tillering"
+title = "Wheat adaptation"
 
 # Project summary to display on homepage.
-summary = ""
+summary = "Adapting wheat to future warm and dry climates: improved simulation of flowering and tillering"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = ""

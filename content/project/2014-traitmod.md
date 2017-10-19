@@ -5,10 +5,10 @@ date = "2014-07-01"
 draft = true
 
 # Project title.
-title = "Raising water productivity: Trait assessment for Australian rainfed wheat"
+title = "Trait assessment"
 
 # Project summary to display on homepage.
-summary = ""
+summary = "Raising water productivity: Trait assessment for Australian rainfed wheat"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = ""
