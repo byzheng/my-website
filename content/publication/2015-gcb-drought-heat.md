@@ -9,6 +9,7 @@ publication_short = ""
 selected = false
 title = "The shifting influence of drought and heat stress for crops in Northeast Australia"
 tags = ["wheat", "frost", "heat", "drought", "EC", "Australia", "climate", "adaptation", "APSIM"]
+projects = ["2009-flowering"]
 
 url_code = ""
 url_dataset = ""

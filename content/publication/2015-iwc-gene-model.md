@@ -9,6 +9,7 @@ publication_short = ""
 selected = false
 title = "Gene-based prediction of heading time to target real-time and future climate adaptation in wheat"
 tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering", "gene", "model"]
+projects = ["2009-flowering"]
 
 url_code = ""
 url_dataset = ""
