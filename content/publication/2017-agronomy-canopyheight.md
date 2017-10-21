@@ -9,6 +9,7 @@ publication_short = "18th Australian Agronomy Conference"
 selected = false
 title = "Estimation of canopy height using an unmanned aerial vehicle in the field during wheat growth season"
 tags = ["wheat", "height", "HTP", "UAV", "image"]
+projects = ["2014-csc"]
 
 url_code = ""
 url_dataset = ""

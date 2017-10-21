@@ -10,6 +10,7 @@ selected = false
 title = "Comparison of ground cover estimates from experiment plots in cotton, sorghum and sugarcane based on images and ortho-mosaics captured by UAV"
 tags = ["wheat", "cotton", "sorghum", "sugarcane", "UAV", "HTP", "coverage", "image"]
 
+projects = ["2014-csc"]
 
 url_code = ""
 url_dataset = ""

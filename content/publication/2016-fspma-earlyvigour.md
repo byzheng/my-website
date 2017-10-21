@@ -10,6 +10,8 @@ selected = false
 title = "Dynamic monitoring of canopy structure by time serial photography of early stage growth of wheat"
 tags = ["wheat", "canopy", "image", "structure"]
 
+projects = ["2014-csc"]
+
 url_code = ""
 url_dataset = ""
 url_pdf = ""
