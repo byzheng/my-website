@@ -9,6 +9,7 @@ publication_short = ""
 selected = false
 title = "Quantification of direct and indirect cost of frost for the Australian wheatbelt"
 tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "economy"]
+projects = ["2013-frost-situation"]
 
 url_code = ""
 url_dataset = ""

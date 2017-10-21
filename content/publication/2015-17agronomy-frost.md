@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Predicting heading date and frost impact in wheat across Australia"
 tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering", "model"]
-projects = ["2009-flowering"]
+projects = ["2009-flowering", "2013-frost-situation"]
 
 url_code = ""
 url_dataset = ""
