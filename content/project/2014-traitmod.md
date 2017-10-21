@@ -2,7 +2,7 @@
 # Date this page was created.
 date = "2014-07-01"
 
-draft = true
+draft = false
 
 # Project title.
 title = "Trait assessment"
@@ -30,5 +30,7 @@ caption = ""
 
 +++
 
-The project plans to develop a new wheat model in the APSIM next generation to evaluate wheat traits related with water usage patterns, then assess traits across Australian wheatbelt.
+The project plans to develop a new wheat model in the APSIM next generation to evaluate wheat traits related with water usage patterns, then assess traits across Australian wheatbelt. This project was funded by [GRDC](https://grdc.com.au/) from 2013 to 2018.
+
+
 
