@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Dynamic quantification of canopy structure to characterize early plant vigour in wheat genotypes"
 tags = ["wheat", "early-vigour"]
-projects = ["2014-csc"]
+projects = ["2014-csc-htp"]
 
 url_code = ""
 url_dataset = ""

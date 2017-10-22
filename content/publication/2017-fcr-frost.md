@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Economic assessment of wheat breeding options for potential improved levels of post head-emergence frost tolerance"
 tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "economy"]
-projects = ["2013-frost-situation"]
+projects = ["2013-grdc-frost-situation"]
 
 url_code = ""
 url_dataset = ""

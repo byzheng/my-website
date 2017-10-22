@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Role of genotypic variation in response to increasing temperatures in wheat"
 tags = ["wheat", "heat", "breeding"]
-projects = ["2009-flowering"]
+projects = ["2009-grdc-flowering"]
 
 url_code = ""
 url_dataset = ""

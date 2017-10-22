@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Predicting heading time of Australian wheat using effects of VRN1 and Ppd-D1"
 tags = ["wheat", "Australia", "climate", "adaptation", "APSIM", "flowering", "gene", "model"]
-projects = ["2009-flowering"]
+projects = ["2009-grdc-flowering"]
 
 url_code = ""
 url_dataset = ""

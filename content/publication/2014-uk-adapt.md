@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Breeding for the future: How to adapt to potential impacts of future frost, drought and heat events on Australian wheat?"
 tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM"]
-projects = ["2009-flowering"]
+projects = ["2009-grdc-flowering"]
 
 url_code = ""
 url_dataset = ""

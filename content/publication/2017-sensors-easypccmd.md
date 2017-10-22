@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "EasyPCC: Benchmark Datasets and Tools for High-Throughput Measurement of the Plant Canopy Coverage Ratio under Field Conditions"
 tags = ["UAV", "HTP", "coverage", "wheat", "sorghum", "image"]
-projects = ["2014-csc"]
+projects = ["2014-csc-htp"]
 
 url_code = ""
 url_dataset = ""

@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Improvement of the model capacity and assessment traits related with water use efficiency for wheat in Australia"
 tags = ["wheat", "canopy", "Australia", "climate", "adaptation", "APSIM", "breeding", "nitrogen", "irrigation"]
-projects = ["2014-csc", "2014-traitmod"]
+projects = ["2014-csc-htp", "2013-grdc-frost-situation"]
 
 url_code = ""
 url_dataset = ""

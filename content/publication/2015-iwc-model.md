@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Crop modelling to aid crop improvement"
 tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation"]
-projects = ["2009-flowering"]
+projects = ["2009-grdc-flowering"]
 
 url_code = ""
 url_dataset = ""

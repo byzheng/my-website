@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Identification of Earliness Per Se Flowering Time Locus in Spring Wheat through a Genome-Wide Association Study"
 tags = ["wheat", "EPS", "gene", "Australia", "climate", "adaptation", "APSIM", "flowering", "model"]
-projects = ["2009-flowering"]
+projects = ["2009-grdc-flowering"]
 
 url_code = ""
 url_dataset = ""

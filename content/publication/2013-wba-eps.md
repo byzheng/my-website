@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Association genetics for earliness components and QTL-based ecophysiological predictions of heading date provide tools to optimize heading date through breeding"
 tags = ["wheat", "EPS", "APSIM", "flowering", "gene", "model"]
-projects = ["2009-flowering"]
+projects = ["2009-grdc-flowering"]
 
 url_code = ""
 url_dataset = ""

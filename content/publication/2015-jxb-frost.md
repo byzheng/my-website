@@ -9,7 +9,7 @@ publication_short = ""
 selected = true
 title = "Frost trends and their estimated impact on yield in the Australian wheatbelt"
 tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering"]
-projects = ["2009-flowering", "2013-frost-situation"]
+projects = ["2009-grdc-flowering", "2013-grdc-frost-situation"]
 
 url_code = ""
 url_dataset = ""

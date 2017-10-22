@@ -9,7 +9,7 @@ publication_short = ""
 selected = false
 title = "Using gene-based information to adapt wheat flowering time to avoid heat, frost and drought stresses in current and future climates"
 tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering", "gene", "model"]
-projects = ["2009-flowering"]
+projects = ["2009-grdc-flowering"]
 
 url_code = ""
 url_dataset = ""

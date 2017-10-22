@@ -10,7 +10,7 @@ selected = true
 title = "Dynamic monitoring of NDVI in wheat agronomy and breeding trials using an unmanned aerial vehicle"
 tags = ["UAV", "NDVI", "HTP", "wheat", "breeding", "image"]
 
-projects = ["2014-csc"]
+projects = ["2014-csc-htp"]
 
 url_code = ""
 url_dataset = ""

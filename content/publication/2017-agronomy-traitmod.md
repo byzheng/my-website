@@ -9,7 +9,7 @@ publication_short = "18th Australian Agronomy Conference"
 selected = false
 title = "Assessment of canopy growth and development for three wheat cultivars under different water and nitrogen regimes"
 tags = ["wheat", "canopy", "Australia", "nitrogen", "irrigation", "APSIM", "breeding"]
-projects = ["2014-traitmod"]
+projects = ["2013-grdc-frost-situation"]
 
 url_code = ""
 url_dataset = ""

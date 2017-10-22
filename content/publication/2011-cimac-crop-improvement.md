@@ -9,7 +9,7 @@ publication_short = "International conference on crop improvement, ideotyping, a
 selected = false
 title = "Crop improvement, ideotyping and modelling under climate change"
 tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM"]
-projects = ["2009-flowering"]
+projects = ["2009-grdc-flowering"]
 
 url_code = ""
 url_dataset = ""
