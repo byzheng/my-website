@@ -3,7 +3,7 @@
 date = "2014-10-20"
 draft = false
 # Project title.
-title = "CSC 2014"
+title = "High throughput phenotyping"
 
 # Project summary to display on homepage.
 summary = "Development of new algorithm to characterize canopy development of crop"
@@ -13,7 +13,7 @@ image_preview = ""
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["HTP", "wheat", "UAV"]
+tags = ["HTP", "wheat", "UAV", "CSC"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""
