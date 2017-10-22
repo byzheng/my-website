@@ -20,7 +20,7 @@ defaultContentLanguageInSubdir = false
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [outputs]
-  home = [ "HTML", "CSS" ]
+  home = [ "HTML", "CSS", "RSS" ]
 
 [blackfriday]
   hrefTargetBlank = true
