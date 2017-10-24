@@ -112,7 +112,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   #   For multi-lingual sites, copy this block to each language section at the end of this file.
   publication_types = [
     'Uncategorized',  # 0
-    'Conference proceedings',  # 1
+    'Conference',  # 1
     'Journal',  # 2
     'Work in progress',  # 3
     'Technical report',  # 4
