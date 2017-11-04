@@ -19,9 +19,12 @@ defaultContentLanguageInSubdir = false
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+
 [outputs]
   home = [ "HTML", "CSS", "RSS" ]
-
+  section = [ "HTML", "RSS" ]
+  taxonomy = [ "HTML", "RSS" ]
+  taxonomyTerm = [ "HTML", "RSS" ]
 [blackfriday]
   hrefTargetBlank = true
 
