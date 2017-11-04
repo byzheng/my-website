@@ -3,7 +3,7 @@
 date = "2014-10-20"
 draft = false
 # Project title.
-title = "High throughput phenotyping"
+title = "CSC 2014: High throughput phenotyping"
 
 # Project summary to display on homepage.
 summary = "Development of new algorithm to characterize canopy development of crop"
