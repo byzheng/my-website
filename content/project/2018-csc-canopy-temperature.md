@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2018-01-01"
+date = "2017-11-01"
 draft = false
 # Project title.
 title = "CSC 2018: Canopy temperature using UAV"
