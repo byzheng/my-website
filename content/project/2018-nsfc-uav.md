@@ -5,7 +5,7 @@ date = "2018-01-01"
 draft = false
 
 # Project title.
-title = "Root Nitrogen"
+title = "Phenotyping with light interception"
 
 # Project summary to display on homepage.
 summary = "Quantification and evaluation of the phenotyping parameters and light interception function of the crop canopy based on rotor unmanned aerial vehicle (UAV) platform"
