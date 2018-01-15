@@ -23,7 +23,7 @@ abstract = "Crop modelling has become an effective means to assess climate chang
 
 [[url_custom]]
 name = "View Journal Article"
-url = "https://www.sciencedirect.com/science/article/pii/S0168192318300054
+url = "https://www.sciencedirect.com/science/article/pii/S0168192318300054"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
