@@ -1,6 +1,6 @@
 +++
-authors = ["Quanxi Shao", "Michael Bange", "James Mahan", "Huidong Jin", "Hizbullah Jamali", "Bangyou Zheng", "Scott C.Chapman"]
-date = "2019-02-15"
+authors = ["Quanxi Shao", "Michael Bange", "James Mahan", "Huidong Jin", "Hizbullah Jamali", "Bangyou Zheng", "Scott C. Chapman"]
+date = "2019-01-01"
 image_preview = ""
 math = false
 publication_types = ["2"]
