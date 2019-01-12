@@ -1,6 +1,6 @@
 +++
 authors = ["Yue Mu", "Yuichiro Fujii", "Daisuke Takata", "Bangyou Zheng", "Koji Noshita", "Kiyoshi Honda", "Seishi Ninomiya", "Wei Guo"]
-date = "2018-12-1o"
+date = "2018-12-10"
 image_preview = ""
 math = false
 publication_types = ["2"]
