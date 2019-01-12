@@ -8,7 +8,7 @@ publication = "Climate"
 publication_short = ""
 selected = false
 title = "The Value of Tactical Adaptation to El Niño–Southern Oscillation for East Australian Wheat"
-tags = ["Australia", ENSO", "climate change"]
+tags = ["Australia", "ENSO", "climate change"]
 
 url_code = ""
 url_dataset = ""
