@@ -1,5 +1,5 @@
 +++
-authors = ["Sambuddha Ghosal", "Bangyou Zheng"", "Scott C. Chapman", "Andries B. Potgieter", "David R. Jordan", "Xuemin Wang", "Asheesh K. Singh", "Arti Singh"", "Masayuki Hirafuji"", "Seishi Ninomiya", "Baskar Ganapathysubramanian", "Soumik Sarkar"", "Wei Guo"]
+authors = ["Sambuddha Ghosal", "Bangyou Zheng", "Scott C. Chapman", "Andries B. Potgieter", "David R. Jordan", "Xuemin Wang", "Asheesh K. Singh", "Arti Singh", "Masayuki Hirafuji", "Seishi Ninomiya", "Baskar Ganapathysubramanian", "Soumik Sarkar", "Wei Guo"]
 date = "2019-05-27"
 image_preview = ""
 math = false
