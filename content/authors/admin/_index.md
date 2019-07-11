@@ -17,7 +17,7 @@ interests:
 - "Big data"
 - "High throughput phenotyping"
 - "R programming"
-name: Nelson Bighetti
+name: Bangyou Zheng
 organizations:
 - name: CSIRO
   url: "https://www.csiro.au"
