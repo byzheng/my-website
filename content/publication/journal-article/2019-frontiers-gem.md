@@ -1,5 +1,5 @@
 ---
-title: From QTLs to Adaptation Landscapes: Using Genotype-To-Phenotype Models to Characterize G×E Over Time
+title: "From QTLs to Adaptation Landscapes: Using Genotype-To-Phenotype Models to Characterize G×E Over Time"
 authors: 
  - Daniela Bustos-Korts
  - Marcos Malosetti
