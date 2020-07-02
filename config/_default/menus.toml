@@ -35,6 +35,12 @@
   url = "https://rapsimng.bangyou.me/"
   hrefTargetBlank = true
 [[main]]
+  name = "WeaAna"
+  parent = "rpackages"
+  identifier = "weaana"
+  url = "https://weaana.bangyou.me/"
+  hrefTargetBlank = true
+[[main]]
   name = "Contact"
   url = "#contact"
   weight = 70
