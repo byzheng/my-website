@@ -22,11 +22,22 @@
   name = "PhenoCopter"
   url = "https://phenocopter.csiro.au"
   weight = 50
-
+  hrefTargetBlank = true
+[[main]]
+  name = "R Packages"
+  url = "#"
+  weight = 60
+  identifier = "rpackages"
+[[main]]
+  name = "RApsimNG"
+  parent = "rpackages"
+  identifier = "rapsimng"
+  url = "https://rapsimng.bangyou.me/"
+  hrefTargetBlank = true
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 60
+  weight = 70
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
