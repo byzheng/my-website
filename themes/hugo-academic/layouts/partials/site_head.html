@@ -12,7 +12,7 @@
   {{ $superuser_username := "" }}
   {{ $superuser_role := "" }}
   {{ range first 1 (where (where site.Pages "Section" "authors") "Params.superuser" true) }}
-    {{ $superuser_name = .Params.name }}
+    {{ $superuser_name = .Title }}
     {{ $superuser_username = path.Base (path.Split .Path).Dir }}
     {{ $superuser_role = .Params.role }}
   {{ end }}
@@ -114,10 +114,17 @@
 
   {{ end }}
 
-  {{/* We cannot use SRI with Google Fonts because the CSS is dynamically generated according to the user agent. */}}
-  {{/* Hugo's htmlEscape cannot escape "|" in Google Font URIs so we implement our own escape functionality. */}}
+  {{/* Load Google Fonts if the site's Font Theme uses them. */}}
+  {{/* Note: we cannot use SRI with Google Fonts because the CSS is dynamically generated according to the user agent. */}}
   {{ with ($scr.Get "google_fonts") }}
-  <link rel="stylesheet" {{ printf "href=\"https://fonts.googleapis.com/css?family=%s&display=swap\"" . | replaceRE "\\|" "%7C" | safeHTMLAttr }}>
+    {{ if hasPrefix . "family=" }}
+      {{/* If `google_fonts` starts with "family=", use API v2 (https://developers.google.com/fonts/docs/css2) */}}
+      <link rel="stylesheet" {{ printf "href=\"https://fonts.googleapis.com/css2?%s&display=swap\"" . | safeHTMLAttr }}>
+    {{ else }}
+      {{/* Otherwise, use API v1 */}}
+      {{/* Hugo's htmlEscape cannot escape "|" in Google Font URIs so we implement our own escape functionality. */}}
+      <link rel="stylesheet" {{ printf "href=\"https://fonts.googleapis.com/css?family=%s&display=swap\"" . | replaceRE "\\|" "%7C" | safeHTMLAttr }}>
+    {{ end }}
   {{ end }}
 
   {{ $css_comment := printf "/*!* Source Themes Academic v%s (https://sourcethemes.com/academic/) */\n" site.Data.academic.version }}
@@ -137,6 +144,11 @@
   {{ partial "marketing/google_analytics" . }}
   {{ partial "marketing/google_tag_manager" . }}
 
+  {{/* Netlify Identity integration. */}}
+  {{ if .IsHome | and (site.Params.cms.netlify_cms | default true) }}
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {{ end }}
+
   {{ with .OutputFormats.Get "RSS" }}
   <link rel="alternate" href="{{.RelPermalink}}" type="application/rss+xml" title="{{site.Title}}">
   {{ end }}
@@ -147,11 +159,16 @@
 
   <link rel="canonical" href="{{ .Permalink }}">
 
+  {{/* Get page image for sharing. */}}
   {{ $featured_image := (.Resources.ByType "image").GetMatch "*featured*" }}
+  {{ $avatar_image := (.Resources.ByType "image").GetMatch "avatar*" }}
   {{ $has_logo := fileExists "assets/images/logo.png" | or (fileExists "assets/images/logo.svg") }}
   {{ $og_image := "" }}
   {{ $twitter_card := "summary_large_image" }}
-  {{ if $featured_image }}
+  {{ if (and (eq .Kind "taxonomy") $avatar_image) }}
+    {{ $og_image = ($avatar_image.Fill "270x270 Center").Permalink }}{{/* Match image proc in About widget. */}}
+    {{ $twitter_card = "summary" }}
+  {{ else if $featured_image }}
     {{ $og_image = $featured_image.Permalink }}
   {{ else if .Params.header.image }}
     {{ $og_image = printf "img/%s" .Params.header.image | absURL }}
@@ -159,9 +176,6 @@
     {{ $og_image = printf "img/%s" site.Params.sharing_image | absURL }}
   {{ else if $has_logo }}
     {{ $og_image = (partial "functions/get_logo" (dict "constraint" "fit" "size" 300)).Permalink }}
-    {{ $twitter_card = "summary" }}
-  {{ else if site.Params.avatar }}
-    {{ $og_image = (printf "img/%s" site.Params.avatar) | absURL }}
     {{ $twitter_card = "summary" }}
   {{ else }}
     {{ $og_image = (partial "functions/get_icon" 512).Permalink }}
@@ -175,7 +189,7 @@
   {{ end }}
   <meta property="og:site_name" content="{{ site.Title }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:title" content="{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}">
+  <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}">
   <meta property="og:description" content="{{ $desc }}">
   {{- with $og_image -}}
   <meta property="og:image" content="{{.}}">
@@ -199,6 +213,6 @@
 
   {{ partial "custom_head" . }}
 
-  <title>{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}</title>
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
 
 </head>

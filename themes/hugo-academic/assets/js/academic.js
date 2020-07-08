@@ -338,49 +338,72 @@
 
   function canChangeTheme() {
     // If the theme changer component is present, then user is allowed to change the theme variation.
-    return $('.js-dark-toggle').length;
+    return $('.js-theme-selector').length;
   }
 
   function getThemeMode() {
     return parseInt(localStorage.getItem('dark_mode') || 2);
   }
 
-  function changeThemeModeClick() {
+  function changeThemeModeClick(newMode) {
+    console.info('Request to set theme.');
     if (!canChangeTheme()) {
+      console.info('Cannot set theme - admin disabled theme selector.');
       return;
     }
-    let $themeChanger = $('.js-dark-toggle i');
-    let currentThemeMode = getThemeMode();
     let isDarkTheme;
-    switch (currentThemeMode) {
+    switch (newMode) {
       case 0:
         localStorage.setItem('dark_mode', '1');
-        isDarkTheme = 1;
+        isDarkTheme = true;
         console.info('User changed theme variation to Dark.');
-        $themeChanger.removeClass('fa-moon fa-sun').addClass('fa-palette');
+        showActiveTheme(0);
         break;
       case 1:
         localStorage.setItem('dark_mode', '2');
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
           // The visitor prefers dark themes and switching to the dark variation is allowed by admin.
-          isDarkTheme = 1;
+          isDarkTheme = true;
         } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
           // The visitor prefers light themes and switching to the dark variation is allowed by admin.
-          isDarkTheme = 0;
+          isDarkTheme = false;
         } else {
           isDarkTheme = isSiteThemeDark;  // Use the site's default theme variation based on `light` in the theme file.
         }
         console.info('User changed theme variation to Auto.');
-        $themeChanger.removeClass('fa-moon fa-palette').addClass('fa-sun');
+        showActiveTheme(1);
         break;
       default:
         localStorage.setItem('dark_mode', '0');
-        isDarkTheme = 0;
+        isDarkTheme = false;
         console.info('User changed theme variation to Light.');
-        $themeChanger.removeClass('fa-sun fa-palette').addClass('fa-moon');
+        showActiveTheme(2);
         break;
     }
     renderThemeVariation(isDarkTheme);
+  }
+
+  function showActiveTheme(mode){
+    switch (mode) {
+      case 0:
+        // Dark.
+        $('.js-set-theme-light').removeClass('dropdown-item-active');
+        $('.js-set-theme-dark').addClass('dropdown-item-active');
+        $('.js-set-theme-auto').removeClass('dropdown-item-active');
+        break;
+      case 1:
+        // Auto.
+        $('.js-set-theme-light').removeClass('dropdown-item-active');
+        $('.js-set-theme-dark').removeClass('dropdown-item-active');
+        $('.js-set-theme-auto').addClass('dropdown-item-active');
+        break;
+      default:
+        // Light.
+        $('.js-set-theme-light').addClass('dropdown-item-active');
+        $('.js-set-theme-dark').removeClass('dropdown-item-active');
+        $('.js-set-theme-auto').removeClass('dropdown-item-active');
+        break;
+    }
   }
 
   function getThemeVariation() {
@@ -391,18 +414,18 @@
     let isDarkTheme;
     switch (currentThemeMode) {
       case 0:
-        isDarkTheme = 0;
+        isDarkTheme = false;
         break;
       case 1:
-        isDarkTheme = 1;
+        isDarkTheme = true;
         break;
       default:
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
           // The visitor prefers dark themes and switching to the dark variation is allowed by admin.
-          isDarkTheme = 1;
+          isDarkTheme = true;
         } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
           // The visitor prefers light themes and switching to the dark variation is allowed by admin.
-          isDarkTheme = 0;
+          isDarkTheme = false;
         } else {
           isDarkTheme = isSiteThemeDark;  // Use the site's default theme variation based on `light` in the theme file.
         }
@@ -414,7 +437,7 @@
   /**
    * Render theme variation (day or night).
    *
-   * @param {int} isDarkTheme - TODO: convert to boolean.
+   * @param {boolean} isDarkTheme
    * @param {boolean} init
    * @returns {undefined}
    */
@@ -429,12 +452,12 @@
     if (!init) {
       // If request to render light when light variation already rendered, return.
       // If request to render dark when dark variation already rendered, return.
-      if ((isDarkTheme === 0 && !$('body').hasClass('dark')) || (isDarkTheme === 1 && $('body').hasClass('dark'))) {
+      if ((isDarkTheme === false && !$('body').hasClass('dark')) || (isDarkTheme === true && $('body').hasClass('dark'))) {
         return;
       }
     }
 
-    if (isDarkTheme === 0) {
+    if (isDarkTheme === false) {
       if (!init) {
         // Only fade in the page when changing the theme variation.
         $('body').css({opacity: 0, visibility: 'visible'}).animate({opacity: 1}, 500);
@@ -452,7 +475,7 @@
           location.reload();
         }
       }
-    } else if (isDarkTheme === 1) {
+    } else if (isDarkTheme === true) {
       if (!init) {
         // Only fade in the page when changing the theme variation.
         $('body').css({opacity: 0, visibility: 'visible'}).animate({opacity: 1}, 500);
@@ -477,18 +500,17 @@
     // If theme changer component present, set its icon according to the theme mode (day, night, or auto).
     if (canChangeTheme) {
       let themeMode = getThemeMode();
-      let $themeChanger = $('.js-dark-toggle i');
       switch (themeMode) {
         case 0:
-          $themeChanger.removeClass('fa-sun fa-palette').addClass('fa-moon');
+          showActiveTheme(2);
           console.info('Initialize theme variation to Light.');
           break;
         case 1:
-          $themeChanger.removeClass('fa-moon fa-sun').addClass('fa-palette');
+          showActiveTheme(0);
           console.info('Initialize theme variation to Dark.');
           break;
         default:
-          $themeChanger.removeClass('fa-moon fa-palette').addClass('fa-sun');
+          showActiveTheme(1);
           console.info('Initialize theme variation to Auto.');
           break;
       }
@@ -568,9 +590,17 @@
     initThemeVariation();
 
     // Change theme mode.
-    $('.js-dark-toggle').click(function (e) {
+    $('.js-set-theme-light').click(function (e) {
       e.preventDefault();
-      changeThemeModeClick();
+      changeThemeModeClick(2);
+    });
+    $('.js-set-theme-dark').click(function (e) {
+      e.preventDefault();
+      changeThemeModeClick(0);
+    });
+    $('.js-set-theme-auto').click(function (e) {
+      e.preventDefault();
+      changeThemeModeClick(1);
     });
 
     // Live update of day/night mode on system preferences update (no refresh required).
@@ -588,10 +618,10 @@
       if (currentThemeVariation === 2) {
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
           // The visitor prefers dark themes.
-          isDarkTheme = 1;
+          isDarkTheme = true;
         } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
           // The visitor prefers light themes.
-          isDarkTheme = 0;
+          isDarkTheme = false;
         } else {
           // The visitor does not have a day or night preference, so use the theme's default setting.
           isDarkTheme = isSiteThemeDark;
