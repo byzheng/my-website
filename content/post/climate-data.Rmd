@@ -12,6 +12,11 @@ tags:
 ---
 
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = TRUE)
+```
+
+
 In recent years, plot specific crop models have been adapted to national and regional scales to 
 aid policy makers with agricultural decisions concerning climate change and the resulting effects on food security and future water demands. Inputs for the crop modeling process can be separated into three major categories: climatic, soil, and management parameters.
 
