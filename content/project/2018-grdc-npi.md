@@ -30,3 +30,5 @@ caption = ""
 
 +++
 
+This project combines multiple research areas including crop modelling and genomics, and molecular markers and aims to improve accuracy in predicting phenogy for current and newly released wheat and barley cultivars across the Australian grain belt to improve the model performance and estimate new parameters of the wheat and barley cultivars using the Agricultural Production Systems sIMulator: Next Generation (APSIM NG), which will be informed through phenotypic data from controlled environment experiments, molecular marker information and/or genomic information. 
+
