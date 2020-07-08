@@ -1,6 +1,6 @@
 ---
 title: A faster way to trim a raster file
-author: Bangyou
+author: Bangyou Zheng
 date: '2017-09-17'
 slug: trim-raster
 categories:
@@ -11,6 +11,7 @@ tags:
   - htp
   - gis
 ---
+
 
 In the plot segmentation of image-based HTP platforms (e.g. UAV, ground-vehicle), we always need to trim a plot to remove the edge effect, then extracts the pixel values we are interesting. The operation is similar with `cutline` in `gdalwarp` command.
 
