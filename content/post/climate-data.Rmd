@@ -1,8 +1,8 @@
 ---
-title: Geospatial Climate Data
+title: Climate Data
 author: Bangyou Zheng
 date: '2018-09-28'
-slug: geospatial-climate-data
+slug: climate-data
 draft: true
 categories:
   - climate
@@ -11,7 +11,6 @@ tags:
   - data
   - weather
 ---
-
 
 In recent years, plot specific crop models have been adapted to national and regional scales to 
 aid policy makers with agricultural decisions concerning climate change and the resulting effects on food security and future water demands. Inputs for the crop modeling process can be separated into three major categories: climatic, soil, and management parameters.
