@@ -17,7 +17,7 @@ caption = ""
 
 |          |       |
 |----------|-------|
-|Citation  | 1317  |
-|H-Index   |   20  |
-|i10-index |   25  |
+|Citation  | 1726  |
+|H-Index   |   22  |
+|i10-index |   30  |
 
