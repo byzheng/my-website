@@ -15,7 +15,7 @@ image_preview = ""
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["sensor", "CSIRO", "irrigation"]
+tags = ["sensor", "CSIRO", "irrigation", "active"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "https://research.csiro.au/digiscape/digiscapes-projects/waterwise/"

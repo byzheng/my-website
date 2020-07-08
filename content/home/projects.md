@@ -22,7 +22,7 @@ subtitle = ""
   filter_default = 0
     [[content.filter_button]]
     name = "Active"
-    tag = "Active"
+    tag = "active"
   
   [[content.filter_button]]
     name = "Model"
