@@ -1,0 +1,57 @@
+---
+title: Calculation of thermal time
+author: Bangyou Zheng
+date: '2020-07-08'
+slug: calculation-thermal-time
+categories:
+  - climate
+tags:
+  - crop
+  - weather
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The thermal time is important to quantify the crop growth for a specific period (e.g. from sowing to flowering). However, the codes might be complicated if there are multiple records in an experiment.</p>
+<p>Here I showed how to use <code>left_join</code> function to easily calculate thermal time for the whole records in one data frame.</p>
+<pre class="r"><code>library(weaana)
+suppressPackageStartupMessages(library(tidyverse))</code></pre>
+<p>Random observations are generated from 1957 and 2009 for sowing and flowering time.</p>
+<pre class="r"><code>obs &lt;- tibble(sowing = as.Date(paste0(seq(1957, 2009), &#39;-05-01&#39;)),
+       flowering = as.Date(paste0(seq(1957, 2009), &#39;-&#39;, round(runif(53) * 20 + 210)), 
+                           format = &quot;%Y-%j&quot;))</code></pre>
+<p>The weather records are stored in the APSIM format and red by <code>weaana</code> package.</p>
+<pre class="r"><code>records &lt;- readWeatherRecords(&quot;WeatherRecordsDemo1.met&quot;) %&gt;% 
+    getWeatherRecords()</code></pre>
+<p>The daily thermal time is calculated using base temperature 0C. The accumulated thermal times are summed up since the starting of weather records.</p>
+<pre class="r"><code>records &lt;- records %&gt;% 
+    mutate(tt = ifelse(avgt &gt; 0, avgt, 0),
+           cum_tt = cumsum(tt)) %&gt;% 
+    select(date, cum_tt)</code></pre>
+<p>The accumulated thermal time at sowing and flowering are selected from the weather records. Then the thermal time from sowing to flowering is calcuated by the difference of accumulated thermal time at sowing and flowering.</p>
+<pre class="r"><code>sowing_tt &lt;- obs %&gt;% 
+    left_join(records, by = c(&quot;sowing&quot; = &#39;date&#39;)) %&gt;% 
+    rename(sowing_tt = cum_tt)
+flowering_tt &lt;- obs %&gt;% 
+    left_join(records, by = c(&quot;flowering&quot; = &#39;date&#39;)) %&gt;% 
+    left_join(sowing_tt, by = c(&quot;sowing&quot;, &#39;flowering&#39;)) %&gt;% 
+    mutate(tt = cum_tt - sowing_tt) %&gt;% 
+    select(-cum_tt, -sowing_tt)
+head(flowering_tt)</code></pre>
+<pre><code>## # A tibble: 6 x 3
+##   sowing     flowering     tt
+##   &lt;date&gt;     &lt;date&gt;     &lt;dbl&gt;
+## 1 1957-05-01 1957-08-03 1366.
+## 2 1958-05-01 1958-08-05 1485.
+## 3 1959-05-01 1959-08-14 1504.
+## 4 1960-05-01 1960-08-15 1416.
+## 5 1961-05-01 1961-08-01 1242.
+## 6 1962-05-01 1962-08-12 1488.</code></pre>
+<pre class="r"><code>flowering_tt %&gt;% 
+    ggplot() +
+    geom_histogram(aes(tt)) +
+    theme_bw() +
+    xlab(&quot;Thermal time (Cd)&quot;)</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<p><img src="/post/calculation-thermal-time_files/figure-html/plot-fig-1.png" width="384" /></p>
