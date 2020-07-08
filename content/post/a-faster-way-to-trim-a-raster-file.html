@@ -43,7 +43,7 @@ sply &lt;- SpatialPolygons(list(Polygons(list(Polygon(ply)), ID = &#39;1&#39;)),
 
 system.time(cell_idx1 &lt;- cellFromPolygon(plot, sply))</code></pre>
 <pre><code>##    user  system elapsed 
-##    0.17    0.06    0.23</code></pre>
+##    0.57    0.04    0.67</code></pre>
 <p>An alternative method is to use <code>point.in.polygon</code> function in sp package.</p>
 <pre class="r"><code>system.time({
     # Generate a grid of all x and y values in the raster file
@@ -54,7 +54,7 @@ system.time(cell_idx1 &lt;- cellFromPolygon(plot, sply))</code></pre>
     cell_idx2 &lt;- seq(1, prod(dim(plot)[1:2]))[cid == 1]
 })</code></pre>
 <pre><code>##    user  system elapsed 
-##    0.38    0.05    0.42</code></pre>
+##    0.67    0.09    0.76</code></pre>
 <p>The first method takes about 10 S, but the second method only takes less than 1s. The two methods generate the same results for the cell index.</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
 <pre><code>## -- Attaching packages ------ tidyverse 1.3.0 --</code></pre>
