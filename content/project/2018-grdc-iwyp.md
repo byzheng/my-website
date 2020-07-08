@@ -8,7 +8,7 @@ draft = false
 title = "Genetic diversity toolkit"
 
 # Project summary to display on homepage.
-summary = "A genetic diversity toolkit to maximise harvest index by controlling the duration of developmental phase: IWYP CSIRO"
+summary = "A genetic diversity toolkit to maximise harvest index by controlling the duration of developmental phase"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = ""
