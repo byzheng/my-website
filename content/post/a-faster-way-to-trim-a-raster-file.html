@@ -1,0 +1,83 @@
+---
+title: A faster way to trim a raster file
+author: Bangyou
+date: '2017-09-17'
+slug: trim-raster
+categories:
+  - gis
+tags:
+  - R
+  - raster
+  - htp
+  - gis
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>In the plot segmentation of image-based HTP platforms (e.g. UAV, ground-vehicle), we always need to trim a plot to remove the edge effect, then extracts the pixel values we are interesting. The operation is similar with <code>cutline</code> in <code>gdalwarp</code> command.</p>
+<p>In R, <code>raster</code> package provides a function <code>cellFromPolygon</code> to extract cull numbers from a polygon. However, <code>cellFromPolygon</code> is slightly slow, especially for a larger file.</p>
+<p>For example, the wheat plot from a 20M pixel Sony camera is about 3.4 MB. I want to trim this plot by 20% in each side.</p>
+<pre class="r"><code>library(raster)</code></pre>
+<pre><code>## Loading required package: sp</code></pre>
+<pre class="r"><code># Define the polygon to trim raster file 
+ply &lt;- read.table(textConnection(&#39;
+434129.53992703213589 6950697.5565780829638
+434127.33717670320766 6950693.9743350874633
+434126.31413929269183 6950694.6008593635634
+434128.51703721459489 6950698.1830912819132
+434129.53992703213589 6950697.5565780829638&#39;))
+names(ply) &lt;- c(&#39;long&#39;, &#39;lat&#39;)
+
+plot &lt;- brick(&#39;wheat-plot.tif&#39;)
+
+# Plot the raster and polygon
+plotRGB(plot)
+lines(ply$long, ply$lat, col = &#39;red&#39;, lwd = 3)</code></pre>
+<p><img src="/post/a-faster-way-to-trim-a-raster-file_files/figure-html/read-data-1.png" width="672" /></p>
+<p>The first method is to use <code>cellFromPolygon</code> to extrct the cell index.</p>
+<pre class="r"><code>library(sp)
+# Create spatial polygon
+sply &lt;- SpatialPolygons(list(Polygons(list(Polygon(ply)), ID = &#39;1&#39;)), 
+                proj4string = plot@crs)
+
+system.time(cell_idx1 &lt;- cellFromPolygon(plot, sply))</code></pre>
+<pre><code>##    user  system elapsed 
+##    0.33    0.08    0.41</code></pre>
+<p>An alternative method is to use <code>point.in.polygon</code> function in sp package.</p>
+<pre class="r"><code>system.time({
+    # Generate a grid of all x and y values in the raster file
+    xy &lt;- xyFromCell(plot, seq(1, prod(dim(plot)[1:2])))
+    # Check point in the polygon
+    cid &lt;- point.in.polygon(xy[,1], xy[,2], ply[,1], ply[,2])
+    # Obtain the cell index
+    cell_idx2 &lt;- seq(1, prod(dim(plot)[1:2]))[cid == 1]
+})</code></pre>
+<pre><code>##    user  system elapsed 
+##    0.63    0.06    0.92</code></pre>
+<p>The first method takes about 10 S, but the second method only takes less than 1s. The two methods generate the same results for the cell index.</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
+<pre><code>## v ggplot2 3.3.0     v purrr   0.3.4
+## v tibble  3.0.1     v dplyr   0.8.5
+## v tidyr   1.0.3     v stringr 1.4.0
+## v readr   1.3.1     v forcats 0.5.0</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x tidyr::extract() masks raster::extract()
+## x dplyr::filter()  masks stats::filter()
+## x dplyr::lag()     masks stats::lag()
+## x dplyr::select()  masks raster::select()</code></pre>
+<pre class="r"><code>pd &lt;- xy %&gt;% 
+    as.data.frame() %&gt;% 
+    tbl_df() 
+
+pd %&gt;%
+    slice(cell_idx1[[1]]) %&gt;% 
+    ggplot() +
+    geom_tile(aes(x, y), fill = &#39;red&#39;, alpha = 0.5) +
+    geom_tile(aes(x, y), fill = &#39;blue&#39;, alpha = 0.5, 
+              data = pd[cell_idx2,]) +
+    coord_equal() + 
+    theme_bw() +
+    xlab(&#39;&#39;) + ylab(&#39;&#39;)</code></pre>
+<p><img src="/post/a-faster-way-to-trim-a-raster-file_files/figure-html/comparison-metho-1.png" width="384" /></p>

@@ -10,23 +10,28 @@
 
 [[main]]
   name = "Publications"
-  url = "#featured"
+  url = "/publication"
   weight = 30
 
 [[main]]
   name = "Projects"
-  url = "#projects"
+  url = "/project"
   weight = 40
+
+[[main]]
+  name = "Posts"
+  url = "/post"
+  weight = 50
 
 [[main]]
   name = "PhenoCopter"
   url = "https://phenocopter.csiro.au"
-  weight = 50
+  weight = 60
   hrefTargetBlank = true
 [[main]]
   name = "R Packages"
   url = "#"
-  weight = 60
+  weight = 61
   identifier = "rpackages"
 [[main]]
   name = "RApsimNG"
@@ -44,10 +49,3 @@
   name = "Contact"
   url = "#contact"
   weight = 70
-
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# [[main]]
-#    name = "CV"
-#    url = "files/cv.pdf"
-#    weight = 70
