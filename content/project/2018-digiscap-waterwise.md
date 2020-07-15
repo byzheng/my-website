@@ -18,7 +18,7 @@ image_preview = ""
 tags = ["sensor", "CSIRO", "irrigation", "active"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://research.csiro.au/digiscape/digiscapes-projects/waterwise/"
+external_link = ""
 
 # Does the project detail page use math formatting?
 math = false
@@ -30,4 +30,4 @@ caption = ""
 
 +++
 
-Digiscape’s WaterWise initiative focuses on providing Australian irrigators with digital strategies to confidently apply irrigation water at the right time to optimise yield, quality and water use for high-value crops.
+(Digiscape’s WaterWise)[https://research.csiro.au/digiscape/digiscapes-projects/waterwise/] initiative focuses on providing Australian irrigators with digital strategies to confidently apply irrigation water at the right time to optimise yield, quality and water use for high-value crops. 
