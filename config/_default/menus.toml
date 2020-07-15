@@ -49,3 +49,9 @@
   name = "Contact"
   url = "#contact"
   weight = 70
+  
+[[main_right]]
+  weight   = 1
+  name     = "<i class=\"fab fa-github\"></i>"
+  url      = "https://github.com/byzheng/my-website"
+
