@@ -1,6 +1,7 @@
 ---
 title: Calculation of thermal time
-author: Bangyou Zheng
+authors: 
+- bangyou-zheng
 date: '2020-07-08'
 slug: calculation-thermal-time
 categories:
@@ -42,16 +43,16 @@ head(flowering_tt)</code></pre>
 <pre><code>## # A tibble: 6 x 3
 ##   sowing     flowering     tt
 ##   &lt;date&gt;     &lt;date&gt;     &lt;dbl&gt;
-## 1 1957-05-01 1957-08-03 1366.
-## 2 1958-05-01 1958-08-05 1485.
-## 3 1959-05-01 1959-08-14 1504.
-## 4 1960-05-01 1960-08-15 1416.
-## 5 1961-05-01 1961-08-01 1242.
-## 6 1962-05-01 1962-08-12 1488.</code></pre>
+## 1 1957-05-01 1957-08-10 1465.
+## 2 1958-05-01 1958-08-01 1420.
+## 3 1959-05-01 1959-08-16 1531.
+## 4 1960-05-01 1960-08-03 1286.
+## 5 1961-05-01 1961-08-14 1425.
+## 6 1962-05-01 1962-08-10 1456.</code></pre>
 <pre class="r"><code>flowering_tt %&gt;% 
     ggplot() +
     geom_histogram(aes(tt)) +
     theme_bw() +
     xlab(&quot;Thermal time (Cd)&quot;)</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/post/calculation-thermal-time_files/figure-html/plot-fig-1.png" width="384" /></p>
+<p><img src="/post/calculation-thermal-time/index_files/figure-html/plot-fig-1.png" width="384" /></p>

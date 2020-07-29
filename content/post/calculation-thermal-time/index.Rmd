@@ -1,6 +1,7 @@
 ---
 title: Calculation of thermal time
-author: Bangyou Zheng
+authors: 
+- bangyou-zheng
 date: '2020-07-08'
 slug: calculation-thermal-time
 categories:

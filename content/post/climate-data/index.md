@@ -1,6 +1,7 @@
 ---
 title: Climate Data
-author: Bangyou Zheng
+authors: 
+ - bangyou-zheng
 date: '2018-09-28'
 slug: climate-data
 categories:
@@ -10,11 +11,6 @@ tags:
   - data
   - weather
 ---
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(cache = TRUE)
-```
 
 
 In recent years, plot specific crop models have been adapted to national and regional scales to 

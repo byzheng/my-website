@@ -1,6 +1,6 @@
 ---
 authors:
-- admin
+- bangyou-zheng
 bio: Bangyou Zheng is a research scientist of digital agriculture at the CSIRO.
 education:
   courses:

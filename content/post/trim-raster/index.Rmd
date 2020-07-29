@@ -1,6 +1,7 @@
 ---
 title: A faster way to trim a raster file
-author: Bangyou Zheng
+authors:
+  - bangyou-zheng
 date: '2017-09-17'
 slug: trim-raster
 categories:
