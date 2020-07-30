@@ -5,6 +5,9 @@ weight: 200
 authors:
 - bangyou-zheng
 slug: weaana
+tags:
+ - software
+ - weather
 ---
 
 [weaana](https://github.com/byzheng/weaana) is a R package to process the weather records.
