@@ -29,22 +29,10 @@
   weight = 60
   hrefTargetBlank = true
 [[main]]
-  name = "R Packages"
-  url = "#"
+  name = "Software"
+  url = "/software"
   weight = 61
-  identifier = "rpackages"
-[[main]]
-  name = "RApsimNG"
-  parent = "rpackages"
-  identifier = "rapsimng"
-  url = "https://rapsimng.bangyou.me/"
-  hrefTargetBlank = true
-[[main]]
-  name = "WeaAna"
-  parent = "rpackages"
-  identifier = "weaana"
-  url = "https://weaana.bangyou.me/"
-  hrefTargetBlank = true
+  identifier = "software"
 [[main]]
   name = "Contact"
   url = "#contact"
