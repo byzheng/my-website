@@ -1,6 +1,6 @@
 +++
 authors = ["Dean Holzwortha", "N. Huth", "J. Fainges", "H. Brown", 
-"E. Zurcher", "R. Cichota", "S. Verrall", "N. I. Herrmanna", "B. Zheng", "V.Snow"]
+"E. Zurcher", "R. Cichota", "S. Verrall", "N. I. Herrmanna", "bangyou-zheng", "V. Snow"]
 date = "2018-02-13"
 image_preview = ""
 math = false
