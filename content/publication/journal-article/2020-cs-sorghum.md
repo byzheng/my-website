@@ -4,7 +4,7 @@ authors:
  - Greg McLean
  - Erik van Oosterom
  - Scott Chapman
- - Bangyou Zheng
+ - bangyou-zheng
  - Alex Wu
  - Al Doherty
  - David Jordan

@@ -1,5 +1,5 @@
 +++
-authors = ["David B. Lobell", "Graeme L. Hammer", "Karine Chenu", "Bangyou Zheng", "Greg McLean", "Scott C. Chapman"]
+authors = ["David B. Lobell", "Graeme L. Hammer", "Karine Chenu", "bangyou-zheng", "Greg McLean", "Scott C. Chapman"]
 date = "2015-09-23"
 image_preview = ""
 math = false

@@ -1,5 +1,5 @@
 +++
-authors = ["Karine Chenu", "Jack Christopher", "Bangyou Zheng", "Mathieu Veyradier", "Al Doherty", "Florianne Oudin", "Graeme Hammer", "Fernanda Dreccer", "Scott Chapman"]
+authors = ["Karine Chenu", "Jack Christopher", "bangyou-zheng", "Mathieu Veyradier", "Al Doherty", "Florianne Oudin", "Graeme Hammer", "Fernanda Dreccer", "Scott Chapman"]
 date = "2013-06-16"
 image_preview = ""
 math = false

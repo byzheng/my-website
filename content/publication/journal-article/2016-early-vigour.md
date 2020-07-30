@@ -1,5 +1,5 @@
 +++
-authors = ["Tao Duan", "Scott Chapman", "Edward Holland", "Yan Guo", "Bangyou Zheng"]
+authors = ["Tao Duan", "Scott Chapman", "Edward Holland", "Yan Guo", "bangyou-zheng"]
 date = "2016-08-01"
 image_preview = ""
 math = false

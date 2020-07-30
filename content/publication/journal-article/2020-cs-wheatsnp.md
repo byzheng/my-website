@@ -2,7 +2,7 @@
 authors: 
  - Matthieu Bogard 
  - Ben Biddulph  
- - Bangyou Zheng  
+ - bangyou-zheng  
  - Matthew Hayden  
  - Haydn Kuchel  
  - Dan Mullan  

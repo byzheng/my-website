@@ -6,7 +6,7 @@ authors:
  - Marcos Malosetti
  - Scott Chapman
  - Karine Chenu
- - Bangyou Zheng
+ - bangyou-zheng
  - Fred A. van Eeuwijk
  
 publishDate: "2019-11-27"

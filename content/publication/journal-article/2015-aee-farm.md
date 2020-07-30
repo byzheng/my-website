@@ -1,5 +1,5 @@
 +++
-authors = ["Afshin Ghahramani", "Philip N. Kokic", "Andrew D. Moore", "Bangyou Zheng", "Scott C.Chapman", "Mark S.Howden", "Steven J. Crimp"]
+authors = ["Afshin Ghahramani", "Philip N. Kokic", "Andrew D. Moore", "bangyou-zheng", "Scott C.Chapman", "Mark S.Howden", "Steven J. Crimp"]
 date = "2015-05-27"
 image_preview = ""
 math = false

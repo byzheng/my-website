@@ -6,7 +6,7 @@ authors:
  - Edmar I Teixeira
  - Enli Wang
  - Rob F Zyskowski
- - Bangyou Zheng
+ - bangyou-zheng
 
 doi: 10.1093/insilicoplants/diy004
 date: "2019-04-25"

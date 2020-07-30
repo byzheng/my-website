@@ -6,7 +6,7 @@ authors:
  - Karine Chenu
  - Scott Chapman
  - Martin P. Boer
- - Bangyou Zheng
+ - bangyou-zheng
  - Fred A. van Eeuwijk
  
 publishDate: "2019-12-04"

@@ -1,5 +1,5 @@
 +++
-authors = ["Sivakumar Sukumaran", "Marta S. Lopes", "Susanne Dreisigacker", "Laura E. Dixon", "Meluleki Zikhali", "Simon Griffiths", "Bangyou Zheng", "Scott Chapman", "Matthew P. Reynolds"]
+authors = ["Sivakumar Sukumaran", "Marta S. Lopes", "Susanne Dreisigacker", "Laura E. Dixon", "Meluleki Zikhali", "Simon Griffiths", "bangyou-zheng", "Scott Chapman", "Matthew P. Reynolds"]
 date = "2016-09-01"
 image_preview = ""
 math = false

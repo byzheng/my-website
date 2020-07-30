@@ -1,5 +1,5 @@
 +++
-authors = ["Zhenong Jin", "Qianlai Zhuang", "Zeli Tan", "Jeffrey S. Dukes", "Bangyou Zheng", "Jerry M. Melillo"]
+authors = ["Zhenong Jin", "Qianlai Zhuang", "Zeli Tan", "Jeffrey S. Dukes", "bangyou-zheng", "Jerry M. Melillo"]
 date = "2016-07-04"
 image_preview = ""
 math = false

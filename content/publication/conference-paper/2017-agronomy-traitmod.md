@@ -1,5 +1,5 @@
 +++
-authors = ["Bangyou Zheng", "Karine Chenu", "Fernanda Dreccer", "Greg Rebetzke ", "Scott Chapman"]
+authors = ["bangyou-zheng", "Karine Chenu", "Fernanda Dreccer", "Greg Rebetzke ", "Scott Chapman"]
 date = "2017-09-26"
 image_preview = ""
 math = false
