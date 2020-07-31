@@ -1,18 +1,18 @@
-+++
-title = "Publications"
-date = "2017-09-18T00:00:00Z"
-math = false
-highlight = false
-detailed_list = false
-list_format = 2
+---
+title: Publications
 
+# View.
+#   1 = List
+#   2 = Compact
+#   3 = Card
+#   4 = Citation
+view: 2
 
-# Optional featured image (relative to `static/img/` folder).
-[header]
-image = ""
-caption = ""
-+++
-
+# Optional header image (relative to `static/media/` folder).
+header:
+  caption: ""
+  image: ""
+---
 
 
 |          |       |

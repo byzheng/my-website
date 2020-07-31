@@ -8,8 +8,8 @@ slug: rsenaps
 tags: 
  - software
  - sensor
+ - R
 external_link: https://github.com/csiro-crop-informatics/rsenaps
+summary: "R package to communicate with [Senaps](https://senaps.io/) platform."
 ---
-
-[rsenaps](https://github.com/csiro-crop-informatics/rsenaps) is a R package to communicate with [Senaps](https://senaps.io/) platform.
 

@@ -9,6 +9,5 @@ tags:
  - software
  - apsim
 external_link: https://rapsimng.bangyou.me/
+summary: "R package to modify and run apsimx file."
 ---
-
-[RApsimNG](https://github.com/byzheng/RApsimNG) is a R package to modify and run apsimx file. 

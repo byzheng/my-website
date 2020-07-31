@@ -6,11 +6,10 @@ authors:
 - bangyou-zheng
 slug: weaana
 tags:
+ - R
  - software
  - weather
 external_link: https://weaana.bangyou.me
+summary: "R package to process the weather records"
 ---
-
-[weaana](https://github.com/byzheng/weaana) is a R package to process the weather records.
-
  
