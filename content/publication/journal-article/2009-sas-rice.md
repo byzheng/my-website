@@ -22,10 +22,6 @@ abstract = "Objective: The aim of this paper was to explore a technology which c
 
 
 
-[[url_custom]]
-name = "View Journal Article"
-url = ""
-
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = ""

@@ -10,6 +10,7 @@ selected = false
 title = "Improving process-based crop models to better capture genotype×environment×management interactions"
 tags = ["apsim", "model", "wheat", "adaptation"]
 
+doi = "10.1093/jxb/erz092"
 url_code = ""
 url_dataset = ""
 url_pdf = ""
@@ -21,9 +22,7 @@ abstract = "In spite of the increasing expectation for process-based crop modell
 
 
 
-[[url_custom]]
-name = "View Journal Article"
-url = "https://academic.oup.com/jxb/article/70/9/2389/5380476"
+
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
