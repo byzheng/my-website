@@ -47,13 +47,13 @@ social:
   icon_pack: fab
   link: https://twitter.com/BangyouZheng
 - icon: google-scholar
-  icon_pack: ai
+  icon_pack: fab
   link: https://scholar.google.com.au/citations?user=MfZ-QtEAAAAJ&hl=en
 - icon: github
   icon_pack: fab
   link: https://github.com/byzheng
 - icon: researchgate
-  icon_pack: ai
+  icon_pack: fab
   link: https://www.researchgate.net/profile/Bangyou_Zheng
 
 # Link to a PDF of your resume/CV from the About widget.
