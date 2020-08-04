@@ -1,6 +1,6 @@
 ---
 title: "Common Errors in APSIM Next Generation"
-date: 2020-08-04
+date: 2020-08-02
 slug: apsim-common-errors
 toc: true
 authors:
