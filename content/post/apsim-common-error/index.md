@@ -1,5 +1,5 @@
 ---
-title: "Common errors in APSIM Next Generation"
+title: "Common Errors in APSIM Next Generation"
 date: 2020-08-04
 slug: apsim-common-errors
 toc: true
