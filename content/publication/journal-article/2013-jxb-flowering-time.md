@@ -11,10 +11,10 @@ title = "Quantification of the effects of VRN1 and Ppd-D1 to predict spring whea
 tags = ["wheat", "frost", "heat", "Australia", "climate", "adaptation", "APSIM", "flowering", "gene", "model"]
 projects = ["2009-grdc-flowering"]
 
+doi = "10.1093/jxb/ert209"
 url_code = ""
 url_dataset = ""
 url_pdf = ""
-url_project = "project/2009-grdc-flowering"
 url_slides = ""
 url_video = ""
 

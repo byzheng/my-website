@@ -10,6 +10,7 @@ featured = true
 title = "Pixel size of aerial imagery constrains the applications of unmanned aerial vehicle in crop breeding"
 tags = ["wheat", "HTP", "UAV"]
 
+doi = "10.1016/j.isprsjprs.2019.05.008"
 url_code = ""
 url_dataset = ""
 url_pdf = ""
@@ -21,9 +22,6 @@ abstract = "Image analysis using proximal sensors can help accelerate the select
 
 
 
-[[url_custom]]
-name = "View Journal Article"
-url = "https://www.sciencedirect.com/science/article/pii/S0924271619301303"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
