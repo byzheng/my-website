@@ -10,6 +10,6 @@ tags:
  - sensor
  - R
 external_link: https://github.com/csiro-crop-informatics/rsenaps
-summary: "R package to communicate with [Senaps](https://senaps.io/) platform."
+summary: "R package to communicate with Senaps platform."
 ---
 
