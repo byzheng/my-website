@@ -15,4 +15,4 @@ header:
   image: ""
 ---
 
-List softwares which I have contributed to.
+List softwares which I have major contributed to.
