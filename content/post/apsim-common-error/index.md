@@ -5,8 +5,6 @@ slug: apsim-common-errors
 toc: true
 authors:
 - bangyou-zheng
-categories:
-  - APSIM
 tags:
   - APSIM
 ---
