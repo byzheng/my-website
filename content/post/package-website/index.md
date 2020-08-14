@@ -4,8 +4,6 @@ authors:
  - bangyou-zheng
 date: '2020-07-31'
 slug: package-website
-categories:
-  - software
 tags:
   - R
 ---
