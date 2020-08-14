@@ -5,8 +5,6 @@ authors:
 date: '2020-08-05'
 slug: archive-big-folder
 draft: false
-categories:
-  - HTP
 tags:
   - HTP
   - data
