@@ -4,6 +4,8 @@ authors:
  - bangyou-zheng
 date: '2020-08-14'
 slug: blogdown-toc
+categories:
+  - R
 tags:
   - R
   - blogdown

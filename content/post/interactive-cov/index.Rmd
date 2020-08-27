@@ -4,6 +4,8 @@ authors:
 - bangyou-zheng
 date: '2020-08-26'
 slug: interactive-cor
+categories:
+  - R
 tags:
   - R
   - blogdown
