@@ -5,9 +5,8 @@ header:
   caption: ""
   image: ""
 share: false
-slag: resource
-title: Resource
+slag: r-bloggers
+title: R-Bloggers
+external_link: https://www.r-bloggers.com/
+summary: "R news and tutorials contributed by hundreds of R bloggers"
 ---
-
-
-[R-Bloggers](https://www.r-bloggers.com/)
