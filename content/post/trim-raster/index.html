@@ -43,7 +43,7 @@ sply &lt;- SpatialPolygons(list(Polygons(list(Polygon(ply)), ID = &#39;1&#39;)),
 
 system.time(cell_idx1 &lt;- cellFromPolygon(plot, sply))</code></pre>
 <pre><code>##    user  system elapsed 
-##    0.42    0.11    0.55</code></pre>
+##    0.30    0.00    0.29</code></pre>
 <p>An alternative method is to use <code>point.in.polygon</code> function in sp package.</p>
 <pre class="r"><code>system.time({
     # Generate a grid of all x and y values in the raster file
@@ -54,11 +54,11 @@ system.time(cell_idx1 &lt;- cellFromPolygon(plot, sply))</code></pre>
     cell_idx2 &lt;- seq(1, prod(dim(plot)[1:2]))[cid == 1]
 })</code></pre>
 <pre><code>##    user  system elapsed 
-##    0.56    0.11    0.69</code></pre>
+##    0.28    0.00    0.28</code></pre>
 <p>The first method takes about 10 S, but the second method only takes less than 1s. The two methods generate the same results for the cell index.</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
 <pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 4.0.2</code></pre>
-<pre><code>## -- Attaching packages ------------------ tidyverse 1.3.0 --</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
 <pre><code>## v ggplot2 3.3.2     v purrr   0.3.4
 ## v tibble  3.0.3     v dplyr   1.0.1
 ## v tidyr   1.1.1     v stringr 1.4.0
@@ -67,7 +67,7 @@ system.time(cell_idx1 &lt;- cellFromPolygon(plot, sply))</code></pre>
 <pre><code>## Warning: package &#39;tibble&#39; was built under R version 4.0.2</code></pre>
 <pre><code>## Warning: package &#39;tidyr&#39; was built under R version 4.0.2</code></pre>
 <pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.0.2</code></pre>
-<pre><code>## -- Conflicts --------------------- tidyverse_conflicts() --
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
 ## x tidyr::extract() masks raster::extract()
 ## x dplyr::filter()  masks stats::filter()
 ## x dplyr::lag()     masks stats::lag()
