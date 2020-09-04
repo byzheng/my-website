@@ -68,8 +68,9 @@ p1 <- ggplot(pd) +
                                    vjust = 1, size = 8, hjust = 1),
         axis.text.y = element_text(size = 8),
         legend.position = 'bottom') +
-  guides(fill = guide_colorbar(title = NULL, barwidth = unit(0.6, "npc"))) +
-  xlab("") + ylab("")
+  guides(fill = FALSE) +
+#  guides(fill = guide_colorbar(title = NULL, barwidth = unit(0.6, "npc"))) +
+  xlab("") + ylab("") 
 p1
 ```
 
@@ -94,7 +95,8 @@ p2 <- ggplot(pd2) +
                                    vjust = 1, size = 8, hjust = 1),
         axis.text.y = element_text(size = 8),
         legend.position = 'bottom') +
-  guides(fill = guide_colorbar(title = NULL, barwidth = unit(0.6, "npc"))) +
+  guides(fill = FALSE) +
+#  guides(fill = guide_colorbar(title = NULL, barwidth = unit(0.6, "npc"))) +
   xlab("") + ylab("")
 girafe(ggobj = p2)
 ```
@@ -204,7 +206,8 @@ p3 <- ggplot(pd3) +
                                    vjust = 1, size = 8, hjust = 1),
         axis.text.y = element_text(size = 8),
         legend.position = 'bottom') +
-  guides(fill = guide_colorbar(title = NULL, barwidth = unit(0.6, "npc"))) +
+  guides(fill = FALSE) +
+#  guides(fill = guide_colorbar(title = NULL, barwidth = unit(0.6, "npc"))) +
   xlab("") + ylab("")
 girafe(ggobj = p3)
 ```
