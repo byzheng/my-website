@@ -15,7 +15,8 @@ tags:
 Correlation figure is very useful to show correlation for all variables in a data frame. There are several ways to draw a correlation plot in R. This post is to show how to create correlation plots and interactive plot in Rmarkdown.
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(cache = TRUE, dev = 'png')
+knitr::opts_chunk$set(cache = TRUE, dev = 'png', warning = FALSE,
+                      message = FALSE)
 ```
 
 Load all required libraries.
