@@ -2,7 +2,7 @@
 title: JS updates position of TOC for Rmarkdown file in blogdown
 authors: 
  - bangyou-zheng
-date: '2020-08-14'
+date: '2020-09-02'
 slug: blogdown-toc
 categories:
   - R
