@@ -19,5 +19,5 @@ header:
 |----------|-------|
 |Citation  | 1923  |
 |H-Index   |   24  |
-|i10-index |   30  |
+|i10-index |   33  |
 
