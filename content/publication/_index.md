@@ -21,3 +21,4 @@ header:
 |H-Index   |   24  |
 |i10-index |   34 |
 
+Data from [Google Scholar](https://scholar.google.com/citations?user=MfZ-QtEAAAAJ) and updated on 7 December 2020.
