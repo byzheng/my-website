@@ -5,7 +5,7 @@ date = "2020-08-01"
 draft = false
 
 # Project title.
-title = "Machine Learning applied to high - throughput feature extraction from imagery to map spatial variability"
+title = "Machine Learning in Agriculture"
 
 # Project summary to display on homepage.
 summary = ""
@@ -30,3 +30,4 @@ caption = ""
 
 +++
 
+Machine learning applied to high-throughput feature extraction from imagery to map spatial variability.
