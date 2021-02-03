@@ -5,7 +5,7 @@ date = "2020-07-01"
 draft = false
 
 # Project title.
-title = "INVITA - A technology and analytics platform for improving variety selection"
+title = "INVITA"
 
 # Project summary to display on homepage.
 summary = ""
@@ -30,3 +30,4 @@ caption = ""
 
 +++
 
+A technology and analytics platform for improving variety selection.
