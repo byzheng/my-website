@@ -14,13 +14,8 @@ tags:
 
 <p>The thermal time is important to quantify the crop growth for a specific period (e.g. from sowing to flowering). However, the codes might be complicated if there are multiple records in an experiment.</p>
 <p>Here I showed how to use <code>left_join</code> function to easily calculate thermal time for the whole records in one data frame.</p>
-<pre class="r"><code>library(weaana)
+<pre class="r"><code>suppressPackageStartupMessages(library(weaana))
 suppressPackageStartupMessages(library(tidyverse))</code></pre>
-<pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 4.0.2</code></pre>
-<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 4.0.2</code></pre>
-<pre><code>## Warning: package &#39;tibble&#39; was built under R version 4.0.2</code></pre>
-<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 4.0.2</code></pre>
-<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.0.2</code></pre>
 <p>Random observations are generated from 1957 and 2009 for sowing and flowering time.</p>
 <pre class="r"><code>obs &lt;- tibble(sowing = as.Date(paste0(seq(1957, 2009), &#39;-05-01&#39;)),
        flowering = as.Date(paste0(seq(1957, 2009), &#39;-&#39;, round(runif(53) * 20 + 210)), 
@@ -46,12 +41,12 @@ head(flowering_tt)</code></pre>
 <pre><code>## # A tibble: 6 x 3
 ##   sowing     flowering     tt
 ##   &lt;date&gt;     &lt;date&gt;     &lt;dbl&gt;
-## 1 1957-05-01 1957-08-02 1350.
-## 2 1958-05-01 1958-08-03 1454.
-## 3 1959-05-01 1959-08-10 1445.
-## 4 1960-05-01 1960-08-11 1374.
-## 5 1961-05-01 1961-08-05 1293.
-## 6 1962-05-01 1962-08-09 1444</code></pre>
+## 1 1957-05-01 1957-08-01 1337.
+## 2 1958-05-01 1958-08-18 1707.
+## 3 1959-05-01 1959-08-01 1316.
+## 4 1960-05-01 1960-08-13 1390.
+## 5 1961-05-01 1961-08-01 1242.
+## 6 1962-05-01 1962-08-06 1412.</code></pre>
 <pre class="r"><code>flowering_tt %&gt;% 
     ggplot() +
     geom_histogram(aes(tt)) +

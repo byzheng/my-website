@@ -11,7 +11,9 @@ tags:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(cache = TRUE, dev = "png")
+knitr::opts_chunk$set(cache = TRUE, 
+  package.startup.message = FALSE,
+  dev = "png")
 ```
 
 The thermal time is important to quantify the crop growth for a specific period (e.g. from sowing to flowering). However, the codes might be complicated if there are multiple records in an experiment. 
@@ -20,7 +22,7 @@ Here I showed how to use `left_join` function to easily calculate thermal time f
 
 
 ```{r load-library}
-library(weaana)
+suppressPackageStartupMessages(library(weaana))
 suppressPackageStartupMessages(library(tidyverse))
 ```
 

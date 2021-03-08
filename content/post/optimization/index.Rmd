@@ -3,6 +3,9 @@ title: Optimization of APSIM NG using factorial simulations
 authors: 
 - bangyou-zheng
 date: '2021-03-08'
+output:
+  blogdown::html_page:
+    toc: true
 slug: optimization-apsimng
 tags:
   - apsim
@@ -14,6 +17,7 @@ tags:
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
+  package.startup.message = FALSE,
   comment = "#>"
 )
 library(knitr)
@@ -38,7 +42,7 @@ The method of factorial simulations can be separated into multiple steps includi
 
 ```{r setup}
 # Load the required packages
-library(rapsimng)
+suppressPackageStartupMessages(library(rapsimng))
 suppressPackageStartupMessages(library(tidyverse))
 ```
 
