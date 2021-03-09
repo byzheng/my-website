@@ -1,0 +1,13 @@
+base
+ggplot2
+corrplot
+ggiraph
+tidyverse
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats
+gdtools

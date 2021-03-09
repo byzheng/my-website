@@ -6,6 +6,7 @@ date: '2018-09-28'
 slug: climate-data
 categories:
   - climate
+toc: true
 tags:
   - climate
   - data

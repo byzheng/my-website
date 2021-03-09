@@ -11,7 +11,7 @@ tags:
   - gis
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
 
 
 <p>In the plot segmentation of image-based HTP platforms (e.g. UAV, ground-vehicle), we always need to trim a plot to remove the edge effect, then extracts the pixel values we are interesting. The operation is similar with <code>cutline</code> in <code>gdalwarp</code> command.</p>
@@ -34,7 +34,7 @@ plot &lt;- brick(&#39;wheat-plot.tif&#39;)
 # Plot the raster and polygon
 plotRGB(plot)
 lines(ply$long, ply$lat, col = &#39;red&#39;, lwd = 3)</code></pre>
-<p><img src="/post/trim-raster/index_files/figure-html/read-data-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/read-data-1.png" width="672" /></p>
 <p>The first method is to use <code>cellFromPolygon</code> to extrct the cell index.</p>
 <pre class="r"><code>library(sp)
 # Create spatial polygon
@@ -88,4 +88,4 @@ system.time(cell_idx1 &lt;- cellFromPolygon(plot, sply))</code></pre>
     coord_equal() + 
     theme_bw() +
     xlab(&#39;&#39;) + ylab(&#39;&#39;)</code></pre>
-<p><img src="/post/trim-raster/index_files/figure-html/comparison-metho-1.png" width="384" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/comparison-metho-1.png" width="384" /></p>

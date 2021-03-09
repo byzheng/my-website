@@ -7,6 +7,7 @@ output:
   blogdown::html_page:
     toc: true
 slug: optimization-apsimng
+toc: true
 tags:
   - apsim
   - optimization

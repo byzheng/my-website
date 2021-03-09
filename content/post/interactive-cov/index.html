@@ -12,13 +12,13 @@ tags:
   - hugo
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
-<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
-<script src="/rmarkdown-libs/d3/d3.min.js"></script>
-<script src="/rmarkdown-libs/d3-lasso/d3-lasso.min.js"></script>
-<link href="/rmarkdown-libs/ggiraphjs/ggiraphjs.min.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/ggiraphjs/ggiraphjs.min.js"></script>
-<script src="/rmarkdown-libs/girafe-binding/girafe.js"></script>
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
+<script src="{{< blogdown/postref >}}index_files/d3/d3.min.js"></script>
+<script src="{{< blogdown/postref >}}index_files/d3-lasso/d3-lasso.min.js"></script>
+<link href="{{< blogdown/postref >}}index_files/ggiraphjs/ggiraphjs.min.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/ggiraphjs/ggiraphjs.min.js"></script>
+<script src="{{< blogdown/postref >}}index_files/girafe-binding/girafe.js"></script>
 
 
 <p>Correlation figure is very useful to show correlation for all variables in a data frame. There are several ways to draw a correlation plot in R. This post is to show how to create correlation plots and interactive plot in Rmarkdown.</p>
@@ -31,14 +31,14 @@ library(tidyverse)</code></pre>
 <h2>Basic plot function</h2>
 <p>The <code>plot</code> function in basic R can be used to plot correlation in a data frame (e.g. the dataset <code>longley</code>). However this method is not suitable to view a table with lots of columns.</p>
 <pre class="r"><code>plot(longley)</code></pre>
-<p><img src="/post/interactive-cov/index_files/figure-html/basic-plot-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/basic-plot-1.png" width="672" /></p>
 </div>
 <div id="corrplot-package" class="section level2">
 <h2>corrplot package</h2>
 <p><code>corrplot</code> package can be used to draw a static correlation figure for a data frame. However, the scatter plots are not plotted for each pair of variables and it is hard to understand the real correlation.</p>
 <pre class="r"><code>cor(longley) %&gt;% 
   corrplot()</code></pre>
-<p><img src="/post/interactive-cov/index_files/figure-html/corrplot-static-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/corrplot-static-1.png" width="672" /></p>
 </div>
 <div id="interactive-figure-using-ggiraph" class="section level2">
 <h2>Interactive figure using ggiraph</h2>
@@ -67,7 +67,7 @@ p1 &lt;- ggplot(pd) +
 #  guides(fill = guide_colorbar(title = NULL, barwidth = unit(0.6, &quot;npc&quot;))) +
   xlab(&quot;&quot;) + ylab(&quot;&quot;) 
 p1</code></pre>
-<p><img src="/post/interactive-cov/index_files/figure-html/corrplot-data-1.png" width="100%" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/corrplot-data-1.png" width="100%" /></p>
 <p>In the next step, the interactive figure is created through adding new columns <code>data_id</code> and <code>tooltip</code>.</p>
 <pre class="r"><code>pd2 &lt;- pd %&gt;% 
   mutate(data_id = paste0(Var1, &#39;-&#39;, Var2),
