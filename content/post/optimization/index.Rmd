@@ -41,7 +41,7 @@ The method of factorial simulations can be separated into multiple steps includi
 
 
 
-```{r setup}
+```{r setup, warning=FALSE}
 # Load the required packages
 suppressPackageStartupMessages(library(rapsimng))
 suppressPackageStartupMessages(library(tidyverse))
