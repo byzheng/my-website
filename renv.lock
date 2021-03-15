@@ -737,8 +737,14 @@
     "weaana": {
       "Package": "weaana",
       "Version": "0.1.0",
-      "Source": "byzheng/weaana",
-      "Hash": "92b22f27c91ced8b9c16c2d7892ac45d"
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "byzheng",
+      "RemoteRepo": "weaana",
+      "RemoteRef": "master",
+      "RemoteSha": "df7af94bf40fcd47be8f3e4935138eaf9a86d663",
+      "Hash": "414325a22754e390a7f16fa5cb2bad44"
     },
     "withr": {
       "Package": "withr",
