@@ -25,7 +25,7 @@
 
 [[main]]
   name = "PhenoCopter"
-  url = "https://phenocopter.bangyou.me"
+  url = "https://phenocopter.netlify.app"
   weight = 60
   hrefTargetBlank = true
 [[main]]
