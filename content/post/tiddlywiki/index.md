@@ -2,7 +2,7 @@
 title: TiddlyWIKI
 authors: 
  - bangyou-zheng
-date: '2022-02-16'
+date: '2022-02-01'
 slug: tiddlywiki
 tags:
   - tiddlywiki
