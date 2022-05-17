@@ -2,7 +2,7 @@
 title: "Using Tiddlywiki for project management and data analysis"
 authors: 
  - bangyou-zheng
-date: '2022-02-01'
+date: '2022-05-17'
 slug: tiddlywiki
 draft: true
 tags:
