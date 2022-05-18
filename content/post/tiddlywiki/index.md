@@ -11,8 +11,15 @@ tags:
 ---
 
 
-I have been looking for a simple and flexible tool to manage projects, take notes from reading (e.g. literature and online), and track results of data analysis, e.g. EverNote, OneNote, Trac, JIRA, github, RMarkdown, etc. The tools are designed to develop software, but too complicated for daily usages of project management and data analysis. Recently, [Tiddlywiki](https://tiddlywiki.com/) and [Projectify](https://thaddeusjiang.github.io/Projectify/) pops up from random goggling. [Tiddlywiki](https://tiddlywiki.com/) is a non-linear notebook for storing information. I found it is very useful and simple to manage my research projects and take notes of data analysis as a data scientist and digital agronomist. 
+I have been looking for a simple and flexible tool to manage projects, take notes from reading (e.g. literature and online), and track results of data analysis, e.g. EverNote, OneNote, Trac, JIRA, github, RMarkdown, etc. The tools are designed to develop software, but too complicated for daily usages. Recently, [Tiddlywiki](https://tiddlywiki.com/) and [Projectify](https://thaddeusjiang.github.io/Projectify/) pops up from random goggling. [Tiddlywiki](https://tiddlywiki.com/) is a non-linear notebook for storing information. I found it is very useful and simple to manage my research projects and take notes of data analysis as a data scientist and digital agronomist. 
 
+## Project management
+
+I always work to multiple projects at the same time. Beyond the project management by project members, I prefer to keep a personal project management to track, hold and restore my activities related with a specific project. [Projectify](https://thaddeusjiang.github.io/Projectify/) is a preconfigured Tiddlywiki for project management to capture thoughts, plan projects, and schedule tasks. Projectify manages projects through [tags](https://tiddlywiki.com/static/Tagging.html) in Tiddlywiki. 
+Adding tags into the new tiddler can easily associate it into [one or multiple projects ](https://thaddeusjiang.github.io/Projectify/). 
+
+
+## Reading notes
 
 
 ## Data analysis
@@ -24,6 +31,10 @@ I have been looking for a simple and flexible tool to manage projects, take note
 * Check the previous analysis for any strange results. The checking procedure might find an error in the raw data and scripts which introduce a new fix into master analysis, or new understanding for science. 
 
 It is unreproducible, time-consuming and even impossible to write RMarkdown file for each branching data analysis as 1) the modified or dropped input files, 2) the too big intermediate results, 3) lost tracks of R scripts, etc. Branching data analysis is very common for scientific research and non-linear procedure.
+
+
+As the way of natural thinking, the feature of tiddlywiki to [create missing tiddler](https://tiddlywiki.com/static/Creating%2520and%2520editing%2520tiddlers.html) is very easy to branch master data analysis without leaving current tiddler just through using two brackets (e.g. `[[New Idea]]`). Tiddlywiki shows a link to create new tiddler. 
+
 
 
 
