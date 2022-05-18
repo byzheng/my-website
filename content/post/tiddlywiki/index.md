@@ -4,7 +4,6 @@ authors:
  - bangyou-zheng
 date: '2022-05-17'
 slug: tiddlywiki
-draft: true
 tags:
   - tiddlywiki
   - R
@@ -15,12 +14,15 @@ I have been looking for a simple and flexible tool to manage projects, take note
 
 ## Project management
 
-I always work to multiple projects at the same time. Beyond the project management by project members, I prefer to keep a personal project management to track, hold and restore my activities related with a specific project. [Projectify](https://thaddeusjiang.github.io/Projectify/) is a preconfigured Tiddlywiki for project management to capture thoughts, plan projects, and schedule tasks. Projectify manages projects through [tags](https://tiddlywiki.com/static/Tagging.html) in Tiddlywiki. 
+I always work on multiple projects at the same time. Beyond the project management by project members, I prefer to keep a personal project management to track, hold and restore my activities related with a specific project. [Projectify](https://thaddeusjiang.github.io/Projectify/) is a preconfigured Tiddlywiki for project management to capture thoughts, plan projects, and schedule tasks. Projectify manages projects through [tags](https://tiddlywiki.com/static/Tagging.html) in Tiddlywiki. 
 Adding tags into the new tiddler can easily associate it into [one or multiple projects ](https://thaddeusjiang.github.io/Projectify/). 
 
 
 ## Reading notes
 
+Literature and online materials are very important to scientific research. [Refnotes](https://kookma.github.io/TW-Refnotes/) plugin can add reference into any tiddlers using bibtex format. My reference management tool [Zotero](https://www.zotero.org/) with extension [Better Bibtext](https://retorque.re/zotero-better-bibtex/) can easily export references in a collection into bibtex format and keep updates.
+
+My notes are managed by [tags](https://tiddlywiki.com/static/Tagging.html) and [list](https://tiddlywiki.com/static/ListWidget.html) according to topic. 
 
 ## Data analysis
 
@@ -36,12 +38,6 @@ It is unreproducible, time-consuming and even impossible to write RMarkdown file
 As the way of natural thinking, the feature of tiddlywiki to [create missing tiddler](https://tiddlywiki.com/static/Creating%2520and%2520editing%2520tiddlers.html) is very easy to branch master data analysis without leaving current tiddler just through using two brackets (e.g. `[[New Idea]]`). Tiddlywiki shows a link to create new tiddler. 
 
 
-
-
-
-
-
- 
 
 <!--
 
