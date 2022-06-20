@@ -24,11 +24,6 @@
   weight = 50
 
 [[main]]
-  name = "PhenoCopter"
-  url = "https://phenocopter.netlify.app"
-  weight = 60
-  hrefTargetBlank = true
-[[main]]
   name = "Software"
   url = "/software"
   weight = 61
