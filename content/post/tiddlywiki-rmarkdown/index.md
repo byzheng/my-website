@@ -2,7 +2,7 @@
 title: "Combine project management and data analysis using Tiddlywiki and RMarkdown"
 authors: 
  - bangyou-zheng
-date: '2022-07-08'
+date: '2022-07-11'
 slug: tiddlywiki-rmarkdown
 categories:
   - R
