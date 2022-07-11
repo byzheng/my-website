@@ -4,6 +4,8 @@ authors:
  - bangyou-zheng
 date: '2022-07-08'
 slug: tiddlywiki-rmarkdown
+categories:
+  - R
 tags:
   - tiddlywiki
   - R
