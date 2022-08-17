@@ -7,7 +7,7 @@ authors:
  - Scott C. Chapman 
  
 doi: 10.34133/2022/9768253
-date: "2022-07-4"
+date: "2022-07-04"
 image_preview: ""
 math: false
 publication_types: ["2"]
