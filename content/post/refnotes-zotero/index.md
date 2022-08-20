@@ -25,12 +25,13 @@ The export format `better BibTex` escapes specially character in the authors in 
 ![](20220603181406.png "")
 
 
-No `year` field is exported in `Better BibLaTex` format. The post script can be used to export `year`.
+No `year` field is exported in `Better BibLaTex` format. The post script can be used to export `year`. Add new field `zotero-key` to create a link with Zotero protocol which can open the same item in Zotero.
 
 ```
 if (Translator.BetterBibLaTeX ) {
   const date = Zotero.BetterBibTeX.parseDate(item.date)
   reference.add({ name: 'year', value:  `${date.year}`})
+  reference.add({ name: 'zotero-key', value: item.itemKey })
 } 
 ```
 
