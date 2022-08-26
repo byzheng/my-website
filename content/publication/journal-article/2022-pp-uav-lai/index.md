@@ -14,8 +14,7 @@ publication_types: ["2"]
 publication: "Plant Phenomics"
 publication_short: ""
 selected: false
-title: "Unsupervised Plot-Scale LAI Phenotyping via UAV-Based
-Imaging, Modelling, and Machine Learning"
+title: "Unsupervised Plot-Scale LAI Phenotyping via UAV-Based Imaging, Modelling, and Machine Learning"
 tags: 
  - PROSAIL
  - wheat
