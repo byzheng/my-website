@@ -2,7 +2,7 @@
 title: 'Compile APSIMNG from source codes'
 authors: 
  - bangyou-zheng
-date: '2022-09-17'
+date: '2022-09-16'
 slug: compile-apsimng
 tags:
   - apsimng
