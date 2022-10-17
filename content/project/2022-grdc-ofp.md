@@ -5,7 +5,7 @@ date = "2022-04-01"
 draft = false
 
 # Project title.
-title = "OFP"
+title = "On Farm Performance"
 
 # Project summary to display on homepage.
 summary = ""

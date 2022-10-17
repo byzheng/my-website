@@ -5,7 +5,7 @@ date = "2022-07-01"
 draft = false
 
 # Project title.
-title = "NPI2"
+title = "National Phenology Initiative - Phase 2"
 
 # Project summary to display on homepage.
 summary = ""
@@ -30,4 +30,4 @@ caption = ""
 
 +++
 
-Frost and Heat Management Analysis.
+National Phenology Initiative - Phase 2.

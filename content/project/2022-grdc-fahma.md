@@ -5,7 +5,7 @@ date = "2022-07-01"
 draft = false
 
 # Project title.
-title = "FAHMA"
+title = "Frost and Heat Management Analysis"
 
 # Project summary to display on homepage.
 summary = ""
@@ -30,4 +30,4 @@ caption = ""
 
 +++
 
-National Phenology Initiative - Phase 2.
+Frost and Heat Management Analysis.
