@@ -15,7 +15,7 @@ image_preview = ""
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["model", "GRDC", "climate", "rain", "wheat", "phenology", "active"]
+tags = ["model", "GRDC", "climate", "rain", "wheat", "phenology"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""

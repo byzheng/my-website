@@ -5,7 +5,7 @@ date = "2022-07-01"
 draft = false
 
 # Project title.
-title = "FAHMA"
+title = "NPI2"
 
 # Project summary to display on homepage.
 summary = ""
