@@ -29,19 +29,19 @@ Run following command under Models folders on Windows
 Publish for windows
 
 ```
-dotnet publish -c Release -f netcoreapp3.1 -r win-x64 Models.csproj
+dotnet publish -c Release -f netcoreapp3.1 -r win-x64   --self-contained Models.csproj
 ```
 
 Publish for Ubuntu
 
 ```
-dotnet publish -c Release -f netcoreapp3.1 -r ubuntu.20.04-x64  Models.csproj
+dotnet publish -c Release -f netcoreapp3.1 -r ubuntu.20.04-x64 --self-contained Models.csproj
 ```
 
 Publish for SLES (e.g. CSIRO cluster):
 
 ```
-dotnet publish -c Release -f netcoreapp3.1 -r sles.15-x64  Models.csproj
+dotnet publish -c Release -f netcoreapp3.1 -r sles.15-x64 --self-contained Models.csproj
 ```
 
 All runtime identify for other operating system can be found from [github](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json)
