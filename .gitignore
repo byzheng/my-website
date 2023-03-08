@@ -5,3 +5,5 @@
 /public
 /blogdown
 servr.bat
+*.Rds
+*.csv

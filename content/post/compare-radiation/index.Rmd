@@ -1,0 +1,190 @@
+---
+title: "Comparison of radiation from different sources"
+authors:
+  - bangyou-zheng
+date: '2023-03-08'
+slug: compare-radiation
+tags:
+  - R
+  - climate
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, 
+                      warning = FALSE,
+                      out.height = 600, out.width = "100%")
+suppressPackageStartupMessages(library(tidyverse))
+```
+
+```{r read-data}
+records <- readRDS("weather-records.Rds")
+records <- records %>% 
+    mutate(Source = factor(Source, 
+                           levels = c("agcd", "power", "ppd", "drill")))
+```
+
+
+## Data source
+
+The weather records are sourced for 77 sites from 
+
+* [SILO Patched Point Dataset](https://www.longpaddock.qld.gov.au/silo/point-data/) with label `ppd`
+* [SILO Data Drill](https://www.longpaddock.qld.gov.au/silo/gridded-data/) with label `drill`
+* [Australian Gridded Climate Data](http://www.bom.gov.au/climate/austmaps/about-agcd-maps.shtml) from BOM with label `agcd`
+* [NASA POWER](https://power.larc.nasa.gov/) with label `power`
+
+The daily radiations (MJ/m^2) are downloaded from 1990-01-01 to 2022-12-31.
+
+## Sites
+
+There are 79 sites sourced from Lilley et al (2019) across Australian grain belt.
+
+```{r fig-site, results='asis', out.height = 400, out.width = "100%"}
+sites <- read.csv("sites.csv", as.is = TRUE)
+
+
+library(leaflet)
+
+m <- leaflet() %>%
+    addTiles() %>%  # Add default OpenStreetMap map tiles
+    addMarkers(lng=~Longitude, lat=~Latitude, popup=~Site, data = sites) %>%
+    leaflet.extras::suspendScroll(hoverToWake = FALSE)
+m
+
+```
+
+
+
+## Yearly total radiation
+
+We calculated the yearly total radiation and then anomaly of tatal radiation from 1990 to 2022.
+
+```{r radn-abnormal-year, fig.height=6, fig.cap="Anomaly of yearly total radiation (MJ/m^2)"}
+
+yearly_records <- records %>%  
+    group_by(Source, Number, year) %>% 
+    summarise(radn = sum(radn), .groups = "drop") %>% 
+    group_by(Source, Number) %>% 
+    mutate(abnormal = radn - mean(radn)) %>%
+    ungroup() 
+yearly_records %>% 
+    # filter(year > 2010) %>% 
+#    filter(Number == 10111) %>%
+    ggplot(aes(year, abnormal, color = factor(Number))) +
+    geom_line() +
+    guides(color = "none") +
+    facet_wrap(~Source) +
+    geom_hline(yintercept = 0) +
+    theme_bw() +
+    ylab("Anomaly of radiation (MJ/m2)") +
+    xlab("Year")
+
+```
+
+Among 4 data sources, the biggest difference occur since 2016. Then I plot the monthly total radiation since 2016.
+
+```{r fig-month-radiation, out.height=800, fig.cap="Monthly total radiation since 2016"}
+
+
+records %>% 
+    filter(year > 2016) %>% 
+    group_by(Source, Number, year, month) %>% 
+    summarise(radn = sum(radn), .groups = "drop") %>% 
+    ggplot() +
+    geom_boxplot(aes(factor(month), radn, color = Source))  +
+    facet_wrap(~year, scales = "free", ncol = 2) +
+    theme_bw() +
+    ylab("Monthly total radiation (MJ/m2)") +
+    xlab("Month") +
+    theme(legend.position = "bottom")
+
+```
+
+Radiations from AGDC are higher than values from from PPD and Data Drill, and slightly lower than values from NASA POWER. 
+
+```{r fig-yearly-radn-compare, out.height=200, fig.cap="Comparison of yearly total radiations between AGDC and other sources"}
+
+
+yearly_records %>% 
+    filter(Source == "agcd") %>% 
+    select(Number, year, base = radn) %>% 
+    right_join(yearly_records %>% 
+                   filter(Source != "agcd") %>% 
+                   select(Number, Source, year, radn)) %>% 
+    ggplot() +
+    geom_point(aes(base, radn)) +
+    facet_wrap(~Source) +
+    theme_bw() +
+    geom_abline() +
+    xlab("Yearly total radiation from AGCD (MJ/m2)") +
+    ylab("Yearly total radiation from other sources (MJ/m2)")
+
+```
+
+
+
+## Winter radiation
+
+As cereal crops are mainly growing during winter season, I calculate the total radiation and anomaly from May to October.
+
+```{r radn-abnormal-winter, fig.height=6, fig.cap="Anomaly of winter total radiation (MJ/m^2) from May to October"}
+
+records %>% 
+    filter(month > 4, month < 11) %>% 
+    group_by(Source, Number, year) %>% 
+    summarise(radn = sum(radn), .groups = "drop") %>% 
+    group_by(Source, Number) %>% 
+    mutate(abnormal = radn - mean(radn)) %>%
+    ungroup() %>% 
+    # filter(year > 2010) %>% 
+#    filter(Number == 10111) %>%
+    ggplot(aes(year, abnormal, color = factor(Number))) +
+    geom_line() +
+    guides(color = "none") +
+    facet_wrap(~Source) +
+    geom_hline(yintercept = 0) +
+    theme_bw() +
+    ylab("Anomaly of radiation (MJ/m2)") +
+    xlab("Year")
+
+```
+
+
+
+
+## Summer radiation
+
+I also calculate the total radiation and anomaly for summer crops from May to October.
+
+```{r radn-abnormal-summer, fig.height=6, fig.cap="Anomaly of winter total radiation (MJ/m^2) from November to April"}
+
+records %>% 
+    filter(month <5 | month > 10) %>% 
+    group_by(Source, Number, year) %>% 
+    summarise(radn = sum(radn), .groups = "drop") %>% 
+    group_by(Source, Number) %>% 
+    mutate(abnormal = radn - mean(radn)) %>%
+    ungroup() %>% 
+    
+    # filter(year > 2010) %>% 
+#    filter(Number == 10111) %>%
+    ggplot(aes(year, abnormal, color = factor(Number))) +
+    geom_line() +
+    guides(color = "none") +
+    facet_wrap(~Source) +
+    geom_hline(yintercept = 0) +
+    theme_bw() +
+    ylab("Anomaly of radiation (MJ/m2)") +
+    xlab("Year")
+
+```
+
+
+## Summary
+
+Since 2016, radiations from SILO PPD and Data Drill are much lower than values from AGCD and NASA POWER and also lower than the long term average. We should be carefull to use them in the crop simulations. Radiations from BOM AGCD sound reasonable especially during winter. 
+
+## Reference
+
+Lilley JM, Flohr BM, Whish JPM, Farre I, Kirkegaard JA. 2019.  Defining optimal sowing and flowering periods for canola in Australia. Field Crops Research 235, 118–128.
