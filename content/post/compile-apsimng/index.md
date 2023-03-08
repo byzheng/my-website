@@ -14,7 +14,6 @@ tags:
 ## Checkout the latest source codes from APSIMInitiative
 
 ```
-git clone --depth 1 https://github.com/APSIMInitiative/APSIM.Shared.git
 git clone  --depth 1  https://github.com/APSIMInitiative/ApsimX.git
 ```
 
