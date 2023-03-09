@@ -22,7 +22,7 @@ tags:
 
 ## Data source
 
-The weather records are sourced for 77 sites from
+The weather records are sourced for 79 sites from
 
 -   [SILO Patched Point Dataset](https://www.longpaddock.qld.gov.au/silo/point-data/) with label `ppd`
 -   [SILO Data Drill](https://www.longpaddock.qld.gov.au/silo/gridded-data/) with label `drill`
@@ -40,7 +40,7 @@ There are 79 sites sourced from Lilley et al (2019) across Australian grain belt
 
 ## Yearly total radiation
 
-We calculated the yearly total radiation and then anomaly of tatal radiation from 1990 to 2022.
+I calculated the yearly total radiation and then anomaly of tatal radiation from 1990 to 2022.
 
 <div class="figure">
 
