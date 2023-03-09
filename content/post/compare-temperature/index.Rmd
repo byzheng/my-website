@@ -1,0 +1,162 @@
+---
+title: "Comparison of temperature from different sources"
+authors:
+  - bangyou-zheng
+date: '2023-03-09'
+slug: compare-temperature
+tags:
+  - R
+  - climate
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, 
+                      warning = FALSE,
+                      out.height = 600, out.width = "100%")
+suppressPackageStartupMessages(library(tidyverse))
+```
+
+```{r read-data}
+records <- readRDS("../compare-radiation/weather-records.Rds")
+records <- records %>% 
+    mutate(Source = factor(Source, 
+                           levels = c("agcd", "power", "ppd", "drill")))
+```
+
+
+## Data source
+
+The weather records are sourced for 79 sites from 
+
+* [SILO Patched Point Dataset](https://www.longpaddock.qld.gov.au/silo/point-data/) with label `ppd`
+* [SILO Data Drill](https://www.longpaddock.qld.gov.au/silo/gridded-data/) with label `drill`
+* [Australian Gridded Climate Data](http://www.bom.gov.au/climate/austmaps/about-agcd-maps.shtml) from BOM with label `agcd`
+* [NASA POWER](https://power.larc.nasa.gov/) with label `power`
+
+The daily radiations (MJ/m^2) are downloaded from 1990-01-01 to 2022-12-31.
+
+## Sites
+
+There are 79 sites sourced from Lilley et al (2019) across Australian grain belt.
+
+```{r fig-site, results='asis', out.height = 400, out.width = "100%"}
+sites <- read.csv("../compare-radiation/sites.csv", as.is = TRUE)
+
+
+library(leaflet)
+
+m <- leaflet() %>%
+    addTiles() %>%  # Add default OpenStreetMap map tiles
+    addMarkers(lng=~Longitude, lat=~Latitude, popup=~Site, data = sites) %>%
+    leaflet.extras::suspendScroll(hoverToWake = FALSE)
+m
+
+```
+
+
+
+## Yearly average minimum temperature
+
+I calculated the yearly average minimum temperature and then anomaly of average minimum temperature from 1990 to 2022.
+
+```{r mint-abnormal-year, fig.height=6, fig.cap="Anomaly of average minimum temperature (C)"}
+
+
+yearly_records <- records %>%  
+    filter(mint > -100) %>% 
+    group_by(Source, Number, year) %>% 
+    summarise(mint = mean(mint), .groups = "drop") %>% 
+    group_by(Source, Number) %>% 
+    mutate(abnormal = mint - mean(mint)) %>%
+    ungroup() 
+yearly_records %>% 
+    ggplot(aes(year, abnormal, color = factor(Number))) +
+    geom_line() +
+    guides(color = "none") +
+    facet_wrap(~Source) +
+    geom_hline(yintercept = 0) +
+    theme_bw() +
+    ylab("Anomaly of average minimum temperature (C)") +
+    xlab("Year")
+
+```
+
+
+```{r fig-yearly-mint-compare, out.height=200, fig.cap="Comparison of yearly average minimum temperature between AGDC and other sources"}
+
+
+yearly_records %>% 
+    filter(Source == "agcd") %>% 
+    select(Number, year, base = mint) %>% 
+    right_join(yearly_records %>% 
+                   filter(Source != "agcd") %>% 
+                   select(Number, Source, year, mint)) %>% 
+    ggplot() +
+    geom_point(aes(base, mint)) +
+    facet_wrap(~Source) +
+    theme_bw() +
+    geom_abline() +
+    xlab("Yearly average minimum temperature from AGCD (C)") +
+    ylab("Yearly average minimum temperature from other sources (C)")
+
+```
+
+
+
+## Yearly average maximum temperature
+
+I calculated the yearly average maximum temperature and then anomaly of average maximum temperature from 1990 to 2022.
+
+```{r maxt-abnormal-year, fig.height=6, fig.cap="Anomaly of average maximum temperature (C)"}
+
+
+yearly_records <- records %>%  
+    filter(maxt > -100) %>% 
+    group_by(Source, Number, year) %>% 
+    summarise(maxt = mean(maxt), .groups = "drop") %>% 
+    group_by(Source, Number) %>% 
+    mutate(abnormal = maxt - mean(maxt)) %>%
+    ungroup() 
+yearly_records %>% 
+    ggplot(aes(year, abnormal, color = factor(Number))) +
+    geom_line() +
+    guides(color = "none") +
+    facet_wrap(~Source) +
+    geom_hline(yintercept = 0) +
+    theme_bw() +
+    ylab("Anomaly of average maximum temperature (C)") +
+    xlab("Year")
+
+```
+
+
+```{r fig-yearly-maxt-compare, out.height=200, fig.cap="Comparison of yearly average maximum temperature between AGDC and other sources"}
+
+
+yearly_records %>% 
+    filter(Source == "agcd") %>% 
+    select(Number, year, base = maxt) %>% 
+    right_join(yearly_records %>% 
+                   filter(Source != "agcd") %>% 
+                   select(Number, Source, year, maxt)) %>% 
+    ggplot() +
+    geom_point(aes(base, maxt)) +
+    facet_wrap(~Source) +
+    theme_bw() +
+    geom_abline() +
+    xlab("Yearly average maximum temperature from AGCD (C)") +
+    ylab("Yearly average maximum temperature from other sources (C)")
+
+```
+
+
+
+
+## Summary
+
+Comparing with radiation, temperatures don't have big difference among data source. 
+
+## Reference
+
+Lilley JM, Flohr BM, Whish JPM, Farre I, Kirkegaard JA. 2019.  Defining optimal sowing and flowering periods for canola in Australia. Field Crops Research 235, 118–128.
