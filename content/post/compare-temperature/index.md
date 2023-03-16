@@ -29,7 +29,7 @@ The weather records are sourced for 79 sites from
 -   [Australian Gridded Climate Data](http://www.bom.gov.au/climate/austmaps/about-agcd-maps.shtml) from BOM with label `agcd`
 -   [NASA POWER](https://power.larc.nasa.gov/) with label `power`
 
-The daily radiations (MJ/m^2) are downloaded from 1990-01-01 to 2022-12-31.
+The daily temperature (oC) are downloaded from 1990-01-01 to 2022-12-31.
 
 ## Sites
 
@@ -53,9 +53,18 @@ Figure 1: Anomaly of average minimum temperature (C)
 
 <div class="figure">
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/fig-yearly-mint-compare-1.png" alt="Comparison of yearly average minimum temperature between AGDC and other sources" width="100%" height="200" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-yearly-mint-compare-1.png" alt="Comparison of yearly average minimum temperature between AGDC and other sources" width="100%" height="600" />
 <p class="caption">
 Figure 2: Comparison of yearly average minimum temperature between AGDC and other sources
+</p>
+
+</div>
+
+<div class="figure">
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-daily-mint-compare-1.png" alt="Comparison of daily minimum temperature between AGDC and other sources" width="100%" height="600" />
+<p class="caption">
+Figure 3: Comparison of daily minimum temperature between AGDC and other sources
 </p>
 
 </div>
@@ -68,16 +77,25 @@ I calculated the yearly average maximum temperature and then anomaly of average 
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/maxt-abnormal-year-1.png" alt="Anomaly of average maximum temperature (C)" width="100%" height="600" />
 <p class="caption">
-Figure 3: Anomaly of average maximum temperature (C)
+Figure 4: Anomaly of average maximum temperature (C)
 </p>
 
 </div>
 
 <div class="figure">
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/fig-yearly-maxt-compare-1.png" alt="Comparison of yearly average maximum temperature between AGDC and other sources" width="100%" height="200" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-yearly-maxt-compare-1.png" alt="Comparison of yearly average maximum temperature between AGDC and other sources" width="100%" height="600" />
 <p class="caption">
-Figure 4: Comparison of yearly average maximum temperature between AGDC and other sources
+Figure 5: Comparison of yearly average maximum temperature between AGDC and other sources
+</p>
+
+</div>
+
+<div class="figure">
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-daily-maxt-compare-1.png" alt="Comparison of daily maximum temperature between AGDC and other sources" width="100%" height="600" />
+<p class="caption">
+Figure 6: Comparison of daily maximum temperature between AGDC and other sources
 </p>
 
 </div>

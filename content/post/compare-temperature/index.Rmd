@@ -9,7 +9,6 @@ tags:
   - climate
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, 
                       warning = FALSE,
@@ -34,7 +33,7 @@ The weather records are sourced for 79 sites from
 * [Australian Gridded Climate Data](http://www.bom.gov.au/climate/austmaps/about-agcd-maps.shtml) from BOM with label `agcd`
 * [NASA POWER](https://power.larc.nasa.gov/) with label `power`
 
-The daily radiations (MJ/m^2) are downloaded from 1990-01-01 to 2022-12-31.
+The daily temperature (oC) are downloaded from 1990-01-01 to 2022-12-31.
 
 ## Sites
 
@@ -83,7 +82,7 @@ yearly_records %>%
 ```
 
 
-```{r fig-yearly-mint-compare, out.height=200, fig.cap="Comparison of yearly average minimum temperature between AGDC and other sources"}
+```{r fig-yearly-mint-compare, fig.height=3.5, fig.cap="Comparison of yearly average minimum temperature between AGDC and other sources"}
 
 
 yearly_records %>% 
@@ -100,6 +99,28 @@ yearly_records %>%
     xlab("Yearly average minimum temperature from AGCD (C)") +
     ylab("Yearly average minimum temperature from other sources (C)")
 
+```
+
+
+
+```{r fig-daily-mint-compare, fig.height=7.5, fig.cap="Comparison of daily minimum temperature between AGDC and other sources"}
+records2 <- records %>% 
+    filter(mint > -100) %>% 
+    filter(year > 2018)
+
+records2 %>% 
+    filter(Source == "agcd") %>% 
+    select(Number,year, date, base = mint) %>% 
+    right_join(records2 %>% 
+                   filter(Source != "agcd") %>% 
+                   select(Number, Source, year, date, mint)) %>% 
+    ggplot() +
+    geom_point(aes(base, mint), shape = ".") +
+    facet_grid(year~Source) +
+    theme_bw() +
+    geom_abline() +
+    xlab("Daily minimum temperature from AGCD (C)") +
+    ylab("Daily minimum temperature from other sources (C)")
 ```
 
 
@@ -131,7 +152,7 @@ yearly_records %>%
 ```
 
 
-```{r fig-yearly-maxt-compare, out.height=200, fig.cap="Comparison of yearly average maximum temperature between AGDC and other sources"}
+```{r fig-yearly-maxt-compare, fig.height=3.5, fig.cap="Comparison of yearly average maximum temperature between AGDC and other sources"}
 
 
 yearly_records %>% 
@@ -148,6 +169,25 @@ yearly_records %>%
     xlab("Yearly average maximum temperature from AGCD (C)") +
     ylab("Yearly average maximum temperature from other sources (C)")
 
+```
+
+
+
+```{r fig-daily-maxt-compare, fig.height=7.5, fig.cap="Comparison of daily maximum temperature between AGDC and other sources"}
+
+records2 %>% 
+    filter(Source == "agcd") %>% 
+    select(Number,year, date, base = maxt) %>% 
+    right_join(records2 %>% 
+                   filter(Source != "agcd") %>% 
+                   select(Number, Source, year, date, maxt)) %>% 
+    ggplot() +
+    geom_point(aes(base, maxt), shape = ".") +
+    facet_grid(year~Source) +
+    theme_bw() +
+    geom_abline() +
+    xlab("Daily maximum temperature from AGCD (C)") +
+    ylab("Daily maximum temperature from other sources (C)")
 ```
 
 
