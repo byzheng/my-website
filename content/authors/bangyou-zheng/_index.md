@@ -76,4 +76,5 @@ Bangyou Zheng is a research scientist of digital agriculture at the CSIRO. His r
 
 He works in Crop Adaptation and Modelling team. The team deploys skills in physiology, phenomics, data management and decision systems to deliver innovations in crop yield.
 
-Opinions are own own. Posts are not an endorsement.
+Opinions are my own. Posts are not an endorsement.
+
