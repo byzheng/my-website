@@ -80,7 +80,7 @@ sections:
       region: QLD
       street: 306 Carmody Road
     autolink: true
-    email: bangyou.zheng@csir.au
+    email: bangyou.zheng@csiro.au
     phone: +61 7 3214 2620
     title: Contact
   design:
