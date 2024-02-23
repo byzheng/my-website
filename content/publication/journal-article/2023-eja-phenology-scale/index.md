@@ -21,11 +21,11 @@ authors:
  - Michele Kohout
  
 doi: 10.1016/j.eja.2023.126824
-date: "European Journal of Agronomy"
+date: "2023-04-19"
 image_preview: ""
 math: false
 publication_types: ["2"]
-publication: "Agriculture"
+publication: "European Journal of Agronomy"
 publication_short: ""
 selected: false
 title: "Scales of development for wheat and barley specific to either single culms or a population of culms"

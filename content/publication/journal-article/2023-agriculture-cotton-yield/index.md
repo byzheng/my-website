@@ -1,7 +1,7 @@
 ---
 authors:
  - Yaqiu Zhu
- - Bangyou Zheng
+ - bangyou-zheng
  - Qiyou Luo
  - Weihua Jiao
  - Yadong Yang
