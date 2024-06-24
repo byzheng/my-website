@@ -17,8 +17,8 @@ header:
 
 |          |       |
 |----------|-------|
-|Citation  | 4766  |
-|H-Index   |   34  |
-|i10-index |   56  |
+|Citation  | 5085  |
+|H-Index   |   36  |
+|i10-index |   58  |
 
-Data from [Google Scholar](https://scholar.google.com/citations?user=MfZ-QtEAAAAJ) and updated on 23 February 2024.
+Data from [Google Scholar](https://scholar.google.com/citations?user=MfZ-QtEAAAAJ) and updated on 23 June 2024.
