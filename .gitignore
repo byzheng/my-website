@@ -8,3 +8,4 @@ servr.bat
 *.Rds
 *.csv
 *.lock
+/resources/_gen
