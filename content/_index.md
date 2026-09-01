@@ -28,13 +28,14 @@ sections:
     columns: "2"
     view: compact
   id: posts
-- block: portfolio
+- block: collection
   content:
     count: 5
-    default_button_index: 0
     filters:
       folders:
       - project
+    sort_by: Date
+    sort_ascending: false
     title: Projects
   design:
     columns: "4"
