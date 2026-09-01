@@ -43,9 +43,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/BangyouZheng
 - icon: "google-scholar"
   icon_pack: "ai"
   link: https://scholar.google.com.au/citations?user=MfZ-QtEAAAAJ&hl=en
