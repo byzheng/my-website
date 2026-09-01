@@ -6,7 +6,7 @@ math = false
 publication_types = ["2"]
 publication = "ISPRS Journal of Photogrammetry and Remote Sensing"
 publication_short = ""
-featured = true
+featured = false
 title = "Pixel size of aerial imagery constrains the applications of unmanned aerial vehicle in crop breeding"
 tags = ["wheat", "HTP", "UAV"]
 

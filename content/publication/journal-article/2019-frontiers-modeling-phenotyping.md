@@ -16,7 +16,7 @@ math: false
 publication_types: ["2"]
 publication: Frontiers in Plant Science
 publication_short: ""
-featured: true
+featured: false
 
 tags: 
  - apsim
