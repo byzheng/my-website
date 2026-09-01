@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo | Bangyou Zheng</title><link>https://www.bangyou.me/tag/hugo/</link><atom:link href="https://www.bangyou.me/tag/hugo/index.xml" rel="self" type="application/rss+xml"/><description>hugo</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 26 Aug 2020 00:00:00 +0000</lastBuildDate><image><url>https://www.bangyou.me/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>hugo</title><link>https://www.bangyou.me/tag/hugo/</link></image><item><title>Interactive correlation plot</title><link>https://www.bangyou.me/post/interactive-cor/</link><pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/interactive-cor/</guid><description>
-&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/header-attrs/header-attrs.js">&lt;/script>
-&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/htmlwidgets/htmlwidgets.js">&lt;/script>
-&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/d3/d3.min.js">&lt;/script>
-&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/d3-lasso/d3-lasso.min.js">&lt;/script>
-&lt;link href="https://www.bangyou.me/post/interactive-cor/index_files/ggiraphjs/ggiraphjs.min.css" rel="stylesheet" />
-&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/ggiraphjs/ggiraphjs.min.js">&lt;/script>
-&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/girafe-binding/girafe.js">&lt;/script>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo | Bangyou Zheng</title><link>https://byzheng.github.io/my-website/tag/hugo/</link><atom:link href="https://byzheng.github.io/my-website/tag/hugo/index.xml" rel="self" type="application/rss+xml"/><description>hugo</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 26 Aug 2020 00:00:00 +0000</lastBuildDate><image><url>https://byzheng.github.io/my-website/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>hugo</title><link>https://byzheng.github.io/my-website/tag/hugo/</link></image><item><title>Interactive correlation plot</title><link>https://byzheng.github.io/my-website/post/interactive-cor/</link><pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/interactive-cor/</guid><description>
+&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/header-attrs/header-attrs.js">&lt;/script>
+&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/htmlwidgets/htmlwidgets.js">&lt;/script>
+&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/d3/d3.min.js">&lt;/script>
+&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/d3-lasso/d3-lasso.min.js">&lt;/script>
+&lt;link href="https://byzheng.github.io/my-website/post/interactive-cor/index_files/ggiraphjs/ggiraphjs.min.css" rel="stylesheet" />
+&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/ggiraphjs/ggiraphjs.min.js">&lt;/script>
+&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/girafe-binding/girafe.js">&lt;/script>
 &lt;p>Correlation figure is very useful to show correlation for all variables in a data frame. There are several ways to draw a correlation plot in R. This post is to show how to create correlation plots and interactive plot in Rmarkdown.&lt;/p>
 &lt;p>Load all required libraries.&lt;/p>
 &lt;pre class="r">&lt;code>library(ggplot2)
@@ -16,14 +16,14 @@ library(tidyverse)&lt;/code>&lt;/pre>
 &lt;h2>Basic plot function&lt;/h2>
 &lt;p>The &lt;code>plot&lt;/code> function in basic R can be used to plot correlation in a data frame (e.g. the dataset &lt;code>longley&lt;/code>). However this method is not suitable to view a table with lots of columns.&lt;/p>
 &lt;pre class="r">&lt;code>plot(longley)&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://www.bangyou.me/post/interactive-cor/index_files/figure-html/basic-plot-1.png" width="672" />&lt;/p>
+&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/figure-html/basic-plot-1.png" width="672" />&lt;/p>
 &lt;/div>
 &lt;div id="corrplot-package" class="section level2">
 &lt;h2>corrplot package&lt;/h2>
 &lt;p>&lt;code>corrplot&lt;/code> package can be used to draw a static correlation figure for a data frame. However, the scatter plots are not plotted for each pair of variables and it is hard to understand the real correlation.&lt;/p>
 &lt;pre class="r">&lt;code>cor(longley) %&amp;gt;%
 corrplot()&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://www.bangyou.me/post/interactive-cor/index_files/figure-html/corrplot-static-1.png" width="672" />&lt;/p>
+&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/figure-html/corrplot-static-1.png" width="672" />&lt;/p>
 &lt;/div>
 &lt;div id="interactive-figure-using-ggiraph" class="section level2">
 &lt;h2>Interactive figure using ggiraph&lt;/h2>
@@ -50,7 +50,7 @@ guides(fill = FALSE) +
 # guides(fill = guide_colorbar(title = NULL, barwidth = unit(0.6, &amp;quot;npc&amp;quot;))) +
 xlab(&amp;quot;&amp;quot;) + ylab(&amp;quot;&amp;quot;)
 p1&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://www.bangyou.me/post/interactive-cor/index_files/figure-html/corrplot-data-1.png" width="100%" />&lt;/p>
+&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/figure-html/corrplot-data-1.png" width="100%" />&lt;/p>
 &lt;p>In the next step, the interactive figure is created through adding new columns &lt;code>data_id&lt;/code> and &lt;code>tooltip&lt;/code>.&lt;/p>
 &lt;pre class="r">&lt;code>pd2 &amp;lt;- pd %&amp;gt;%
 mutate(data_id = paste0(Var1, &amp;#39;-&amp;#39;, Var2),
