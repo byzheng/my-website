@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>raster | Bangyou Zheng</title><link>https://byzheng.github.io/my-website/tag/raster/</link><atom:link href="https://byzheng.github.io/my-website/tag/raster/index.xml" rel="self" type="application/rss+xml"/><description>raster</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 17 Sep 2017 00:00:00 +0000</lastBuildDate><image><url>https://byzheng.github.io/my-website/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>raster</title><link>https://byzheng.github.io/my-website/tag/raster/</link></image><item><title>A faster way to trim a raster file</title><link>https://byzheng.github.io/my-website/post/trim-raster/</link><pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/trim-raster/</guid><description>
-&lt;script src="https://byzheng.github.io/my-website/post/trim-raster/index_files/header-attrs/header-attrs.js">&lt;/script>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>raster | Bangyou Zheng</title><link>https://www.bangyou.me/tag/raster/</link><atom:link href="https://www.bangyou.me/tag/raster/index.xml" rel="self" type="application/rss+xml"/><description>raster</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 17 Sep 2017 00:00:00 +0000</lastBuildDate><image><url>https://www.bangyou.me/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>raster</title><link>https://www.bangyou.me/tag/raster/</link></image><item><title>A faster way to trim a raster file</title><link>https://www.bangyou.me/post/trim-raster/</link><pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/trim-raster/</guid><description>
+&lt;script src="https://www.bangyou.me/post/trim-raster/index_files/header-attrs/header-attrs.js">&lt;/script>
 &lt;p>In the plot segmentation of image-based HTP platforms (e.g. UAV, ground-vehicle), we always need to trim a plot to remove the edge effect, then extracts the pixel values we are interesting. The operation is similar with &lt;code>cutline&lt;/code> in &lt;code>gdalwarp&lt;/code> command.&lt;/p>
 &lt;p>In R, &lt;code>raster&lt;/code> package provides a function &lt;code>cellFromPolygon&lt;/code> to extract cull numbers from a polygon. However, &lt;code>cellFromPolygon&lt;/code> is slightly slow, especially for a larger file.&lt;/p>
 &lt;p>For example, the wheat plot from a 20M pixel Sony camera is about 3.4 MB. I want to trim this plot by 20% in each side.&lt;/p>
@@ -18,7 +18,7 @@ plot &amp;lt;- brick(&amp;#39;wheat-plot.tif&amp;#39;)
 # Plot the raster and polygon
 plotRGB(plot)
 lines(ply$long, ply$lat, col = &amp;#39;red&amp;#39;, lwd = 3)&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/trim-raster/index_files/figure-html/read-data-1.png" width="672" />&lt;/p>
+&lt;p>&lt;img src="https://www.bangyou.me/post/trim-raster/index_files/figure-html/read-data-1.png" width="672" />&lt;/p>
 &lt;p>The first method is to use &lt;code>cellFromPolygon&lt;/code> to extrct the cell index.&lt;/p>
 &lt;pre class="r">&lt;code>library(sp)
 # Create spatial polygon
@@ -71,4 +71,4 @@ data = pd[cell_idx2,]) +
 coord_equal() +
 theme_bw() +
 xlab(&amp;#39;&amp;#39;) + ylab(&amp;#39;&amp;#39;)&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/trim-raster/index_files/figure-html/comparison-metho-1.png" width="384" />&lt;/p></description></item></channel></rss>
+&lt;p>&lt;img src="https://www.bangyou.me/post/trim-raster/index_files/figure-html/comparison-metho-1.png" width="384" />&lt;/p></description></item></channel></rss>

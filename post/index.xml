@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | Bangyou Zheng</title><link>https://byzheng.github.io/my-website/post/</link><atom:link href="https://byzheng.github.io/my-website/post/index.xml" rel="self" type="application/rss+xml"/><description>Posts</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><image><url>https://byzheng.github.io/my-website/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>Posts</title><link>https://byzheng.github.io/my-website/post/</link></image><item><title>Compile APSIMNG from source codes</title><link>https://byzheng.github.io/my-website/post/compile-apsimng/</link><pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/compile-apsimng/</guid><description>&lt;h2 id="checkout-the-latest-source-codes-from-apsiminitiative">Checkout the latest source codes from APSIMInitiative&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | Bangyou Zheng</title><link>https://www.bangyou.me/post/</link><atom:link href="https://www.bangyou.me/post/index.xml" rel="self" type="application/rss+xml"/><description>Posts</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><image><url>https://www.bangyou.me/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>Posts</title><link>https://www.bangyou.me/post/</link></image><item><title>Compile APSIMNG from source codes</title><link>https://www.bangyou.me/post/compile-apsimng/</link><pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/compile-apsimng/</guid><description>&lt;h2 id="checkout-the-latest-source-codes-from-apsiminitiative">Checkout the latest source codes from APSIMInitiative&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git clone --depth 1 https://github.com/APSIMInitiative/ApsimX.git
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="compile-apsimng-gui">Compile APSIMNG GUI&lt;/h2>
 &lt;p>Open &lt;code>ApsimX.sln&lt;/code> under folder &lt;code>ApsimX&lt;/code> with Visual Studio (2019 above), and then use menu &lt;code>Build&lt;/code> -&amp;gt; &lt;code>Build Solution&lt;/code> to build whole projects.&lt;/p>
@@ -19,7 +19,7 @@
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install sqlite3
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>for CSIRO cluster&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-v" data-lang="v">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">module&lt;/span> &lt;span class="nv">load&lt;/span> &lt;span class="nv">sqlite&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mf">3.35.5&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Combine project management and data analysis using Tiddlywiki and RMarkdown</title><link>https://byzheng.github.io/my-website/post/tiddlywiki-rmarkdown/</link><pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/tiddlywiki-rmarkdown/</guid><description>&lt;p>I have been looking for a simple and flexible tool to manage projects, take notes, and track results of data analysis with R, e.g. EverNote, OneNote, Trac, JIRA, github, RMarkdown, bookdown, etc. Recently, &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> and &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">Projectify&lt;/a> pops up from random goggling. &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> is a non-linear notebook for storing information. I found it is very useful and simple to manage my research projects and take notes of data analysis as a data scientist and digital agronomist.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Combine project management and data analysis using Tiddlywiki and RMarkdown</title><link>https://www.bangyou.me/post/tiddlywiki-rmarkdown/</link><pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/tiddlywiki-rmarkdown/</guid><description>&lt;p>I have been looking for a simple and flexible tool to manage projects, take notes, and track results of data analysis with R, e.g. EverNote, OneNote, Trac, JIRA, github, RMarkdown, bookdown, etc. Recently, &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> and &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">Projectify&lt;/a> pops up from random goggling. &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> is a non-linear notebook for storing information. I found it is very useful and simple to manage my research projects and take notes of data analysis as a data scientist and digital agronomist.&lt;/p>
 &lt;h2 id="project-management">Project management&lt;/h2>
 &lt;p>I always work on multiple projects at the same time. Beyond the project management by project members, I prefer to keep a personal project management to track, hold and restore my activities related with a specific project. &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">Projectify&lt;/a> is a preconfigured Tiddlywiki for project management to capture thoughts, plan projects, and schedule tasks. Projectify manages projects through &lt;a href="https://tiddlywiki.com/static/Tagging.html" target="_blank" rel="noopener">tags&lt;/a> in Tiddlywiki.
 Adding tags into the new tiddler can easily associate it into &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">one or multiple projects &lt;/a>.&lt;/p>
@@ -120,7 +120,7 @@ Adding tags into the new tiddler can easily associate it into &lt;a href="https:
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">&amp;#34;field1&amp;#34;: &lt;/span>&lt;span class="s2">&amp;#34;V1&amp;#34;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">&amp;#34;field 2&amp;#34;: &lt;/span>&lt;span class="s2">&amp;#34;Value 2&amp;#34;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This method allows me to save Rmarkdown output in the centralized places (i.e. Tiddlywki)
-and share with my colleagues.&lt;/p></description></item><item><title>Using Refnotes and Zotero in Tiddlywiki</title><link>https://byzheng.github.io/my-website/post/refnotes-zotero/</link><pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/refnotes-zotero/</guid><description>&lt;p>&lt;a href="https://www.zotero.org/" target="_blank" rel="noopener">Zotero&lt;/a> is a free and open-source reference management software to manage bibliographic data and related research materials. &lt;a href="https://retorque.re/zotero-better-bibtex/" target="_blank" rel="noopener">Better BibTeX (BBT)&lt;/a> is an extension for Zotero and Juris-M that makes it easier to manage bibliographic data. &lt;a href="https://kookma.github.io/TW-Refnotes/" target="_blank" rel="noopener">Refnotes&lt;/a> is a &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> plugin to create and manage footnotes, abbreviations, citations, and references.&lt;/p>
+and share with my colleagues.&lt;/p></description></item><item><title>Using Refnotes and Zotero in Tiddlywiki</title><link>https://www.bangyou.me/post/refnotes-zotero/</link><pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/refnotes-zotero/</guid><description>&lt;p>&lt;a href="https://www.zotero.org/" target="_blank" rel="noopener">Zotero&lt;/a> is a free and open-source reference management software to manage bibliographic data and related research materials. &lt;a href="https://retorque.re/zotero-better-bibtex/" target="_blank" rel="noopener">Better BibTeX (BBT)&lt;/a> is an extension for Zotero and Juris-M that makes it easier to manage bibliographic data. &lt;a href="https://kookma.github.io/TW-Refnotes/" target="_blank" rel="noopener">Refnotes&lt;/a> is a &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> plugin to create and manage footnotes, abbreviations, citations, and references.&lt;/p>
 &lt;p>Tiddlywiki and Refnotes use &lt;code>bibtex&lt;/code> to mange references. A few setting of Zotero and BBT should be changed to export correct format for Refnotes.&lt;/p>
 &lt;h2 id="config-zotero-and-bbt">Config Zotero and BBT&lt;/h2>
 &lt;p>The export format &lt;code>better BibTex&lt;/code> escapes specially character in the authors in default, &lt;code>better BibLaTex&lt;/code> doesn&amp;rsquo;t escape in default. So I suggest to use &lt;code>Better BibLaTex&lt;/code> as export format. The &lt;code>Quick Copy&lt;/code> can be set to &lt;code>Better BibLaTex&lt;/code> format, then use shortcut &lt;code>Ctrl + Shift + C&lt;/code> to quick copy BibTex into clipboard, then paste into Tiddlywiki.&lt;/p>
@@ -128,10 +128,10 @@ and share with my colleagues.&lt;/p></description></item><item><title>Using Refn
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp 400w,
-/my-website/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_922fd03d17dde3dbda983e5958105b06.webp 760w,
-/my-website/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp"
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp 400w,
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_922fd03d17dde3dbda983e5958105b06.webp 760w,
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp"
 width="755"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -142,10 +142,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp 400w,
-/my-website/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_19956f057a776ed9e20961bfc6997c0a.webp 760w,
-/my-website/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp"
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp 400w,
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_19956f057a776ed9e20961bfc6997c0a.webp 760w,
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp"
 width="760"
 height="711"
 loading="lazy" data-zoomable />&lt;/div>
@@ -169,10 +169,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp 400w,
-/my-website/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1d71457c1143c26a66afd66cf0066d84.webp 760w,
-/my-website/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp"
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp 400w,
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1d71457c1143c26a66afd66cf0066d84.webp 760w,
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp"
 width="760"
 height="711"
 loading="lazy" data-zoomable />&lt;/div>
@@ -183,10 +183,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp 400w,
-/my-website/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_4deb2f782319b7d2684b3936ab6bdebc.webp 760w,
-/my-website/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp"
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp 400w,
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_4deb2f782319b7d2684b3936ab6bdebc.webp 760w,
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp"
 width="755"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -197,10 +197,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp 400w,
-/my-website/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_efe82480007f28e1b2ef23cf7abb9f83.webp 760w,
-/my-website/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp"
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp 400w,
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_efe82480007f28e1b2ef23cf7abb9f83.webp 760w,
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp"
 width="760"
 height="711"
 loading="lazy" data-zoomable />&lt;/div>
@@ -222,10 +222,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp 400w,
-/my-website/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1e634de4c62b2f32c7f802de584fc958.webp 760w,
-/my-website/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp"
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp 400w,
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1e634de4c62b2f32c7f802de584fc958.webp 760w,
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp"
 width="760"
 height="435"
 loading="lazy" data-zoomable />&lt;/div>
@@ -233,8 +233,8 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;/p>
 &lt;ul>
 &lt;li>A message &lt;code>A tiddler with this title already exists&lt;/code> indicates the reference has been imported before. You can cancel it or reimport to overwrite if meta data has been changed.&lt;/li>
-&lt;/ul></description></item><item><title>Optimization of APSIM NG using factorial simulations</title><link>https://byzheng.github.io/my-website/post/optimization-apsimng/</link><pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/optimization-apsimng/</guid><description>
-&lt;script src="https://byzheng.github.io/my-website/post/optimization-apsimng/index_files/header-attrs/header-attrs.js">&lt;/script>
+&lt;/ul></description></item><item><title>Optimization of APSIM NG using factorial simulations</title><link>https://www.bangyou.me/post/optimization-apsimng/</link><pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/optimization-apsimng/</guid><description>
+&lt;script src="https://www.bangyou.me/post/optimization-apsimng/index_files/header-attrs/header-attrs.js">&lt;/script>
 &lt;div id="TOC">
 &lt;ul>
 &lt;li>&lt;a href="#split-apsimx-into-individual-simulations">Split apsimx into individual simulations&lt;/a>&lt;/li>
@@ -1038,8 +1038,8 @@ genotypes = genotypes, obs = obs, out_folder = out_folder)
 &lt;pre class="r">&lt;code>df &amp;lt;- &amp;quot;Optimization/&amp;quot; %&amp;gt;%
 list.files(full.names = TRUE) %&amp;gt;%
 map_df(readRDS)&lt;/code>&lt;/pre>
-&lt;/div></description></item><item><title>Capture message, warnings and errors from a R function</title><link>https://byzheng.github.io/my-website/post/capture-logs/</link><pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/capture-logs/</guid><description>
-&lt;script src="https://byzheng.github.io/my-website/post/capture-logs/index_files/header-attrs/header-attrs.js">&lt;/script>
+&lt;/div></description></item><item><title>Capture message, warnings and errors from a R function</title><link>https://www.bangyou.me/post/capture-logs/</link><pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/capture-logs/</guid><description>
+&lt;script src="https://www.bangyou.me/post/capture-logs/index_files/header-attrs/header-attrs.js">&lt;/script>
 &lt;p>During development the web platform &lt;a href="https://phenocopter.bangyou.me">PhenoCopter&lt;/a> to process images captured by UAV, I need to capture all logs (i.e. message, warning and error) of R scripts for data processing, and then store into the database which are rendered by web interface and allows user to view all logs in real time.&lt;/p>
 &lt;div id="define-functions-for-testing" class="section level2">
 &lt;h2>Define functions for testing&lt;/h2>
@@ -1213,14 +1213,14 @@ message(&amp;#39;GtBRVWpNGunZRJAt:This is a final message&amp;#39;)
 capture_log2(test_warning, 1, post = TRUE)(1)
 capture_log2(test_error, 1, post = TRUE)(1)
 capture_log2(test_final_message, 1, post = TRUE)(1)&lt;/code>&lt;/pre>
-&lt;/div></description></item><item><title>JS updates position of TOC for Rmarkdown file in blogdown</title><link>https://byzheng.github.io/my-website/post/blogdown-toc/</link><pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/blogdown-toc/</guid><description>&lt;p>The TOC is rendered underneath when using &lt;a href="https://cran.r-project.org/web/packages/blogdown/index.html" target="_blank" rel="noopener">blogdown 0.20&lt;/a> to write Rmarkdown file.&lt;/p>
+&lt;/div></description></item><item><title>JS updates position of TOC for Rmarkdown file in blogdown</title><link>https://www.bangyou.me/post/blogdown-toc/</link><pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/blogdown-toc/</guid><description>&lt;p>The TOC is rendered underneath when using &lt;a href="https://cran.r-project.org/web/packages/blogdown/index.html" target="_blank" rel="noopener">blogdown 0.20&lt;/a> to write Rmarkdown file.&lt;/p>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/blogdown-toc/blogdown-toc_hua216ac7b64afdad5690ead684f29ea0b_10494_7eb8d70f3b2497033656eceba5d0373e.webp 400w,
-/my-website/post/blogdown-toc/blogdown-toc_hua216ac7b64afdad5690ead684f29ea0b_10494_b693b610a58e10c42a624a54f6090232.webp 760w,
-/my-website/post/blogdown-toc/blogdown-toc_hua216ac7b64afdad5690ead684f29ea0b_10494_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/blogdown-toc/blogdown-toc_hua216ac7b64afdad5690ead684f29ea0b_10494_7eb8d70f3b2497033656eceba5d0373e.webp"
+/post/blogdown-toc/blogdown-toc_hua216ac7b64afdad5690ead684f29ea0b_10494_7eb8d70f3b2497033656eceba5d0373e.webp 400w,
+/post/blogdown-toc/blogdown-toc_hua216ac7b64afdad5690ead684f29ea0b_10494_b693b610a58e10c42a624a54f6090232.webp 760w,
+/post/blogdown-toc/blogdown-toc_hua216ac7b64afdad5690ead684f29ea0b_10494_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/blogdown-toc/blogdown-toc_hua216ac7b64afdad5690ead684f29ea0b_10494_7eb8d70f3b2497033656eceba5d0373e.webp"
 width="50%"
 height="583"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1229,10 +1229,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/blogdown-toc/hugo-toc_hue4bb7d9d05298defed048b01c54365c3_12051_3aebce4fa08029e9cfc914c6a5970699.webp 400w,
-/my-website/post/blogdown-toc/hugo-toc_hue4bb7d9d05298defed048b01c54365c3_12051_4320df4a256f5d5419decf11f54aea07.webp 760w,
-/my-website/post/blogdown-toc/hugo-toc_hue4bb7d9d05298defed048b01c54365c3_12051_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/blogdown-toc/hugo-toc_hue4bb7d9d05298defed048b01c54365c3_12051_3aebce4fa08029e9cfc914c6a5970699.webp"
+/post/blogdown-toc/hugo-toc_hue4bb7d9d05298defed048b01c54365c3_12051_3aebce4fa08029e9cfc914c6a5970699.webp 400w,
+/post/blogdown-toc/hugo-toc_hue4bb7d9d05298defed048b01c54365c3_12051_4320df4a256f5d5419decf11f54aea07.webp 760w,
+/post/blogdown-toc/hugo-toc_hue4bb7d9d05298defed048b01c54365c3_12051_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/blogdown-toc/hugo-toc_hue4bb7d9d05298defed048b01c54365c3_12051_3aebce4fa08029e9cfc914c6a5970699.webp"
 width="100%"
 height="218"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1262,14 +1262,14 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">$&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">sidebar&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">find&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;li.a&amp;#34;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">addClass&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;nav-link&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">toc&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">html&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Interactive correlation plot</title><link>https://byzheng.github.io/my-website/post/interactive-cor/</link><pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/interactive-cor/</guid><description>
-&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/header-attrs/header-attrs.js">&lt;/script>
-&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/htmlwidgets/htmlwidgets.js">&lt;/script>
-&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/d3/d3.min.js">&lt;/script>
-&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/d3-lasso/d3-lasso.min.js">&lt;/script>
-&lt;link href="https://byzheng.github.io/my-website/post/interactive-cor/index_files/ggiraphjs/ggiraphjs.min.css" rel="stylesheet" />
-&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/ggiraphjs/ggiraphjs.min.js">&lt;/script>
-&lt;script src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/girafe-binding/girafe.js">&lt;/script>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Interactive correlation plot</title><link>https://www.bangyou.me/post/interactive-cor/</link><pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/interactive-cor/</guid><description>
+&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/header-attrs/header-attrs.js">&lt;/script>
+&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/htmlwidgets/htmlwidgets.js">&lt;/script>
+&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/d3/d3.min.js">&lt;/script>
+&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/d3-lasso/d3-lasso.min.js">&lt;/script>
+&lt;link href="https://www.bangyou.me/post/interactive-cor/index_files/ggiraphjs/ggiraphjs.min.css" rel="stylesheet" />
+&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/ggiraphjs/ggiraphjs.min.js">&lt;/script>
+&lt;script src="https://www.bangyou.me/post/interactive-cor/index_files/girafe-binding/girafe.js">&lt;/script>
 &lt;p>Correlation figure is very useful to show correlation for all variables in a data frame. There are several ways to draw a correlation plot in R. This post is to show how to create correlation plots and interactive plot in Rmarkdown.&lt;/p>
 &lt;p>Load all required libraries.&lt;/p>
 &lt;pre class="r">&lt;code>library(ggplot2)
@@ -1280,14 +1280,14 @@ library(tidyverse)&lt;/code>&lt;/pre>
 &lt;h2>Basic plot function&lt;/h2>
 &lt;p>The &lt;code>plot&lt;/code> function in basic R can be used to plot correlation in a data frame (e.g. the dataset &lt;code>longley&lt;/code>). However this method is not suitable to view a table with lots of columns.&lt;/p>
 &lt;pre class="r">&lt;code>plot(longley)&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/figure-html/basic-plot-1.png" width="672" />&lt;/p>
+&lt;p>&lt;img src="https://www.bangyou.me/post/interactive-cor/index_files/figure-html/basic-plot-1.png" width="672" />&lt;/p>
 &lt;/div>
 &lt;div id="corrplot-package" class="section level2">
 &lt;h2>corrplot package&lt;/h2>
 &lt;p>&lt;code>corrplot&lt;/code> package can be used to draw a static correlation figure for a data frame. However, the scatter plots are not plotted for each pair of variables and it is hard to understand the real correlation.&lt;/p>
 &lt;pre class="r">&lt;code>cor(longley) %&amp;gt;%
 corrplot()&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/figure-html/corrplot-static-1.png" width="672" />&lt;/p>
+&lt;p>&lt;img src="https://www.bangyou.me/post/interactive-cor/index_files/figure-html/corrplot-static-1.png" width="672" />&lt;/p>
 &lt;/div>
 &lt;div id="interactive-figure-using-ggiraph" class="section level2">
 &lt;h2>Interactive figure using ggiraph&lt;/h2>
@@ -1314,7 +1314,7 @@ guides(fill = FALSE) +
 # guides(fill = guide_colorbar(title = NULL, barwidth = unit(0.6, &amp;quot;npc&amp;quot;))) +
 xlab(&amp;quot;&amp;quot;) + ylab(&amp;quot;&amp;quot;)
 p1&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/interactive-cor/index_files/figure-html/corrplot-data-1.png" width="100%" />&lt;/p>
+&lt;p>&lt;img src="https://www.bangyou.me/post/interactive-cor/index_files/figure-html/corrplot-data-1.png" width="100%" />&lt;/p>
 &lt;p>In the next step, the interactive figure is created through adding new columns &lt;code>data_id&lt;/code> and &lt;code>tooltip&lt;/code>.&lt;/p>
 &lt;pre class="r">&lt;code>pd2 &amp;lt;- pd %&amp;gt;%
 mutate(data_id = paste0(Var1, &amp;#39;-&amp;#39;, Var2),
@@ -1496,7 +1496,7 @@ girafe(ggobj = p3)&lt;/code>&lt;/pre>
 &lt;p>A new &lt;code>div&lt;/code> element is added at the bottom of interactive figure to show the scatter plot.&lt;/p>
 &lt;pre class="r">&lt;code>knitr::raw_html(&amp;#39;&amp;lt;div id=&amp;quot;comparison-plot&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;)&lt;/code>&lt;/pre>
 &lt;div id="comparison-plot">&lt;/div>
-&lt;/div></description></item><item><title>Archive the big folder</title><link>https://byzheng.github.io/my-website/post/archive-big-folder/</link><pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/archive-big-folder/</guid><description>&lt;p>In the &lt;a href="https://phenocopter.bangyou.me" target="_blank" rel="noopener">PhenoCopter&lt;/a> platform, I have to deal with the limited space in the storage of our data center. The practical solution is to archive old flights into tape and current flights in the active storage.&lt;/p>
+&lt;/div></description></item><item><title>Archive the big folder</title><link>https://www.bangyou.me/post/archive-big-folder/</link><pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/archive-big-folder/</guid><description>&lt;p>In the &lt;a href="https://phenocopter.bangyou.me" target="_blank" rel="noopener">PhenoCopter&lt;/a> platform, I have to deal with the limited space in the storage of our data center. The practical solution is to archive old flights into tape and current flights in the active storage.&lt;/p>
 &lt;p>The challenge for UAV data is mixed by smaller and bigger files (mainly images). The test flight has 37, 010 files with 43.6 GB on disk and 12.8 GB file size in total.&lt;/p>
 &lt;h2 id="create-archive-file">Create archive file&lt;/h2>
 &lt;p>I tested the &lt;code>tar&lt;/code> and &lt;code>zip&lt;/code> format to archive all files into a single file which is eacy to transfer between storage.&lt;/p>
@@ -1511,10 +1511,10 @@ girafe(ggobj = p3)&lt;/code>&lt;/pre>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cd yourdirectory
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">perl -e &amp;#39;for(&amp;lt;*&amp;gt;){((stat)[9]&amp;lt;(unlink))}&amp;#39;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Common Errors in APSIM Next Generation</title><link>https://byzheng.github.io/my-website/post/apsim-common-errors/</link><pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/apsim-common-errors/</guid><description>&lt;p>This page collects the common errors and possible solutions for &lt;a href="https://apsim.info" target="_blank" rel="noopener">APSIM Next Generation&lt;/a>.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Common Errors in APSIM Next Generation</title><link>https://www.bangyou.me/post/apsim-common-errors/</link><pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/apsim-common-errors/</guid><description>&lt;p>This page collects the common errors and possible solutions for &lt;a href="https://apsim.info" target="_blank" rel="noopener">APSIM Next Generation&lt;/a>.&lt;/p>
 &lt;h2 id="weather-file">Weather file&lt;/h2>
 &lt;p>&lt;strong>Input string was not in a correct format.&lt;/strong>&lt;/p>
-&lt;p>Latitude or longitude are missing or not numeric values in the weather file.&lt;/p></description></item><item><title>Build and deploy website for R package</title><link>https://byzheng.github.io/my-website/post/package-website/</link><pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/package-website/</guid><description>&lt;p>After development a R package and push into github, I want to build a reference website, and automatically deploy it with my sub-domain.&lt;/p>
+&lt;p>Latitude or longitude are missing or not numeric values in the weather file.&lt;/p></description></item><item><title>Build and deploy website for R package</title><link>https://www.bangyou.me/post/package-website/</link><pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/package-website/</guid><description>&lt;p>After development a R package and push into github, I want to build a reference website, and automatically deploy it with my sub-domain.&lt;/p>
 &lt;h2 id="setup-pkgdown">Setup pkgdown&lt;/h2>
 &lt;p>&lt;a href="https://pkgdown.r-lib.org" target="_blank" rel="noopener">pkgdown&lt;/a> is an very powerful tool to make it quick and easy to build a website for R package.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-r" data-lang="r">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Run once to configure your package to use pkgdown&lt;/span>
@@ -1531,8 +1531,8 @@ girafe(ggobj = p3)&lt;/code>&lt;/pre>
 &lt;li>Create a file &lt;code>CNAME&lt;/code> (all upper case) under folder &lt;code>.github&lt;/code>.&lt;/li>
 &lt;li>Push the new change into github.&lt;/li>
 &lt;li>Setup the custom domain under the &lt;code>setting&lt;/code> of the repository. Wait a few minutes to allow github deploy and apply new settings.&lt;/li>
-&lt;/ul></description></item><item><title>Calculation of thermal time</title><link>https://byzheng.github.io/my-website/post/calculation-thermal-time/</link><pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/calculation-thermal-time/</guid><description>
-&lt;script src="https://byzheng.github.io/my-website/post/calculation-thermal-time/index_files/header-attrs/header-attrs.js">&lt;/script>
+&lt;/ul></description></item><item><title>Calculation of thermal time</title><link>https://www.bangyou.me/post/calculation-thermal-time/</link><pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/calculation-thermal-time/</guid><description>
+&lt;script src="https://www.bangyou.me/post/calculation-thermal-time/index_files/header-attrs/header-attrs.js">&lt;/script>
 &lt;p>The thermal time is important to quantify the crop growth for a specific period (e.g. from sowing to flowering). However, the codes might be complicated if there are multiple records in an experiment.&lt;/p>
 &lt;p>Here I showed how to use &lt;code>left_join&lt;/code> function to easily calculate thermal time for the whole records in one data frame.&lt;/p>
 &lt;pre class="r">&lt;code>suppressPackageStartupMessages(library(weaana))
@@ -1574,7 +1574,7 @@ geom_histogram(aes(tt)) +
 theme_bw() +
 xlab(&amp;quot;Thermal time (Cd)&amp;quot;)&lt;/code>&lt;/pre>
 &lt;pre>&lt;code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/calculation-thermal-time/index_files/figure-html/plot-fig-1.png" width="384" />&lt;/p></description></item><item><title>Climate Data</title><link>https://byzheng.github.io/my-website/post/climate-data/</link><pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/climate-data/</guid><description>&lt;p>In recent years, plot specific crop models have been adapted to national and regional scales to
+&lt;p>&lt;img src="https://www.bangyou.me/post/calculation-thermal-time/index_files/figure-html/plot-fig-1.png" width="384" />&lt;/p></description></item><item><title>Climate Data</title><link>https://www.bangyou.me/post/climate-data/</link><pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/climate-data/</guid><description>&lt;p>In recent years, plot specific crop models have been adapted to national and regional scales to
 aid policy makers with agricultural decisions concerning climate change and the resulting effects on food security and future water demands. Inputs for the crop modeling process can be separated into three major categories: climatic, soil, and management parameters.&lt;/p>
 &lt;h2 id="temperature">Temperature&lt;/h2>
 &lt;p>Historical climate data that is geospatially explicit is a necessity for any crop modeling process,
@@ -1657,8 +1657,8 @@ ISRIC’s global WISE soil profile database. The dataset contains information on
 &lt;h3 id="worldwide-cropland-maps">Worldwide cropland maps&lt;/h3>
 &lt;p>A new 1 km global IIASA-IFPRI cropland percentage map for the baseline year 2005 has been developed which integrates a number of individual cropland maps at global to regional to national scales. These products are freely available for downloading from the &lt;a href="http://cropland.geo-wiki.org" target="_blank" rel="noopener">http://cropland.geo-wiki.org&lt;/a> website [[ZotCite(GXAI845A(Fritzetal.2015))]].&lt;/p>
 &lt;h3 id="gadm">gadm&lt;/h3>
-&lt;p>GADM (&lt;a href="http://www.gadm.org/" target="_blank" rel="noopener">http://www.gadm.org/&lt;/a>) provides the country based shape file.&lt;/p></description></item><item><title>A faster way to trim a raster file</title><link>https://byzheng.github.io/my-website/post/trim-raster/</link><pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/trim-raster/</guid><description>
-&lt;script src="https://byzheng.github.io/my-website/post/trim-raster/index_files/header-attrs/header-attrs.js">&lt;/script>
+&lt;p>GADM (&lt;a href="http://www.gadm.org/" target="_blank" rel="noopener">http://www.gadm.org/&lt;/a>) provides the country based shape file.&lt;/p></description></item><item><title>A faster way to trim a raster file</title><link>https://www.bangyou.me/post/trim-raster/</link><pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/trim-raster/</guid><description>
+&lt;script src="https://www.bangyou.me/post/trim-raster/index_files/header-attrs/header-attrs.js">&lt;/script>
 &lt;p>In the plot segmentation of image-based HTP platforms (e.g. UAV, ground-vehicle), we always need to trim a plot to remove the edge effect, then extracts the pixel values we are interesting. The operation is similar with &lt;code>cutline&lt;/code> in &lt;code>gdalwarp&lt;/code> command.&lt;/p>
 &lt;p>In R, &lt;code>raster&lt;/code> package provides a function &lt;code>cellFromPolygon&lt;/code> to extract cull numbers from a polygon. However, &lt;code>cellFromPolygon&lt;/code> is slightly slow, especially for a larger file.&lt;/p>
 &lt;p>For example, the wheat plot from a 20M pixel Sony camera is about 3.4 MB. I want to trim this plot by 20% in each side.&lt;/p>
@@ -1677,7 +1677,7 @@ plot &amp;lt;- brick(&amp;#39;wheat-plot.tif&amp;#39;)
 # Plot the raster and polygon
 plotRGB(plot)
 lines(ply$long, ply$lat, col = &amp;#39;red&amp;#39;, lwd = 3)&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/trim-raster/index_files/figure-html/read-data-1.png" width="672" />&lt;/p>
+&lt;p>&lt;img src="https://www.bangyou.me/post/trim-raster/index_files/figure-html/read-data-1.png" width="672" />&lt;/p>
 &lt;p>The first method is to use &lt;code>cellFromPolygon&lt;/code> to extrct the cell index.&lt;/p>
 &lt;pre class="r">&lt;code>library(sp)
 # Create spatial polygon
@@ -1730,4 +1730,4 @@ data = pd[cell_idx2,]) +
 coord_equal() +
 theme_bw() +
 xlab(&amp;#39;&amp;#39;) + ylab(&amp;#39;&amp;#39;)&lt;/code>&lt;/pre>
-&lt;p>&lt;img src="https://byzheng.github.io/my-website/post/trim-raster/index_files/figure-html/comparison-metho-1.png" width="384" />&lt;/p></description></item></channel></rss>
+&lt;p>&lt;img src="https://www.bangyou.me/post/trim-raster/index_files/figure-html/comparison-metho-1.png" width="384" />&lt;/p></description></item></channel></rss>

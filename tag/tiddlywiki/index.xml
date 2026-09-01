@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tiddlywiki | Bangyou Zheng</title><link>https://byzheng.github.io/my-website/tag/tiddlywiki/</link><atom:link href="https://byzheng.github.io/my-website/tag/tiddlywiki/index.xml" rel="self" type="application/rss+xml"/><description>tiddlywiki</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><image><url>https://byzheng.github.io/my-website/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>tiddlywiki</title><link>https://byzheng.github.io/my-website/tag/tiddlywiki/</link></image><item><title>rtiddlywiki</title><link>https://byzheng.github.io/my-website/software/rtiddlywiki/</link><pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/software/rtiddlywiki/</guid><description/></item><item><title>Combine project management and data analysis using Tiddlywiki and RMarkdown</title><link>https://byzheng.github.io/my-website/post/tiddlywiki-rmarkdown/</link><pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/tiddlywiki-rmarkdown/</guid><description>&lt;p>I have been looking for a simple and flexible tool to manage projects, take notes, and track results of data analysis with R, e.g. EverNote, OneNote, Trac, JIRA, github, RMarkdown, bookdown, etc. Recently, &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> and &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">Projectify&lt;/a> pops up from random goggling. &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> is a non-linear notebook for storing information. I found it is very useful and simple to manage my research projects and take notes of data analysis as a data scientist and digital agronomist.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tiddlywiki | Bangyou Zheng</title><link>https://www.bangyou.me/tag/tiddlywiki/</link><atom:link href="https://www.bangyou.me/tag/tiddlywiki/index.xml" rel="self" type="application/rss+xml"/><description>tiddlywiki</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><image><url>https://www.bangyou.me/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>tiddlywiki</title><link>https://www.bangyou.me/tag/tiddlywiki/</link></image><item><title>rtiddlywiki</title><link>https://www.bangyou.me/software/rtiddlywiki/</link><pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/software/rtiddlywiki/</guid><description/></item><item><title>Combine project management and data analysis using Tiddlywiki and RMarkdown</title><link>https://www.bangyou.me/post/tiddlywiki-rmarkdown/</link><pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/tiddlywiki-rmarkdown/</guid><description>&lt;p>I have been looking for a simple and flexible tool to manage projects, take notes, and track results of data analysis with R, e.g. EverNote, OneNote, Trac, JIRA, github, RMarkdown, bookdown, etc. Recently, &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> and &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">Projectify&lt;/a> pops up from random goggling. &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> is a non-linear notebook for storing information. I found it is very useful and simple to manage my research projects and take notes of data analysis as a data scientist and digital agronomist.&lt;/p>
 &lt;h2 id="project-management">Project management&lt;/h2>
 &lt;p>I always work on multiple projects at the same time. Beyond the project management by project members, I prefer to keep a personal project management to track, hold and restore my activities related with a specific project. &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">Projectify&lt;/a> is a preconfigured Tiddlywiki for project management to capture thoughts, plan projects, and schedule tasks. Projectify manages projects through &lt;a href="https://tiddlywiki.com/static/Tagging.html" target="_blank" rel="noopener">tags&lt;/a> in Tiddlywiki.
 Adding tags into the new tiddler can easily associate it into &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">one or multiple projects &lt;/a>.&lt;/p>
@@ -99,7 +99,7 @@ Adding tags into the new tiddler can easily associate it into &lt;a href="https:
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">&amp;#34;field1&amp;#34;: &lt;/span>&lt;span class="s2">&amp;#34;V1&amp;#34;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">&amp;#34;field 2&amp;#34;: &lt;/span>&lt;span class="s2">&amp;#34;Value 2&amp;#34;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This method allows me to save Rmarkdown output in the centralized places (i.e. Tiddlywki)
-and share with my colleagues.&lt;/p></description></item><item><title>Using Refnotes and Zotero in Tiddlywiki</title><link>https://byzheng.github.io/my-website/post/refnotes-zotero/</link><pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate><guid>https://byzheng.github.io/my-website/post/refnotes-zotero/</guid><description>&lt;p>&lt;a href="https://www.zotero.org/" target="_blank" rel="noopener">Zotero&lt;/a> is a free and open-source reference management software to manage bibliographic data and related research materials. &lt;a href="https://retorque.re/zotero-better-bibtex/" target="_blank" rel="noopener">Better BibTeX (BBT)&lt;/a> is an extension for Zotero and Juris-M that makes it easier to manage bibliographic data. &lt;a href="https://kookma.github.io/TW-Refnotes/" target="_blank" rel="noopener">Refnotes&lt;/a> is a &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> plugin to create and manage footnotes, abbreviations, citations, and references.&lt;/p>
+and share with my colleagues.&lt;/p></description></item><item><title>Using Refnotes and Zotero in Tiddlywiki</title><link>https://www.bangyou.me/post/refnotes-zotero/</link><pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/refnotes-zotero/</guid><description>&lt;p>&lt;a href="https://www.zotero.org/" target="_blank" rel="noopener">Zotero&lt;/a> is a free and open-source reference management software to manage bibliographic data and related research materials. &lt;a href="https://retorque.re/zotero-better-bibtex/" target="_blank" rel="noopener">Better BibTeX (BBT)&lt;/a> is an extension for Zotero and Juris-M that makes it easier to manage bibliographic data. &lt;a href="https://kookma.github.io/TW-Refnotes/" target="_blank" rel="noopener">Refnotes&lt;/a> is a &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> plugin to create and manage footnotes, abbreviations, citations, and references.&lt;/p>
 &lt;p>Tiddlywiki and Refnotes use &lt;code>bibtex&lt;/code> to mange references. A few setting of Zotero and BBT should be changed to export correct format for Refnotes.&lt;/p>
 &lt;h2 id="config-zotero-and-bbt">Config Zotero and BBT&lt;/h2>
 &lt;p>The export format &lt;code>better BibTex&lt;/code> escapes specially character in the authors in default, &lt;code>better BibLaTex&lt;/code> doesn&amp;rsquo;t escape in default. So I suggest to use &lt;code>Better BibLaTex&lt;/code> as export format. The &lt;code>Quick Copy&lt;/code> can be set to &lt;code>Better BibLaTex&lt;/code> format, then use shortcut &lt;code>Ctrl + Shift + C&lt;/code> to quick copy BibTex into clipboard, then paste into Tiddlywiki.&lt;/p>
@@ -107,10 +107,10 @@ and share with my colleagues.&lt;/p></description></item><item><title>Using Refn
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp 400w,
-/my-website/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_922fd03d17dde3dbda983e5958105b06.webp 760w,
-/my-website/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp"
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp 400w,
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_922fd03d17dde3dbda983e5958105b06.webp 760w,
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp"
 width="755"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -121,10 +121,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp 400w,
-/my-website/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_19956f057a776ed9e20961bfc6997c0a.webp 760w,
-/my-website/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp"
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp 400w,
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_19956f057a776ed9e20961bfc6997c0a.webp 760w,
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp"
 width="760"
 height="711"
 loading="lazy" data-zoomable />&lt;/div>
@@ -148,10 +148,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp 400w,
-/my-website/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1d71457c1143c26a66afd66cf0066d84.webp 760w,
-/my-website/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp"
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp 400w,
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1d71457c1143c26a66afd66cf0066d84.webp 760w,
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp"
 width="760"
 height="711"
 loading="lazy" data-zoomable />&lt;/div>
@@ -162,10 +162,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp 400w,
-/my-website/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_4deb2f782319b7d2684b3936ab6bdebc.webp 760w,
-/my-website/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp"
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp 400w,
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_4deb2f782319b7d2684b3936ab6bdebc.webp 760w,
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp"
 width="755"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -176,10 +176,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp 400w,
-/my-website/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_efe82480007f28e1b2ef23cf7abb9f83.webp 760w,
-/my-website/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp"
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp 400w,
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_efe82480007f28e1b2ef23cf7abb9f83.webp 760w,
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp"
 width="760"
 height="711"
 loading="lazy" data-zoomable />&lt;/div>
@@ -201,10 +201,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/my-website/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp 400w,
-/my-website/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1e634de4c62b2f32c7f802de584fc958.webp 760w,
-/my-website/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://byzheng.github.io/my-website/my-website/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp"
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp 400w,
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1e634de4c62b2f32c7f802de584fc958.webp 760w,
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp"
 width="760"
 height="435"
 loading="lazy" data-zoomable />&lt;/div>
