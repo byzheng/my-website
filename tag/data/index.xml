@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>data | Bangyou Zheng</title><link>https://www.bangyou.me/tag/data/</link><atom:link href="https://www.bangyou.me/tag/data/index.xml" rel="self" type="application/rss+xml"/><description>data</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate><image><url>https://www.bangyou.me/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>data</title><link>https://www.bangyou.me/tag/data/</link></image><item><title>Archive the big folder</title><link>https://www.bangyou.me/post/archive-big-folder/</link><pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/archive-big-folder/</guid><description>&lt;p>In the &lt;a href="https://phenocopter.bangyou.me" target="_blank" rel="noopener">PhenoCopter&lt;/a> platform, I have to deal with the limited space in the storage of our data center. The practical solution is to archive old flights into tape and current flights in the active storage.&lt;/p>
+&lt;p>The challenge for UAV data is mixed by smaller and bigger files (mainly images). The test flight has 37, 010 files with 43.6 GB on disk and 12.8 GB file size in total.&lt;/p>
+&lt;h2 id="create-archive-file">Create archive file&lt;/h2>
+&lt;p>I tested the &lt;code>tar&lt;/code> and &lt;code>zip&lt;/code> format to archive all files into a single file which is eacy to transfer between storage.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">tar -cf flight1.tar flight1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>tar&lt;/code> command took about 8m to generate 13 GB file.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> zip -r -0 Flight1-Visual.zip Flight1-Visual 2&amp;gt;&amp;amp;1 &amp;gt; /dev/null
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>zip&lt;/code> command took the similar time of &lt;code>tar&lt;/code> command and generate the file with similar size.&lt;/p>
+&lt;h2 id="delete-the-data">Delete the data&lt;/h2>
+&lt;p>The next challenge is to delete all files in the original storage. Thanks for the suggestions from &lt;a href="https://www.slashroot.in/which-is-the-fastest-method-to-delete-files-in-linux" target="_blank" rel="noopener">here&lt;/a>. The fastest way to delete folder with lots of files is &lt;code>rsync&lt;/code> or &lt;code>perl&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">mkdir empty_dir
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rsync -a --delete empty_dir/ yourdirectory/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cd yourdirectory
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">perl -e &amp;#39;for(&amp;lt;*&amp;gt;){((stat)[9]&amp;lt;(unlink))}&amp;#39;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Climate Data</title><link>https://www.bangyou.me/post/climate-data/</link><pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/climate-data/</guid><description>&lt;p>In recent years, plot specific crop models have been adapted to national and regional scales to
+aid policy makers with agricultural decisions concerning climate change and the resulting effects on food security and future water demands. Inputs for the crop modeling process can be separated into three major categories: climatic, soil, and management parameters.&lt;/p>
+&lt;h2 id="temperature">Temperature&lt;/h2>
+&lt;p>Historical climate data that is geospatially explicit is a necessity for any crop modeling process,
+especially on a regional scale. A few publically available sources include weather station data, interpolated grids based
+on station data, and satellite derived data.&lt;/p>
+&lt;h3 id="silo">SILO&lt;/h3>
+&lt;p>Queensland Government database containing point and gridded daily climate data for Australia from 1890 till present designed for crop and pasture modelling . The improved blended data method was developed for preparation and generation of solar radiation gridded datasets for SILO.&lt;/p>
+&lt;h3 id="ncdc">NCDC&lt;/h3>
+&lt;p>One of the most well known sources of regional weather station data comes from National
+Climatic Data Center (NCDC) sector of the National Oceanic and Atmospheric Administration (NOAA).&lt;br>
+Daily observations of temperature, precipitation, winds, pressure, snow, and others can be found for
+over 15,000 stations worldwide, including over 2,000 stations in the United States from the Global
+Surface Summary of the Day (GSOD). The data covers a temporal range that begins in 1929 to near
+present time, although the most complete records begin in 1973. While this dataset represents one of
+the most comprehensive, it suffers from data gaps in localities of low to no representation. Data access
+can found at the following link (&lt;a href="http://www.climate.gov/global-summary-day-gsod%29" target="_blank" rel="noopener">http://www.climate.gov/global-summary-day-gsod)&lt;/a>.&lt;/p>
+&lt;p>An alternative to the Global Summary of the Day weather station database is the Global Historical Climate Network Data (GHCN) version 2. The GHCN provides historical temperature, precipitation, and pressure data for thousands of land stations on a monthly basis. Precipitation is represented over 20590 stations, mean temperature over 7280 stations, and minimum and maximum temperature over 4966 stations. This data also suffers large data gaps favoring the Northern Hemisphere.&lt;br>
+&lt;a href="http://www.ncdc.noaa.gov/ghcnm/v2.php" target="_blank" rel="noopener">http://www.ncdc.noaa.gov/ghcnm/v2.php&lt;/a>&lt;/p>
+&lt;h3 id="faoclim-20">FAOCLIM 2.0&lt;/h3>
+&lt;p>Other sources of weather station data include the FAOCLIM 2.0 global climate database.&lt;br>
+FAOCLIM 2.0 contains monthly data for weather stations across the world. This station database
+contains a number of variables including a monthly total of evapotranspiration, precipitation, and
+sunshine duration, and monthly mean values for maximum and minimum temperature, vapor pressure,
+and wind speed. FAOCLIM 2.0 also contains both long-term averages (1961-1990) and time series for
+precipitation and temperature.
+&lt;a href="http://www.fao.org/nr/climpag/pub/EN1102_en.asp" target="_blank" rel="noopener">http://www.fao.org/nr/climpag/pub/EN1102_en.asp&lt;/a>&lt;/p>
+&lt;p>Weather station data can be a valuable in the crop modeling process. Often, local weather
+station data is obtained for a particular farm and assumed to be representative of the weather
+conditions occurring on site. Quality weather station data is invaluable for farm based studies&lt;/p>
+&lt;h3 id="worldclim">WorldClim&lt;/h3>
+&lt;p>!WorldClim has been developed at an even high resolution for the entire globe, excluding Antarctica. !WorldClim contains global estimates of monthly mean, maximum, and minimum temperature and precipitation at a 1-km resolution between the years 1950-2000.&lt;/p>
+&lt;p>!WorldClim interpolated weather station to produce monthly grids of climate variables. Weather station data came from a variety of different weather station databases including GHCN, WMO climatological normals, FAOCLIM 2.0, International Center for Tropical Agriculture (CIAT), and other regional databases. Extensive quality control measures were taken to insure no duplicate records were present after combining the various databases, giving precedence to the GHCN database. After the quality control check, the database consisted of precipitation records from 47554 locations, mean temperature from 24542 locations, and minimum and maximum temperatures from 14835 locations.&lt;/p>
+&lt;p>Once the weather stations were checked, the ANUSPLIN software package version 4.3 was used to interpolate global climate surfaces from the weather stations. This software implements thin-plate smoothing spline procedure, using every station as a data point. The authors fitted a second-order spline using latitude, longitude, and elevation as independent variables, which produced the lowest overall cross –validation errors. Considering the ANUSPLIN program creates a continuous surface projection, the LAPGRD program was to create a global grid. Hence, the end resolution of the global grid merely depends on the input grid; the higher the resolution of the input grid, the better it represents the modeled climate data.&lt;/p>
+&lt;h3 id="climate-research-unit-cru">Climate Research Unit (CRU)&lt;/h3>
+&lt;p>The CRU database contains two different types, one at a course resolution (above 2°) and one at
+a fine resolution (0.5°). There are two datasets that make up the coarse resolution data.
+One set is the HadCRUT3 for land surface temperature. This set represents over 4349 weather stations and contains land air temperature anomalies on a 5° X 5° grid dating back to 1850 This dataset contains many improvements to older versions (HadCRUT and HadCRUT2), including more station data to improve
+global coverage, removal of duplicate stations, and improving station normals and standard deviations. Precipitation data is contained in the other and can be found at a 2.5° X 3.75° resolution. This set extends from 1900 to 1998. However, while the gridded precipitation data is at a higher resolution comparatively, spatial coverage is spotty; leaving major gaps in northern North America, Central Asia, and Africa. CRU however holds a high resolution dataset that is of interest.&lt;/p>
+&lt;p>The CRU TS 3.0 dataset contains monthly averages of six climate elements including precipitation, mean, maximum, and minimum temperature, and other for crop modeling. This dataset
+represents an update to the previous versions (CRU TS 1.0, CRU TS 2.0, and CRU TS 2.1) and contains the
+highest temporal and parameter coverage. Weather station records were obtained from a variety of
+previously compiled sources and checked for inhomogeneities using an approach similar to the GHCN
+automatic method of homogenization.&lt;/p>
+&lt;p>While this dataset is at a high resolution and a global spatial coverage, the data is lacking
+temporal resolution necessary for crop modeling. In order to use this CRU TS 3.0 data, a weather
+generator must be employed to create a daily time series of climate observations. Candidate generators
+include dGen-CRU, !Weatherman, and WGEN.&lt;/p>
+&lt;h3 id="nasa-power-prediction-of-worldwide-energy-resource-agroclimatology-data">NASA POWER (Prediction of Worldwide Energy Resource) Agroclimatology Data&lt;/h3>
+&lt;p>One source of historical meteorological data is the NASA Agroclimatology Archive, one
+component of NASA’s POWER (Prediction of Worldwide Energy Resource) project. POWER was created
+to allow access to data derived from NASA’s Surface Meteorological and Solar Energy (SSE) project for
+those interested in the design of renewable energy systems. The Agroclimatology archive was
+developed with agricultural Decision Supports Systems (DSS) in mind and provides easy download of
+historical data for specific site locations.&lt;/p>
+&lt;h3 id="agmerra-and-agcfsr">AgMERRA and AgCFSR&lt;/h3>
+&lt;p>The AgMERRA and AgCFSR climate forcing datasets were created as an element of the Agricultural Model Intercomparison and Improvement Project (AgMIP) to provide consistent, daily time series over the 1980-2010 period with global coverage of climate variables required for agricultural models. These datasets were designed to be useful for AgMIP&amp;rsquo;s coordinated, protocol-based studies of agricultural impacts ranging from biophysical process studies to global agricultural economic models. These datasets are provided to promote consistency and transparency in climate data and to facilitate more harmonized comparisons across regions and between models, particularly in instances where there exist strong market linkages between regions. The 1980-2010 time period is of particular importance for agricultural modeling efforts due to the necessity to calibrate models for improved intercomparison as well as for acting as a baseline upon which future climate scenarios can be statistically and dynamically constructed [[ZotCite(IQZRFHTW(Ruaneetal.2015))]].&lt;/p>
+&lt;p>The datasets are stored at 0.25°×0.25° horizontal resolution (~25km), with global coverage and daily values from 1980-2010 in order to form a &amp;ldquo;current period&amp;rdquo; climatology. [[ZotCite(VA5Q73D2(Villoriaetal.2016),ait)]] created a tool to download and visualize dataset from AgMIP.&lt;/p>
+&lt;h2 id="precipitation">Precipitation&lt;/h2>
+&lt;p>The Climate Prediction Center&amp;rsquo;s ([http://www.cpc.ncep.noaa.gov/ CPC]) daily rainfall data for the entire world, 1979 - present &amp;amp; 50-km resolution, is one of the few high quality and long term observation-based rainfall products. Data is available at CPC&amp;rsquo;s [http://ftp.cpc.ncep.noaa.gov/precip/CPC_UNI_PRCP/GAUGE_GLB/ ftp site].&lt;/p>
+&lt;p>A R package [https://github.com/RationShop/raincpc raincpc] could be used to download precipitation data from CPC.&lt;/p>
+&lt;h2 id="soils">Soils&lt;/h2>
+&lt;p>Considering how heavily most crop models are based on soil-plant-atmosphere interactions, soils are an important input parameter and require the most accurate information available. Various regional datasets are available for different regions throughout the world; although a majority of regional studies use soil profiles supplied by their regions soil survey office.&lt;/p>
+&lt;h3 id="harmonized-world-soil-database-hwsd">Harmonized world soil database (HWSD)&lt;/h3>
+&lt;p>The Land Use Change and Agriculture Program of IIASA (LUC) and the Food and Agriculture Organization of the United Nations (FAO) have developed a new comprehensive Harmonized World Soil Database (HWSD). Vast volumes of recently collected regional and national updates of soil information were used for this state-of-the-art database. The work was carried out in partnership with:&lt;/p>
+&lt;ul>
+&lt;li>ISRIC-World Soil Information, together with FAO, were responsible for the development of regional soil and terrain databases and the WISE soil profile database;&lt;/li>
+&lt;li>the European Soil Bureau Network, which had recently completed a major update of soil information for Europe and northern Eurasia, and&lt;/li>
+&lt;li>the Institute of Soil Science, Chinese Academy of Sciences, which provided the recent 1:1,000,000 scale Soil Map of China.&lt;/li>
+&lt;/ul>
+&lt;p>The HWSD is a 30 arc-second raster database with over 16000 different soil mapping units that combines existing regional and national updates of soil information worldwide (SOTER, ESD, Soil Map of China, WISE) with the information contained within the 1:5 000 000 scale FAO-UNESCO Soil Map of the World (FAO, 19711981).&lt;/p>
+&lt;p>The resulting raster database consists of 21600 rows and 43200 columns, which are linked to harmonized soil property data. The use of a standardized structure allows for the linkage of the attribute data with the raster map to display or query the composition in terms of soil units and the characterization of selected soil parameters (organic Carbon, pH, water storage capacity, soil depth, cation exchange capacity of the soil and the clay fraction, total exchangeable nutrients, lime and gypsum contents, sodium exchange percentage, salinity, textural class and granulometry).&lt;/p>
+&lt;h3 id="isric-wise">ISRIC-WISE&lt;/h3>
+&lt;p>ISRIC-WISE soils database is a globally comprehensive dataset at one of the highest resolutions
+available at a 5’ X 5’ resolution. The data were created using the soil distribution show on the 1:5
+million scale FAO-Unesco Soil Map of the World (DSMW) and soil parameter estimates derived from
+ISRIC’s global WISE soil profile database. The dataset contains information on 19 soil variables that are commonly used in crop modeling. This dataset has be used by Mekonnen &amp;amp; Hoekstra (2010) the their assessemnt of global production of wheat’s green, blue and grey water footprint.&lt;/p>
+&lt;h2 id="land-use">Land use&lt;/h2>
+&lt;h3 id="catchment-scale-land-use-of-australia">Catchment Scale Land Use of Australia&lt;/h3>
+&lt;p>This dataset is the most current national compilation of catchment scale land use data for Australia ([http://www.daff.gov.au/abares/pages/publications/display.aspx?url=http://143.188.17.20/anrdl/DAFFService/display.php?fid=pb_luausg9abll20140506_11a.xml CLUM]), as at March 2014. It is a seamless raster dataset that combines land use data for all state and territory jurisdictions, compiled at a resolution of 50 metres by 50 metres. It has been compiled from vector land use datasets collected as part of state and territory mapping programs through the Australian Collaborative Land Use and Management Program (ACLUMP). Catchment scale land use data was produced by combining land tenure and other types of land use information, fine-scale satellite data and information collected in the field. The date of mapping (1997 to 2012) and scale of mapping (1:25 000 to 1:250 000) vary, reflecting the source data capture date and scale. This information is provided in a supporting polygon dataset.&lt;/p>
+&lt;h3 id="worldwide-cropland-maps">Worldwide cropland maps&lt;/h3>
+&lt;p>A new 1 km global IIASA-IFPRI cropland percentage map for the baseline year 2005 has been developed which integrates a number of individual cropland maps at global to regional to national scales. These products are freely available for downloading from the &lt;a href="http://cropland.geo-wiki.org" target="_blank" rel="noopener">http://cropland.geo-wiki.org&lt;/a> website [[ZotCite(GXAI845A(Fritzetal.2015))]].&lt;/p>
+&lt;h3 id="gadm">gadm&lt;/h3>
+&lt;p>GADM (&lt;a href="http://www.gadm.org/" target="_blank" rel="noopener">http://www.gadm.org/&lt;/a>) provides the country based shape file.&lt;/p></description></item></channel></rss>

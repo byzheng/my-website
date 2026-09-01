@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>apsimng | Bangyou Zheng</title><link>https://www.bangyou.me/tag/apsimng/</link><atom:link href="https://www.bangyou.me/tag/apsimng/index.xml" rel="self" type="application/rss+xml"/><description>apsimng</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><image><url>https://www.bangyou.me/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>apsimng</title><link>https://www.bangyou.me/tag/apsimng/</link></image><item><title>Compile APSIMNG from source codes</title><link>https://www.bangyou.me/post/compile-apsimng/</link><pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/compile-apsimng/</guid><description>&lt;h2 id="checkout-the-latest-source-codes-from-apsiminitiative">Checkout the latest source codes from APSIMInitiative&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git clone --depth 1 https://github.com/APSIMInitiative/ApsimX.git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="compile-apsimng-gui">Compile APSIMNG GUI&lt;/h2>
+&lt;p>Open &lt;code>ApsimX.sln&lt;/code> under folder &lt;code>ApsimX&lt;/code> with Visual Studio (2019 above), and then use menu &lt;code>Build&lt;/code> -&amp;gt; &lt;code>Build Solution&lt;/code> to build whole projects.&lt;/p>
+&lt;h2 id="publish-models-for-batch-mode">Publish models for batch mode&lt;/h2>
+&lt;p>Run following command under Models folders on Windows&lt;/p>
+&lt;p>Publish for windows&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">dotnet publish -c Release -f netcoreapp3.1 -r win-x64 --self-contained Models.csproj
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Publish for Ubuntu&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">dotnet publish -c Release -f netcoreapp3.1 -r ubuntu.20.04-x64 --self-contained Models.csproj
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Publish for SLES (e.g. CSIRO cluster):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">dotnet publish -c Release -f netcoreapp3.1 -r sles.15-x64 --self-contained Models.csproj
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>All runtime identify for other operating system can be found from &lt;a href="https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json" target="_blank" rel="noopener">github&lt;/a>&lt;/p>
+&lt;p>Copy the contents &lt;code>bin/Release/netcoreapp3.1/&amp;lt;runtime-identify&amp;gt;/publish/&lt;/code> to your operating system.&lt;/p>
+&lt;h2 id="further-steps">Further steps&lt;/h2>
+&lt;p>On Windows, check whether &lt;code>sqlite3.dll&lt;/code> is under &lt;code>bin\Release\netcoreapp3.1\win-x64\publish&lt;/code> folder. If not, copy from &lt;code>bin\Release\netcoreapp3.1\win-x64\&lt;/code> to &lt;code>publish&lt;/code> folder.&lt;/p>
+&lt;p>On Linux, sqlite3 should be installed into system with following command&lt;/p>
+&lt;p>for Ubuntu&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install sqlite3
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>for CSIRO cluster&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-v" data-lang="v">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">module&lt;/span> &lt;span class="nv">load&lt;/span> &lt;span class="nv">sqlite&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mf">3.35.5&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

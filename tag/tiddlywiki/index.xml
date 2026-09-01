@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tiddlywiki | Bangyou Zheng</title><link>https://www.bangyou.me/tag/tiddlywiki/</link><atom:link href="https://www.bangyou.me/tag/tiddlywiki/index.xml" rel="self" type="application/rss+xml"/><description>tiddlywiki</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><image><url>https://www.bangyou.me/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>tiddlywiki</title><link>https://www.bangyou.me/tag/tiddlywiki/</link></image><item><title>rtiddlywiki</title><link>https://www.bangyou.me/software/rtiddlywiki/</link><pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/software/rtiddlywiki/</guid><description/></item><item><title>Combine project management and data analysis using Tiddlywiki and RMarkdown</title><link>https://www.bangyou.me/post/tiddlywiki-rmarkdown/</link><pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/tiddlywiki-rmarkdown/</guid><description>&lt;p>I have been looking for a simple and flexible tool to manage projects, take notes, and track results of data analysis with R, e.g. EverNote, OneNote, Trac, JIRA, github, RMarkdown, bookdown, etc. Recently, &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> and &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">Projectify&lt;/a> pops up from random goggling. &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> is a non-linear notebook for storing information. I found it is very useful and simple to manage my research projects and take notes of data analysis as a data scientist and digital agronomist.&lt;/p>
+&lt;h2 id="project-management">Project management&lt;/h2>
+&lt;p>I always work on multiple projects at the same time. Beyond the project management by project members, I prefer to keep a personal project management to track, hold and restore my activities related with a specific project. &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">Projectify&lt;/a> is a preconfigured Tiddlywiki for project management to capture thoughts, plan projects, and schedule tasks. Projectify manages projects through &lt;a href="https://tiddlywiki.com/static/Tagging.html" target="_blank" rel="noopener">tags&lt;/a> in Tiddlywiki.
+Adding tags into the new tiddler can easily associate it into &lt;a href="https://thaddeusjiang.github.io/Projectify/" target="_blank" rel="noopener">one or multiple projects &lt;/a>.&lt;/p>
+&lt;h2 id="reading-notes">Reading notes&lt;/h2>
+&lt;p>Literature and online materials are very important to scientific research. &lt;a href="https://kookma.github.io/TW-Refnotes/" target="_blank" rel="noopener">Refnotes&lt;/a> plugin can add reference into any tiddlers using bibtex format. My reference management tool &lt;a href="https://www.zotero.org/" target="_blank" rel="noopener">Zotero&lt;/a> with extension &lt;a href="https://retorque.re/zotero-better-bibtex/" target="_blank" rel="noopener">Better Bibtext&lt;/a> can easily export references in a collection into bibtex format and keep updates. &lt;a href="refnotes-zotero">This post&lt;/a> show how to use Zotero and Refnotes in Tiddlywiki.&lt;/p>
+&lt;h2 id="data-analysis">Data analysis&lt;/h2>
+&lt;p>&lt;a href="https://www.r-project.org/" target="_blank" rel="noopener">R&lt;/a> is my major programming language for data analysis. &lt;a href="https://rmarkdown.rstudio.com/" target="_blank" rel="noopener">RMarkdown&lt;/a> has been using for long period to document the data analysis and share outputs with my colleagues. RMarkdown documents provide powerful features to reproduce outputs of data analysis and very suitable to generate final outputs, which can be treated as a linear procedure from raw data to output. However, as a data scientist, I often branch data analysis to&lt;/p>
+&lt;ul>
+&lt;li>Get new data from my own experiments or other colleagues. The new data require for quality checking and might or might not be useful for further analysis.&lt;/li>
+&lt;li>Test new ideas from the current analysis (branch from master analysis). The new ideas might be brilliant and merge into master analysis, or might be rubbish.&lt;/li>
+&lt;li>Check the previous analysis for any strange results. The checking procedure might find an error in the raw data and scripts which introduce a new fix into master analysis, or new understanding for science.&lt;/li>
+&lt;/ul>
+&lt;p>It is unreproducible, time-consuming and even impossible to write RMarkdown file for each branching data analysis as 1) the modified or dropped input files, 2) the too big intermediate results, 3) lost tracks of R scripts, etc. Branching data analysis is very common for scientific research and non-linear procedure.&lt;/p>
+&lt;p>As the way of natural thinking, the feature of Tiddlywiki to &lt;a href="https://tiddlywiki.com/static/Creating%2520and%2520editing%2520tiddlers.html" target="_blank" rel="noopener">create missing tiddler&lt;/a> is very easy to branch master data analysis without leaving current tiddler just through using two brackets (e.g. &lt;code>[[New Idea]]&lt;/code>). Tiddlywiki shows a link to create new tiddler.&lt;/p>
+&lt;p>There are two types of notes from data analysis using R: 1) notes from general data analysis. 2) final results with Rmarkdown.&lt;/p>
+&lt;h3 id="notes-from-general-data-analysis">Notes from general data analysis&lt;/h3>
+&lt;p>For a new branch of data analysis, I create a new tiddler to take notes. The main difficulty is to save images from RStudio &lt;code>Plot Zoom&lt;/code> into file system and use in Tiddlywki. A hot key (e.g. &lt;code>Win + F&lt;/code>) is defined in &lt;a href="https://www.autohotkey.com/" target="_blank" rel="noopener">Autohotkey&lt;/a> to save images in &lt;code>Plot Zoom&lt;/code> of RStudio, any &lt;code>Save As&lt;/code> window, or take a screenshot for any active windows. Finally the &lt;code>image macro&lt;/code> from &lt;a href="https://kookma.github.io/TW-Shiraz/" target="_blank" rel="noopener">Shiraz Plugin&lt;/a> is copied into clipboard and is ready to paste into Tiddlywiki.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; Win + F
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; Take a scrrenshoot and save to tiddlywiki folder and copy the img macro to clipboard
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; RStudio Plot Zoom: Directly save images
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; Save As Window: Directly save images
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; Any other windows: Take a screenshot, paste into MSPaint, and save images
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#f::
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">SetKeyDelay, 20
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sleep, 100
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; If the active window has title &amp;#34;Plot Zoom&amp;#34; (i.e. RStudio Plot Zoom Window)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; Right click and save a new image
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; Only works after resizing Plot Zoom Window
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">if (WinActive(&amp;#34;Plot Zoom&amp;#34;))
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ; Right Click at the left
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> MouseRightClickFromLeft(50, 10)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Sleep, 300
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ; Down three times
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Loop, 3 {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Send, {Down}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Sleep, 300
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Send, {enter}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Sleep, 2000
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">else if (WinActive(&amp;#34;Save As&amp;#34;) or WinActive(&amp;#34;Save File&amp;#34;))
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; Nothing to do for save as window
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">else
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; For other active window. Take a screenshot with active window
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> send {Alt Down}{PrintScreen}{Alt Up}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sleep, 500
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> run MSPaint
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Sleep, 1000
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Send, #{Up}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Sleep, 500
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Mouseclick, left, 250, 250, 5
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Sleep, 200
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> send ^v
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sleep, 500
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Send ^s
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; Use current time as filename
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">FormatTime, time, A_now, yyyyMMddHHmmss
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sleep, 1000
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Send %time%.png
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sleep, 500
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Send ^l
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sleep, 200
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; Save to tiddlyfolder
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Send, C:\Users\zhe00a\OneDriveCSIRO\Working\09-Blog\tiddlywiki\files\images
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Loop, 5 {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Send, {enter}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sleep, 300
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">; Send to clipboard for the img macro
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">;img_macro = [img[./files/images/%time%.png]]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">img_macro = &amp;lt;&amp;lt;image-basic &amp;#34;./files/images/%time%.png&amp;#34; caption:&amp;#34;&amp;#34; width:&amp;#34;95`%&amp;#34; align:&amp;#34;center&amp;#34;&amp;gt;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">SetEnv ClipBoard, %img_macro%
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">return
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="final-results-with-rmarkdown">Final results with Rmarkdown&lt;/h3>
+&lt;p>I have been writing lots of Rmarkdown files to generate reports from data analysis. However, these Rmarkdown are stored in the different folders and not organise in the proper way. I always have troubles to find the old results. It is useful to organize Rmarkdown output in one system.&lt;/p>
+&lt;p>A new R package &lt;a href="https://rtiddlywiki.bangyou.me/" target="_blank" rel="noopener">rtiddlywiki&lt;/a> is developed to generate Tiddlerwiki markdown format from Rmarkdwon files and &lt;code>PUT&lt;/code> into Tiddlywiki (although only works for node.js web server at this stage). This package provides a new format &lt;code>tiddle_document&lt;/code> with &lt;code>tags&lt;/code> and &lt;code>fields&lt;/code> used in Tiddlywiki, e.g.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;R Markdown file&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">output&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">html_document&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">default&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">rtiddlywiki::tiddler_document&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;full-path-to-tiddlywiki-project&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">host&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;http://127.0.0.1:8080/&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">tags&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;tag 1&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;tag 2&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">fields&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">&amp;#34;field1&amp;#34;: &lt;/span>&lt;span class="s2">&amp;#34;V1&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">&amp;#34;field 2&amp;#34;: &lt;/span>&lt;span class="s2">&amp;#34;Value 2&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This method allows me to save Rmarkdown output in the centralized places (i.e. Tiddlywki)
+and share with my colleagues.&lt;/p></description></item><item><title>Using Refnotes and Zotero in Tiddlywiki</title><link>https://www.bangyou.me/post/refnotes-zotero/</link><pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/refnotes-zotero/</guid><description>&lt;p>&lt;a href="https://www.zotero.org/" target="_blank" rel="noopener">Zotero&lt;/a> is a free and open-source reference management software to manage bibliographic data and related research materials. &lt;a href="https://retorque.re/zotero-better-bibtex/" target="_blank" rel="noopener">Better BibTeX (BBT)&lt;/a> is an extension for Zotero and Juris-M that makes it easier to manage bibliographic data. &lt;a href="https://kookma.github.io/TW-Refnotes/" target="_blank" rel="noopener">Refnotes&lt;/a> is a &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> plugin to create and manage footnotes, abbreviations, citations, and references.&lt;/p>
+&lt;p>Tiddlywiki and Refnotes use &lt;code>bibtex&lt;/code> to mange references. A few setting of Zotero and BBT should be changed to export correct format for Refnotes.&lt;/p>
+&lt;h2 id="config-zotero-and-bbt">Config Zotero and BBT&lt;/h2>
+&lt;p>The export format &lt;code>better BibTex&lt;/code> escapes specially character in the authors in default, &lt;code>better BibLaTex&lt;/code> doesn&amp;rsquo;t escape in default. So I suggest to use &lt;code>Better BibLaTex&lt;/code> as export format. The &lt;code>Quick Copy&lt;/code> can be set to &lt;code>Better BibLaTex&lt;/code> format, then use shortcut &lt;code>Ctrl + Shift + C&lt;/code> to quick copy BibTex into clipboard, then paste into Tiddlywiki.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp 400w,
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_922fd03d17dde3dbda983e5958105b06.webp 760w,
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp"
+width="755"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>&lt;code>Better BibLaTex&lt;/code> use the quotation for title case in default, which can be disabled in the setting &lt;code>Apply title case in titles&lt;/code>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp 400w,
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_19956f057a776ed9e20961bfc6997c0a.webp 760w,
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp"
+width="760"
+height="711"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>No &lt;code>year&lt;/code> field is exported in &lt;code>Better BibLaTex&lt;/code> format. The post script can be used to export &lt;code>year&lt;/code>. Add new field &lt;code>zotero-key&lt;/code> to create a link with Zotero protocol (e.g.zotero://select/items/0_ZKCXPRFN) which can open the same item in Zotero. Add new field &lt;code>zotero-pdf-key&lt;/code> to create a link with Zotero protocol (e.g.zotero://open-pdf/library/items/0_ZKCXPRFN) which can open the first attached pdf file in the list.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">Translator&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">BetterBibLaTeX&lt;/span> &lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">date&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">Zotero&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">BetterBibTeX&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">parseDate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">item&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">date&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">reference&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">add&lt;/span>&lt;span class="p">({&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;year&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">value&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">date&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">year&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">reference&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">add&lt;/span>&lt;span class="p">({&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;zotero-key&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">value&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">item&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">itemKey&lt;/span> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">zotero&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">attachments&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nx">zotero&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">attachments&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">att&lt;/span> &lt;span class="k">of&lt;/span> &lt;span class="nx">zotero&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">attachments&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">att&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">contentType&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s2">&amp;#34;application/pdf&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">reference&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">add&lt;/span>&lt;span class="p">({&lt;/span>&lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="s1">&amp;#39;zotero-pdf-key&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">value&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="nx">att&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">itemKey&lt;/span>&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp 400w,
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1d71457c1143c26a66afd66cf0066d84.webp 760w,
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp"
+width="760"
+height="711"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>The &lt;code>file&lt;/code> field can be ignored in the setting if TiddlyWiki is published in public and you don&amp;rsquo;t want to expose your local file path.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp 400w,
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_4deb2f782319b7d2684b3936ab6bdebc.webp 760w,
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp"
+width="755"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Disable &lt;code>Use BibLaTex extended name format&lt;/code> in the export option &lt;code>BibLaTex&lt;/code> to stop &lt;code>prefix&lt;/code> for authors, e.g. &lt;code>family=Linden, given=C. Gerard, prefix=van der, useprefix=true&lt;/code>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp 400w,
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_efe82480007f28e1b2ef23cf7abb9f83.webp 760w,
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp"
+width="760"
+height="711"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="export-bibtex-to-refnotes">Export bibtex to Refnotes&lt;/h2>
+&lt;p>After downloading references into Zotero, bibtex can be exported into Refnotes and tiddlywiki with following steps.&lt;/p>
+&lt;ul>
+&lt;li>Find the reference which will be used in tiddlywiki, and then copy the &lt;code>Citation Key&lt;/code> (e.g. &lt;code>chinoy_correlation_1947&lt;/code>) into clipboard.&lt;/li>
+&lt;li>Use ref macro to cite reference (i.e. &lt;code>&amp;lt;&amp;lt; ref chinoy_correlation_1947&amp;gt;&amp;gt;&lt;/code>) in the tiddler, and save the tiddler.&lt;/li>
+&lt;li>If an error is shown in the reference list (&lt;code>Reference chinoy_correlation_1947 NOT FOUND. Check your input.&lt;/code>)
+&lt;ul>
+&lt;li>Go back to Zotero and use shortcut &lt;code>Ctrl + Shift + C&lt;/code> to quickly copy &lt;code>Better BibLaTex&lt;/code> into clipboard.&lt;/li>
+&lt;li>Go back to Tiddlywiki and open the sidebar, Click on &lt;code>Paste your Bibtex Entry here&lt;/code>, and paste into &lt;code>Import tiddler&lt;/code> to import reference into Tiddlywiki.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp 400w,
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1e634de4c62b2f32c7f802de584fc958.webp 760w,
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp"
+width="760"
+height="435"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>A message &lt;code>A tiddler with this title already exists&lt;/code> indicates the reference has been imported before. You can cancel it or reimport to overwrite if meta data has been changed.&lt;/li>
+&lt;/ul></description></item></channel></rss>

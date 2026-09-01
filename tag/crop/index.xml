@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>crop | Bangyou Zheng</title><link>https://www.bangyou.me/tag/crop/</link><atom:link href="https://www.bangyou.me/tag/crop/index.xml" rel="self" type="application/rss+xml"/><description>crop</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 08 Jul 2020 00:00:00 +0000</lastBuildDate><image><url>https://www.bangyou.me/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>crop</title><link>https://www.bangyou.me/tag/crop/</link></image><item><title>Calculation of thermal time</title><link>https://www.bangyou.me/post/calculation-thermal-time/</link><pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/calculation-thermal-time/</guid><description>
+&lt;script src="https://www.bangyou.me/post/calculation-thermal-time/index_files/header-attrs/header-attrs.js">&lt;/script>
+&lt;p>The thermal time is important to quantify the crop growth for a specific period (e.g. from sowing to flowering). However, the codes might be complicated if there are multiple records in an experiment.&lt;/p>
+&lt;p>Here I showed how to use &lt;code>left_join&lt;/code> function to easily calculate thermal time for the whole records in one data frame.&lt;/p>
+&lt;pre class="r">&lt;code>suppressPackageStartupMessages(library(weaana))
+suppressPackageStartupMessages(library(tidyverse))&lt;/code>&lt;/pre>
+&lt;p>Random observations are generated from 1957 and 2009 for sowing and flowering time.&lt;/p>
+&lt;pre class="r">&lt;code>obs &amp;lt;- tibble(sowing = as.Date(paste0(seq(1957, 2009), &amp;#39;-05-01&amp;#39;)),
+flowering = as.Date(paste0(seq(1957, 2009), &amp;#39;-&amp;#39;, round(runif(53) * 20 + 210)),
+format = &amp;quot;%Y-%j&amp;quot;))&lt;/code>&lt;/pre>
+&lt;p>The weather records are stored in the APSIM format and red by &lt;code>weaana&lt;/code> package.&lt;/p>
+&lt;pre class="r">&lt;code>records &amp;lt;- readWeatherRecords(&amp;quot;WeatherRecordsDemo1.met&amp;quot;) %&amp;gt;%
+getWeatherRecords()&lt;/code>&lt;/pre>
+&lt;p>The daily thermal time is calculated using base temperature 0C. The accumulated thermal times are summed up since the starting of weather records.&lt;/p>
+&lt;pre class="r">&lt;code>records &amp;lt;- records %&amp;gt;%
+mutate(tt = ifelse(avgt &amp;gt; 0, avgt, 0),
+cum_tt = cumsum(tt)) %&amp;gt;%
+select(date, cum_tt)&lt;/code>&lt;/pre>
+&lt;p>The accumulated thermal time at sowing and flowering are selected from the weather records. Then the thermal time from sowing to flowering is calcuated by the difference of accumulated thermal time at sowing and flowering.&lt;/p>
+&lt;pre class="r">&lt;code>sowing_tt &amp;lt;- obs %&amp;gt;%
+left_join(records, by = c(&amp;quot;sowing&amp;quot; = &amp;#39;date&amp;#39;)) %&amp;gt;%
+rename(sowing_tt = cum_tt)
+flowering_tt &amp;lt;- obs %&amp;gt;%
+left_join(records, by = c(&amp;quot;flowering&amp;quot; = &amp;#39;date&amp;#39;)) %&amp;gt;%
+left_join(sowing_tt, by = c(&amp;quot;sowing&amp;quot;, &amp;#39;flowering&amp;#39;)) %&amp;gt;%
+mutate(tt = cum_tt - sowing_tt) %&amp;gt;%
+select(-cum_tt, -sowing_tt)
+head(flowering_tt)&lt;/code>&lt;/pre>
+&lt;pre>&lt;code>## # A tibble: 6 x 3
+## sowing flowering tt
+## &amp;lt;date&amp;gt; &amp;lt;date&amp;gt; &amp;lt;dbl&amp;gt;
+## 1 1957-05-01 1957-08-01 1337.
+## 2 1958-05-01 1958-08-18 1707.
+## 3 1959-05-01 1959-08-01 1316.
+## 4 1960-05-01 1960-08-13 1390.
+## 5 1961-05-01 1961-08-01 1242.
+## 6 1962-05-01 1962-08-06 1412.&lt;/code>&lt;/pre>
+&lt;pre class="r">&lt;code>flowering_tt %&amp;gt;%
+ggplot() +
+geom_histogram(aes(tt)) +
+theme_bw() +
+xlab(&amp;quot;Thermal time (Cd)&amp;quot;)&lt;/code>&lt;/pre>
+&lt;pre>&lt;code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://www.bangyou.me/post/calculation-thermal-time/index_files/figure-html/plot-fig-1.png" width="384" />&lt;/p></description></item></channel></rss>

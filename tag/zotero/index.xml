@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>zotero | Bangyou Zheng</title><link>https://www.bangyou.me/tag/zotero/</link><atom:link href="https://www.bangyou.me/tag/zotero/index.xml" rel="self" type="application/rss+xml"/><description>zotero</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate><image><url>https://www.bangyou.me/media/logo_hu8419d7c8ed903ebf07025e64caaf36b6_25603_300x300_fit_lanczos_3.png</url><title>zotero</title><link>https://www.bangyou.me/tag/zotero/</link></image><item><title>Using Refnotes and Zotero in Tiddlywiki</title><link>https://www.bangyou.me/post/refnotes-zotero/</link><pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate><guid>https://www.bangyou.me/post/refnotes-zotero/</guid><description>&lt;p>&lt;a href="https://www.zotero.org/" target="_blank" rel="noopener">Zotero&lt;/a> is a free and open-source reference management software to manage bibliographic data and related research materials. &lt;a href="https://retorque.re/zotero-better-bibtex/" target="_blank" rel="noopener">Better BibTeX (BBT)&lt;/a> is an extension for Zotero and Juris-M that makes it easier to manage bibliographic data. &lt;a href="https://kookma.github.io/TW-Refnotes/" target="_blank" rel="noopener">Refnotes&lt;/a> is a &lt;a href="https://tiddlywiki.com/" target="_blank" rel="noopener">Tiddlywiki&lt;/a> plugin to create and manage footnotes, abbreviations, citations, and references.&lt;/p>
+&lt;p>Tiddlywiki and Refnotes use &lt;code>bibtex&lt;/code> to mange references. A few setting of Zotero and BBT should be changed to export correct format for Refnotes.&lt;/p>
+&lt;h2 id="config-zotero-and-bbt">Config Zotero and BBT&lt;/h2>
+&lt;p>The export format &lt;code>better BibTex&lt;/code> escapes specially character in the authors in default, &lt;code>better BibLaTex&lt;/code> doesn&amp;rsquo;t escape in default. So I suggest to use &lt;code>Better BibLaTex&lt;/code> as export format. The &lt;code>Quick Copy&lt;/code> can be set to &lt;code>Better BibLaTex&lt;/code> format, then use shortcut &lt;code>Ctrl + Shift + C&lt;/code> to quick copy BibTex into clipboard, then paste into Tiddlywiki.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp 400w,
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_922fd03d17dde3dbda983e5958105b06.webp 760w,
+/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182019_hub748b14c6b880442fef639456268fecc_54782_67f3601d921fca6735cbcbd0ac5c0fe9.webp"
+width="755"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>&lt;code>Better BibLaTex&lt;/code> use the quotation for title case in default, which can be disabled in the setting &lt;code>Apply title case in titles&lt;/code>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp 400w,
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_19956f057a776ed9e20961bfc6997c0a.webp 760w,
+/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603181406_hu117fee66476199cc052f5d0979d0b794_57199_7975a7f3795d7c94aa0ba84b55f73f30.webp"
+width="760"
+height="711"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>No &lt;code>year&lt;/code> field is exported in &lt;code>Better BibLaTex&lt;/code> format. The post script can be used to export &lt;code>year&lt;/code>. Add new field &lt;code>zotero-key&lt;/code> to create a link with Zotero protocol (e.g.zotero://select/items/0_ZKCXPRFN) which can open the same item in Zotero. Add new field &lt;code>zotero-pdf-key&lt;/code> to create a link with Zotero protocol (e.g.zotero://open-pdf/library/items/0_ZKCXPRFN) which can open the first attached pdf file in the list.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">Translator&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">BetterBibLaTeX&lt;/span> &lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">date&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">Zotero&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">BetterBibTeX&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">parseDate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">item&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">date&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">reference&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">add&lt;/span>&lt;span class="p">({&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;year&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">value&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">date&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">year&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">reference&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">add&lt;/span>&lt;span class="p">({&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;zotero-key&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">value&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">item&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">itemKey&lt;/span> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">zotero&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">attachments&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nx">zotero&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">attachments&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">att&lt;/span> &lt;span class="k">of&lt;/span> &lt;span class="nx">zotero&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">attachments&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">att&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">contentType&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s2">&amp;#34;application/pdf&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">reference&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">add&lt;/span>&lt;span class="p">({&lt;/span>&lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="s1">&amp;#39;zotero-pdf-key&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">value&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="nx">att&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">itemKey&lt;/span>&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp 400w,
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1d71457c1143c26a66afd66cf0066d84.webp 760w,
+/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603180836_huf051fb12ba2b14a4aefc568c8a1af235_43832_7fa5d7eeff8d6215dc280a06ec863f4b.webp"
+width="760"
+height="711"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>The &lt;code>file&lt;/code> field can be ignored in the setting if TiddlyWiki is published in public and you don&amp;rsquo;t want to expose your local file path.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp 400w,
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_4deb2f782319b7d2684b3936ab6bdebc.webp 760w,
+/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182457_hu06b2078173e17f5c0b82e477d684a104_46628_a5e819e6fb06d4c1c4a3776a24f08b74.webp"
+width="755"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Disable &lt;code>Use BibLaTex extended name format&lt;/code> in the export option &lt;code>BibLaTex&lt;/code> to stop &lt;code>prefix&lt;/code> for authors, e.g. &lt;code>family=Linden, given=C. Gerard, prefix=van der, useprefix=true&lt;/code>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp 400w,
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_efe82480007f28e1b2ef23cf7abb9f83.webp 760w,
+/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603182720_hufa72b68af14c3f75e2a7ded85adb4232_44205_e3027dc9508dbf3d61204aec6047140e.webp"
+width="760"
+height="711"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="export-bibtex-to-refnotes">Export bibtex to Refnotes&lt;/h2>
+&lt;p>After downloading references into Zotero, bibtex can be exported into Refnotes and tiddlywiki with following steps.&lt;/p>
+&lt;ul>
+&lt;li>Find the reference which will be used in tiddlywiki, and then copy the &lt;code>Citation Key&lt;/code> (e.g. &lt;code>chinoy_correlation_1947&lt;/code>) into clipboard.&lt;/li>
+&lt;li>Use ref macro to cite reference (i.e. &lt;code>&amp;lt;&amp;lt; ref chinoy_correlation_1947&amp;gt;&amp;gt;&lt;/code>) in the tiddler, and save the tiddler.&lt;/li>
+&lt;li>If an error is shown in the reference list (&lt;code>Reference chinoy_correlation_1947 NOT FOUND. Check your input.&lt;/code>)
+&lt;ul>
+&lt;li>Go back to Zotero and use shortcut &lt;code>Ctrl + Shift + C&lt;/code> to quickly copy &lt;code>Better BibLaTex&lt;/code> into clipboard.&lt;/li>
+&lt;li>Go back to Tiddlywiki and open the sidebar, Click on &lt;code>Paste your Bibtex Entry here&lt;/code>, and paste into &lt;code>Import tiddler&lt;/code> to import reference into Tiddlywiki.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp 400w,
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1e634de4c62b2f32c7f802de584fc958.webp 760w,
+/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://www.bangyou.me/post/refnotes-zotero/20220603184606_hufb1cc822b339933e2d46edbc75d0072d_32486_2537286de8c466f51a926d502d0e694c.webp"
+width="760"
+height="435"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>A message &lt;code>A tiddler with this title already exists&lt;/code> indicates the reference has been imported before. You can cancel it or reimport to overwrite if meta data has been changed.&lt;/li>
+&lt;/ul></description></item></channel></rss>
